@@ -1,0 +1,32 @@
+{
+  "name": "alumni",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@material/button": "^3.1.0",
+    "@material/chips": "^3.1.0",
+    "@material/data-table": "^3.1.1",
+    "@material/menu": "^3.1.0",
+    "@material/switch": "^3.1.0",
+    "material-components-web": "^3.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^4.2.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "sass": "^1.22.10",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="dist/bundle.css">
+</head>
+<body>
+    <h1>Hello world!</h1>
+    <div class="mdc-button mdc-button--raised">Button</div>
+
+    <div class="mdc-chip-set mdc-chip-set--input">
+        <button class="mdc-chip mdc-chip--selected">
+                <i class="material-icons mdc-chip__icon mdc-chip__icon--leading mdc-chip__icon--leading-hidden">face</i>
+                <span class="mdc-chip__checkmark">
+                    <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
+                    <path class="mdc-chip__checkmark-path" fill="none" stroke="black"
+                            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                    </svg>
+                </span>
+                <span class="mdc-chip__text">Filterable content</span>
+        </button>
+    </div>
+
+    <div class="my-inbox-table">
+        <div class="mdc-data-table">
+            <table class="mdc-data-table__table" aria-label="Dessert calories">
+                <thead>
+                    <tr class="mdc-data-table__header-row">
+                        <th class="mdc-data-table__header-cell mdc-data-table__header-cell--checkbox" role="columnheader" scope="col">
+                        <div class="mdc-checkbox mdc-checkbox--selected mdc-data-table__header-row-checkbox">
+                            <input type="checkbox" class="mdc-checkbox__native-control" aria-label="Toggle all rows" />
+                            <div class="mdc-checkbox__background">
+                                <svg class="mdc-checkbox__checkmark" viewbox="0 0 24 24">
+                                    <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                </svg>
+                                <div class="mdc-checkbox__mixedmark"></div>
+                            </div>
+                        </div>
+                        </th>
+                        <th class="mdc-data-table__header-cell" role="columnheader" scope="col">From</th>
+                        <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Date</th>
+                        <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Status</th>
+                        <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="mdc-data-table__content">
+                    <tr class="mdc-data-table__row" data-row-id="u0">
+                        <td class="mdc-data-table__cell mdc-data-table__cell--checkbox">
+                            <div class="mdc-checkbox mdc-data-table__row-checkbox">
+                                <input type="checkbox" class="mdc-checkbox__native-control" aria-labelledby="r0" />
+                                <div class="mdc-checkbox__background">
+                                    <svg class="mdc-checkbox__checkmark" viewbox="0 0 24 24">
+                                    <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                    </svg>
+                                    <div class="mdc-checkbox__mixedmark"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="mdc-data-table__cell" id="r0">
+                            <p class="mdc-data-table__from--name">Morgan Goddard</p>
+                            <p class="mdc-data-table_subject">Subject: <span>Angular</span></p>
+                        </td>
+                        <td class="mdc-data-table__cell mdc-data-table__cell--numeric">Fri, 05 August 2019</td>
+                        <td class="mdc-data-table__cell mdc-data-table__cell--numeric">
+                            <div class="mdc-chip-set">
+                                <button class="mdc-chip my-inbox-chip read-chip">
+                                    <span class="mdc-chip__text">Read</span>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="mdc-data-table__cell mdc-data-table__cell--numeric ">
+                            <div class="mdc-data-table__cell-dots"><span></span><span></span><span></span></div>
+                        </td>
+                    </tr>
+                    <tr class="mdc-data-table__row mdc-data-table__row--selected" aria-selected="true" data-row-id="u1">
+                        <td class="mdc-data-table__cell mdc-data-table__cell--checkbox">
+                            <div class="mdc-checkbox mdc-checkbox--selected mdc-data-table__row-checkbox">
+                            <input type="checkbox" class="mdc-checkbox__native-control" checked aria-labelledby="r1" />
+                            <div class="mdc-checkbox__background">
+                                <svg class="mdc-checkbox__checkmark" viewbox="0 0 24 24">
+                                <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                </svg>
+                                <div class="mdc-checkbox__mixedmark"></div>
+                            </div>
+                            </div>
+                        </td>
+                        <td class="mdc-data-table__cell" id="r1">
+                            <p class="mdc-data-table__from--name">Delene Mentjies</p>
+                            <p class="mdc-data-table_subject">Subject: <span>Angular</span></p>
+                        </td>
+                        <td class="mdc-data-table__cell mdc-data-table__cell--numeric">Fri, 05 August 2019</td>
+                        <td class="mdc-data-table__cell mdc-data-table__cell--numeric">
+                            <div class="mdc-chip-set">
+                                    <button class="mdc-chip my-inbox-chip  unread-chip ">
+                                        <span class="mdc-chip__text">Unread</span>
+                                    </button>
+                            </div>
+                        </td>
+                        <td class="mdc-data-table__cell mdc-data-table__cell--numeric">
+                            <div class="mdc-data-table__cell-dots"><span></span><span></span><span></span></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><!--end of mdc-data-table-->
+    </div><!--end of My inbox table-->
+    <script src="dist/bundle.js" async></script>
+</body>
+</html>
