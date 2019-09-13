@@ -1,6 +1,6 @@
 {
   "name": "alumni",
-  "main": "index.html",
+  "main": "my-requests.html",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server"
@@ -9,8 +9,12 @@
     "@material/button": "^3.1.0",
     "@material/chips": "^3.1.0",
     "@material/data-table": "^3.1.1",
-    "@material/menu": "^3.1.0",
+    "@material/drawer": "^3.1.1",
+    "@material/menu": "^3.2.0",
+    "@material/ripple": "^3.1.0",
     "@material/switch": "^3.1.0",
+    "@material/theme": "^3.1.0",
+    "html-webpack-plugin": "^3.2.0",
     "material-components-web": "^3.1.1"
   },
   "devDependencies": {

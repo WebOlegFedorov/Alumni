@@ -5,6 +5,16 @@ module.exports = {
   output: {
     filename: 'bundle.js',
   },
+  devServer: {
+    port: 3000,
+    historyApiFallback: {
+      rewrites: [
+        { from: /^\/page1/, to: '/my-requests.html' },
+        { from: /^\/page2/, to: '/page2.html' },
+        { from: /^\/page3/, to: '/page3.html' },
+    ]
+    }
+  },
   module: {
     rules: [
       {

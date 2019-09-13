@@ -1,12 +1,33 @@
-import {MDCRipple} from '@material/ripple';//button
-import {MDCChipSet} from '@material/chips';//chips
-import {MDCDataTable} from '@material/data-table';
+import { MDCRipple } from '@material/ripple';
+import { MDCChipSet } from '@material/chips';
+import { MDCDataTable } from '@material/data-table';
+import { MDCDrawer } from "@material/drawer";
+import { MDCTopAppBar } from "@material/top-app-bar";
+import { MDCMenu } from '@material/menu';
+const menu = new MDCMenu(document.querySelector('.mdc-menu'));
+
+
+
+document.getElementById ("checkAllTopicCheckBoxes").addEventListener ("click", openMenu, false);
+function openMenu() {
+    console.log('asds');
+    menu.open = true;
+}
 
 window.onload = function() {
-    console.log(document.querySelector('.mdc-data-table'))
+    
+    /*Drawer*/ 
+    const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+    const topAppBar = MDCTopAppBar.attachTo(document.getElementById('app-bar'));
+    topAppBar.setScrollTarget(document.getElementById('main-content'));
+    topAppBar.listen('MDCTopAppBar:nav', () => {
+        drawer.open = !drawer.open;
+    });
+
+    /*popup menu for "My requests" page. Becomes visible after click on three dots.*/ 
+
     // const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
     // const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));//button
-
 
 
     const chipSetEl = document.querySelector('.mdc-chip-set');//chips
@@ -16,7 +37,6 @@ window.onload = function() {
     /*Check the number of notifications in the header of the page
     (If notifications number is less then 10, or more then 10).
     According to it - change "left" css property of number(inside heart icon)*/ 
-
     function checkNotifNumber() {
         let notifNumberBlock = document.getElementById("header-notifications--number");
         let notifNumberText = document.getElementById("header-notifications--number").innerText;
@@ -30,8 +50,6 @@ window.onload = function() {
     setInterval(checkNotifNumber, 500);
 }
 
-$(document).ready(function(){
-	$('#nav-icon4').click(function(){
-		$(this).toggleClass('open');
-	});
-});
+
+
+	

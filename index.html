@@ -16,42 +16,47 @@
     <div class="sidebar-page-wrapper">
         <header class="sidebar-page-header">
             <!-- Hamburger -->
-            <div class="hamburger">
-                <div id="nav-icon4">
+            <div class="hamburger dashboard-hamburger" id="dashboard-hamburger">
+                <div id="nav-icon3">
                     <span></span>
                     <span></span>
                     <span></span>
+                    <span></span>
                 </div>
             </div>
 
-            <!-- Header notifications block -->
-            <div class="header-notifications">
-                <div class="header-notifications--icon">
-                    <p><img src="img/notifications.png" alt=""></p>
-                    <p class="header-notifications--number" id="header-notifications--number">9</p>
-                </div>
-                <p class="header-notifications--text">Notifications</p>
-            </div>
+            <div class="sidebar-page-header--wrapper">
+                <div class="notifications-and-user--wraper">
+                    <!-- Header notifications block -->
+                    <div class="header-notifications">
+                        <div class="header-notifications--icon">
+                            <p><img src="img/notifications.png" alt=""></p>
+                            <p class="header-notifications--number" id="header-notifications--number">9</p>
+                        </div>
+                        <p class="header-notifications--mob">9</p>
+                        <p class="header-notifications--text">Notifications</p>
+                    </div>
 
-            <!-- Header user block -->
-            <div class="header-user">
-                <div class="header-user--photo">
-                    <img class="header-user--photo-img" src="img/user-photo.jpg" alt="">
-                </div>
-                <div class="header-user--text">
-                    <span class="header-user--descrip">Welcome back</span>
-                    <span class="header-user--name">Caroline </span>
-                </div>
-            </div>
+                    <!-- Header user block -->
+                    <div class="header-user">
+                        <div class="header-user--photo">
+                            <img class="header-user--photo-img" src="img/user-photo.jpg" alt="">
+                        </div>
+                        <div class="header-user--text">
+                            <span class="header-user--descrip">Welcome back</span>
+                            <span class="header-user--name">Caroline </span>
+                        </div>
+                    </div>
+                </div><!--end of notifications-and-user--wraper -->
 
-            <!-- Header logout button -->
-            <div class="header-logout">
-                <div class="mdc-button ">Logout</div>
-            </div>
-
+                <!-- Header logout button -->
+                <div class="header-logout">
+                    <div class="mdc-button ">Logout</div>
+                </div>
+            </div><!--end of sidebar-page-header--wrapper -->
         </header>
         <div class="main-and-sidebar-wrapper">
-            <sidebar class="dashboard-sidebar">
+            <sidebar class="dashboard-sidebar" id="dashboard-sidebar">
                 <div class="dashboard-sidebar-item">
                     <svg class="dashboard-sidebar-item--icon" xmlns="http://www.w3.org/2000/svg" width="45" height="49" viewBox="0 0 45 49">
                         <g>
@@ -159,20 +164,7 @@
                 </div>
             </sidebar> 
             <main class="dashboard-main">
-                <!-- <div class="mdc-chip-set mdc-chip-set--input">
-                        <button class="mdc-chip mdc-chip--selected">
-                            <i class="material-icons mdc-chip__icon mdc-chip__icon--leading mdc-chip__icon--leading-hidden">face</i>
-                            <span class="mdc-chip__checkmark">
-                                <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
-                                <path class="mdc-chip__checkmark-path" fill="none" stroke="black"
-                                        d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                                </svg>
-                            </span>
-                            <span class="mdc-chip__text">Filterable content</span>
-                        </button>
-                    </div> -->
                     <h1 class="pages-main-title">My Requests</h1>
-
                     <div class="my-inbox-table">
                         <div class="mdc-data-table mdc-data-table-inbox">
                             <p class="request-table-title">My inbox</p>
