@@ -8,7 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="bundle.css">
-    <link rel="stylesheet" href="scripts/all.js">
+    <!-- <link rel="stylesheet" href="scripts/all.js"> -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
 </head>
 <body>
         
@@ -162,7 +166,7 @@
         <main class="main-content dashboard-main" id="main-content">
             <h1 class="pages-main-title">My Requests</h1>
             <div class="my-inbox-table">
-                <div class="mdc-data-table mdc-data-table-inbox">
+                <div class="mdc-data-table mdc-data-table-inbox request-table">
                     <p class="request-table-title">My inbox</p>
                     <table class="mdc-data-table__table" aria-label="Dessert calories">
                         <thead>
@@ -199,8 +203,9 @@
                                         </button>
                                     </div>
                                 </td>
-                                <td class="mdc-data-table__cell mdc-data-table__cell--numeric" style="position: relative;" >
+                                <td class="mdc-data-table__cell mdc-data-table__cell--numeric cell-dots-wrapper">
                                     <div class="mdc-data-table__cell-dots"><span></span><span></span><span></span></div>
+                                    <!-- Hidden menu -->
                                     <div class="mdc-menu mdc-menu-surface">
                                         <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
                                             <li class="mdc-list-item" role="menuitem">
@@ -238,8 +243,9 @@
                                         </button>
                                     </div>
                                 </td>
-                                <td class="mdc-data-table__cell mdc-data-table__cell--numeric" >
+                                <td class="mdc-data-table__cell mdc-data-table__cell--numeric cell-dots-wrapper">
                                     <div class="mdc-data-table__cell-dots"><span></span><span></span><span></span></div>
+                                    <!-- Hidden menu -->
                                     <div class="mdc-menu mdc-menu-surface">
                                         <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
                                             <li class="mdc-list-item" role="menuitem">
@@ -277,9 +283,9 @@
                                         </button>
                                     </div>
                                 </td>
-                                <td class="mdc-data-table__cell mdc-data-table__cell--numeric ">
-                                    <button id="checkAllTopicCheckBoxes">open</button>
+                                <td class="mdc-data-table__cell mdc-data-table__cell--numeric cell-dots-wrapper">
                                     <div class="mdc-data-table__cell-dots"><span></span><span></span><span></span></div>
+                                    <!-- Hidden menu -->
                                     <div class="mdc-menu mdc-menu-surface">
                                         <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
                                             <li class="mdc-list-item" role="menuitem">
@@ -317,30 +323,43 @@
                                         </button>
                                     </div>
                                 </td>
-                                <td class="mdc-data-table__cell mdc-data-table__cell--numeric ">
+                                <td class="mdc-data-table__cell mdc-data-table__cell--numeric cell-dots-wrapper">
                                     <div class="mdc-data-table__cell-dots"><span></span><span></span><span></span></div>
+                                    <!-- Hidden menu -->
+                                    <div class="mdc-menu mdc-menu-surface">
+                                        <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+                                            <li class="mdc-list-item" role="menuitem">
+                                            <span class="mdc-list-item__text">Reply</span>
+                                            </li>
+                                            <li class="mdc-list-item" role="menuitem">
+                                            <span class="mdc-list-item__text">Delete</span>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </td>
                             </tr>
                            
                         </tbody>
+                        <div class="pagination">
+                            <button class="pagination-btn mdc-button pagination-btn-previous">
+                                <span class="mdc-button__label">Previous</span>
+                            </button>
+                            <div class="pagination-numbers">
+                                <span class="pagination-numbers--item">1</span>    
+                                <span class="pagination-numbers--item">2</span>  
+                                <span class="pagination-numbers--item pagination-numbers--item-active">3</span>  
+                                <span class="pagination-numbers--item">4</span>  
+                                <span class="pagination-numbers--item">5</span>  
+                            </div>
+                            <button class="pagination-btn mdc-button pagination-btn-next">
+                                <span class="mdc-button__label">Next</span>
+                            </button>
+                        </div><!--end of paginaton-->
                     </table>
                  
                 </div><!--end of mdc-data-table-->
-                <div class="pagination">
-                        <button class="pagination-btn mdc-button pagination-btn-previous">
-                            <span class="mdc-button__label">Previous</span>
-                        </button>
-                        <div class="pagination-numbers">
-                            <span class="pagination-numbers--item">1</span>    
-                            <span class="pagination-numbers--item">2</span>  
-                            <span class="pagination-numbers--item pagination-numbers--item-active">3</span>  
-                            <span class="pagination-numbers--item">4</span>  
-                            <span class="pagination-numbers--item">5</span>  
-                        </div>
-                        <button class="pagination-btn mdc-button pagination-btn-next">
-                            <span class="mdc-button__label">Next</span>
-                        </button>
-                    </div><!--end of paginaton-->
+
+
             </div><!--end of My inbox table-->
         </main>
     </div>

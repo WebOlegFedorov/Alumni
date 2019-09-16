@@ -4,17 +4,29 @@ import { MDCDataTable } from '@material/data-table';
 import { MDCDrawer } from "@material/drawer";
 import { MDCTopAppBar } from "@material/top-app-bar";
 import { MDCMenu } from '@material/menu';
-const menu = new MDCMenu(document.querySelector('.mdc-menu'));
+// const menu = new MDCMenu(document.querySelector('.mdc-menu'));
+// menu.open = true;
 
 
-
-document.getElementById ("checkAllTopicCheckBoxes").addEventListener ("click", openMenu, false);
-function openMenu() {
-    console.log('asds');
-    menu.open = true;
-}
+// document.getElementById ("checkAllTopicCheckBoxes").addEventListener ("click", openMenu, false);
+// function openMenu() {
+//     console.log('asds');
+//     menu.open = true;
+// }
 
 window.onload = function() {
+    $('.mdc-data-table__cell-dots').click(function() {
+
+        if( $(this).parent().find('.mdc-menu-surface').hasClass("mdc-menu-surface--open")) {
+            $(this).parent().find('.mdc-menu-surface').removeClass("mdc-menu-surface--open");
+        }
+        else {
+        $('.mdc-data-table__cell-dots').parent().find('.mdc-menu-surface').removeClass("mdc-menu-surface--open");
+
+            $(this).parent().find('.mdc-menu-surface').addClass("mdc-menu-surface--open");
+        
+        }
+    }) 
     
     /*Drawer*/ 
     const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));

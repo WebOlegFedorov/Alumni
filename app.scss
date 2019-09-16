@@ -164,13 +164,12 @@ header {
   font-size: 18px;
   box-shadow: 0 2px 13px rgba(0, 0, 0, 0.09);
   background: #fff;
-  // flex: 0 1 auto;
   top: 0;
   font-family: 'Titillium Web', sans-serif !important;
   color: #343d42;
   padding: 10px 20px;
   box-sizing: border-box;
-  z-index: 100;
+  z-index: 5;
   p {
     margin: 0;
   }
@@ -315,11 +314,32 @@ header {
 
 
 /*Styles for My request page*/
+
+.mdc-list-item__text{
+  font-family: 'Titillium Web', sans-serif !important;
+  font-size: 14px;  
+}
 .mdc-data-table-inbox {
   box-shadow: 0 15px 30px rgba(25, 71, 128, 0.2);
   max-width: 1300px;
   width: 100%;
   padding: 25px;
+}
+.cell-dots-wrapper {
+  position: relative;
+}
+/*hidden menu,wich opens after click on dots*/
+.mdc-menu-surface {
+  top: 31px;
+  right: calc(100% - 27px);
+}
+:not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item--activated::before,
+:not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item--activated::after {
+  background-color: #5b9de3;
+  // color: #fff;
+}
+.mdc-drawer .mdc-list-item--activated {
+  color: #fff;
 }
 .mdc-data-table {
   &--date {
@@ -340,6 +360,7 @@ header {
   &__cell-button {
     padding-left: 0;
   }
+
   .mdc-data-table {
     &__cell-dots {
       text-align: left;
@@ -359,6 +380,12 @@ header {
       font-size: 14px;
       margin-top: 0;
     }
+  }
+}
+.request-table {
+  display: flex;
+  .pagination {
+    order: 5;
   }
 }
 .request-table-title {
@@ -590,25 +617,29 @@ header {
     }
   }
 }
-// @media screen and (max-width: 700px) {
-//   .pagination {
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     &-numbers {
-//       order: -1;
-//       width: 100%;
-//       display: flex;
-//       justify-content: center;
-//       margin-bottom: 15px;
-//     }
-//     &-btn-previous {
 
-//     }
-//     .pagination-btn {
-//       margin-bottom: 15px;
-//     }
-//   }
-// }
+@media screen and (max-width: 700px) {
+  .dashboard-main {
+    padding: 10px 10px;
+  }
+  .pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+    &-numbers {
+      order: -1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+    &-btn-previous {
+
+    }
+    .pagination-btn {
+      margin-bottom: 15px;
+    }
+  }
+}
 
 // @media screen and (min-width: 1024px) and (max-height: 460px) {
 //   .main-and-sidebar-wrapper .dashboard-main {
