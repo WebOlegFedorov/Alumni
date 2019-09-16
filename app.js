@@ -4,6 +4,7 @@ import { MDCDataTable } from '@material/data-table';
 import { MDCDrawer } from "@material/drawer";
 import { MDCTopAppBar } from "@material/top-app-bar";
 import { MDCMenu } from '@material/menu';
+
 // const menu = new MDCMenu(document.querySelector('.mdc-menu'));
 // menu.open = true;
 
@@ -27,6 +28,10 @@ window.onload = function() {
         
         }
     }) 
+    // $('div:not(.mdc-data-table__cell-dots)').click(function() {
+    //     console
+    //     $(this).parent().find('.mdc-menu-surface').removeClass("mdc-menu-surface--open");
+    // })
     
     /*Drawer*/ 
     const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));

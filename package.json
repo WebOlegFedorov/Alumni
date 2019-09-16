@@ -7,9 +7,13 @@
   },
   "dependencies": {
     "@material/button": "^3.1.0",
+    "@material/card": "^3.2.0",
     "@material/chips": "^3.1.0",
     "@material/data-table": "^3.1.1",
     "@material/drawer": "^3.1.1",
+    "@material/fab": "^3.2.0",
+    "@material/grid-list": "^3.2.0",
+    "@material/layout-grid": "^3.1.0",
     "@material/menu": "^3.2.0",
     "@material/ripple": "^3.1.0",
     "@material/switch": "^3.1.0",
