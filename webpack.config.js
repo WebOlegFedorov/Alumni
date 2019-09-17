@@ -1,7 +1,13 @@
 const autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
 
 module.exports = {
-  entry: ['./app.scss', './app.js'],
+  entry: [
+    './app.scss',
+    './app.js',
+    './scripts/my-request.js',
+    './scripts/jquery-3.4.1.min.js'
+  ],
   output: {
     filename: 'bundle.js',
   },
@@ -9,12 +15,17 @@ module.exports = {
     port: 3000,
     historyApiFallback: {
       rewrites: [
-        { from: /^\/page1/, to: '/my-requests.html' },
-        { from: /^\/page2/, to: '/page2.html' },
-        { from: /^\/page3/, to: '/page3.html' },
+        { from: /^\/main/, to: '/index.html' },
+        { from: /^\/my-requests/, to: '/my-requests.html' }
     ]
     }
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
+  ],
   module: {
     rules: [
       {

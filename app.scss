@@ -540,5 +540,123 @@ header {
     }
   }
 }
+/*--------
+  FOOTER
+---------*/
+.footer {
+  font-family: 'Titillium Web', sans-serif !important;
+  width: 100%;
+  color: #fff;
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    background-color: #36414c;
+    padding: 70px 80px;
+    &-section--title {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    &-section--item {
+      font-weight: 600;
+      margin-bottom: 18px;
+      font-size: 12px;
+      text-decoration: none;
+      color: #fff;
+      transition: .4s ease;
+    }
+    &-section--items {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &-bottom {
+    background-color: #1f262d;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-copyright {
+    color: #c6def6;
+    p {
+      &:nth-child(1) {
+        margin-bottom: 4px;
+        font-size: 12px;
+      }
+      &:nth-child(2) {
+        font-size: 10px;
+      }
+    }
+  }
+  &-social {
+    display: flex;
+    p {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      width: 34px;
+      height: 34px;
+    }
+  }
+  // &-facebook {
+  //   background: url('img/facebook.png');
+  // }
+  // &-twitter {
+  //   background: url('img/twitter.png');
+  // }
+  // &-google-plus {
+  //   background: url('img/google-plus.png');
+  // }
+  // &-insta {
+  //   background: url('img/insta.png');
+  // }
+}
+.footer--courses {
+  .footer-top-section--item {
+    p:nth-child(1)  {
+      margin-bottom: 1px;
+    }
+    p:nth-child(2)  {
+      font-weight: 400;
+    }
+  }
+}
+
+.contact-us-phone {
+  font-size: 22px;
+  // background: url('./img/footer-phone.png') left center no-repeat;
+}
+.contact-us-secure {
+  text-transform: uppercase;
+  // background: url('./img/footer-secure.png') left center no-repeat;
+}
+.contact-us-email {
+  // background: url('./img/footer-email.png') left center no-repeat;
+}
+.contact-us-location {
+  // background: url('./img/footer-location.png') left center no-repeat;
+}
+.footer--contact-us {
+  max-width: 280px;
+  .footer-top-section--item {
+    padding-left: 30px;
+  }
+}
+
+.footer--site-map .footer-top-section--item:hover {
+  opacity: .6;
+}
 
 
+.visa {
+  // background: url('./img/visa.png');
+  width: 96px;
+  height: 32px;
+}
+.mastercard {
+  // background: url('img/mastercard.png');
+  width: 64px;
+  height: 50px;
+}

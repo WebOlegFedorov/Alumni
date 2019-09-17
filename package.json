@@ -19,6 +19,7 @@
     "@material/switch": "^3.1.0",
     "@material/theme": "^3.1.0",
     "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.4.1",
     "material-components-web": "^3.1.1"
   },
   "devDependencies": {
