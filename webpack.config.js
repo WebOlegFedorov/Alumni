@@ -2,6 +2,8 @@ const autoprefixer = require('autoprefixer');
 const webpack = require('webpack');
 const path = require('path');
 module.exports = {
+   watch: true,
+   mode: 'development',
    context: path.resolve(__dirname, ''),
    entry: [
        './app.scss',

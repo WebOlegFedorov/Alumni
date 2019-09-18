@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="bundle.css">
 </head>
-<body>
+<body class="sidebar-page-body">
         
     <header class="mdc-top-app-bar app-bar sidebar-page-header" id="app-bar">
           <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
@@ -43,7 +43,7 @@
             </div>
         </div><!--end of sidebar-page-header--wrapper -->
     </header>
-    <aside class="mdc-drawer mdc-drawer-requests mdc-drawer--modal">
+    <aside class="mdc-drawer mdc-drawer-requests "><!--mdc-drawer--modal-->
         <div class="mdc-drawer__content dashboard-sidebar">
           <nav class="mdc-list ">
             <a class="mdc-list-item mdc-list-item--activated dashboard-sidebar-item" href="#" aria-current="page">
@@ -168,7 +168,7 @@
                             <tr class="mdc-data-table__header-row">
                                 <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Select:</th>
                                 <th class="mdc-data-table__header-cell" role="columnheader" scope="col">From:</th>
-                                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Date:</th>
+                                <th class="mdc-data-table__header-cell header-cell--date" role="columnheader" scope="col">Date:</th>
                                 <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Status</th>
                                 <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Actions</th>
                             </tr>
@@ -358,7 +358,7 @@
             </div><!--end of My inbox table-->
         </main>
     </div>
-    <script src="bundle.js" async></script>
+    <script src="/dist/main.js"></script>
   </body>
 
 </html>

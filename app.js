@@ -9,14 +9,31 @@ window.onload = function() {
     console.log("app js file");
     
     /*Drawer*/ 
-    if($('aside').hasClass('mdc-drawer')) { /* Check if current page contains drawer(left sidebar) */
-        const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
-        const topAppBar = MDCTopAppBar.attachTo(document.getElementById('app-bar'));
-        topAppBar.setScrollTarget(document.getElementById('main-content'));
-        topAppBar.listen('MDCTopAppBar:nav', () => {
-            drawer.open = !drawer.open;
-        });
-    }
+    $(window).on("resize", function() {
+        if($('.sidebar-page-header .mdc-top-app-bar__navigation-icon').css('display')=='block') {
+            console.log('drawer is visible');
+            $('.mdc-drawer-requests').addClass('mdc-drawer--modal');
+            const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+            const topAppBar = MDCTopAppBar.attachTo(document.getElementById('app-bar'));
+            topAppBar.setScrollTarget(document.getElementById('main-content'));
+            topAppBar.listen('MDCTopAppBar:nav', () => {
+                drawer.open = !drawer.open;
+            });
+        } else {
+            $('.mdc-drawer-requests').removeClass('mdc-drawer--modal');
+
+            console.log('drawer is hidden');
+        }
+    }).resize();
+  
+    // if($('aside').hasClass('mdc-drawer')) { /* Check if current page contains drawer(left sidebar) */
+    //     const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+    //     const topAppBar = MDCTopAppBar.attachTo(document.getElementById('app-bar'));
+    //     topAppBar.setScrollTarget(document.getElementById('main-content'));
+    //     topAppBar.listen('MDCTopAppBar:nav', () => {
+    //         drawer.open = !drawer.open;
+    //     });
+    // }
 
     if($('div').hasClass('mdc-button')) { /* Check if current page contains mdc-button  - then initialize Ripple effect*/
         const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));//button
