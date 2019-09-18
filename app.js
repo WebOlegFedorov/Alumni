@@ -3,6 +3,7 @@ import { MDCChipSet } from '@material/chips';
 import { MDCDrawer } from "@material/drawer";
 import { MDCTopAppBar } from "@material/top-app-bar";
 import { MDCMenu } from '@material/menu';
+import {MDCTextField} from '@material/textfield';
 
 window.onload = function() {
     console.log("app js file");
@@ -19,6 +20,10 @@ window.onload = function() {
 
     if($('div').hasClass('mdc-button')) { /* Check if current page contains mdc-button  - then initialize Ripple effect*/
         const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));//button
+    }
+    
+    if($('div').hasClass('mdc-text-field')) { /* Check if current page contains inputs*/
+        const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
     }
     
 

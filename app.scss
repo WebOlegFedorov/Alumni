@@ -17,7 +17,7 @@ $mdc-theme-on-secondary: #4ca0e9;
 @import "./styles/my-requests.scss";//MY REQUESTS page
 @import "@material/grid-list/mdc-grid-list";
 @import "@material/card/mdc-card";
-
+@import "@material/textfield/mdc-text-field";
 
 .my-card-content {
   padding: 16px;
@@ -137,7 +137,27 @@ header {
   font-weight: 100;
   margin: 0 0 20px 12px;
 }
-
+/*---------
+  HEADER
+---------*/
+.main-header {
+background-color: #36414c;
+margin-bottom: 30px;
+padding: 10px 30px;
+  &--btn {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif !important;
+    color: #fff !important;
+    text-transform: none;
+    letter-spacing: 0 !important;
+    // background: #5b9de3 !important;
+    border-radius: 30px !important;
+    width: 140px;
+    height: 48px;
+    @include mdc-button-filled-accessible(#5b9de3);
+  }
+}
 /*------------------------------------------
   STYLES FOR ALL PAGES WITH LEFT SIDEBAR
 -------------------------------------------*/
@@ -592,26 +612,31 @@ header {
   }
   &-social {
     display: flex;
-    p {
+    a {
+      display: block;
+      transition: .4s ease;
       &:not(:last-child) {
-        margin-right: 10px;
+        margin-right: 12px;
       }
       width: 34px;
       height: 34px;
+      &:hover {
+        opacity: .7;
+      }
     }
   }
-  // &-facebook {
-  //   background: url('img/facebook.png');
-  // }
-  // &-twitter {
-  //   background: url('img/twitter.png');
-  // }
-  // &-google-plus {
-  //   background: url('img/google-plus.png');
-  // }
-  // &-insta {
-  //   background: url('img/insta.png');
-  // }
+  &-facebook {
+    background: url('img/facebook.png');
+  }
+  &-twitter {
+    background: url('img/twitter.png');
+  }
+  &-google-plus {
+    background: url('img/google-plus.png');
+  }
+  &-insta {
+    background: url('img/insta.png');
+  }
 }
 .footer--courses {
   .footer-top-section--item {
@@ -626,17 +651,17 @@ header {
 
 .contact-us-phone {
   font-size: 22px;
-  // background: url('./img/footer-phone.png') left center no-repeat;
+  background: url('./img/footer-phone.png') left center no-repeat;
 }
 .contact-us-secure {
   text-transform: uppercase;
-  // background: url('./img/footer-secure.png') left center no-repeat;
+  background: url('./img/footer-secure.png') left center no-repeat;
 }
 .contact-us-email {
-  // background: url('./img/footer-email.png') left center no-repeat;
+  background: url('./img/footer-email.png') left center no-repeat;
 }
 .contact-us-location {
-  // background: url('./img/footer-location.png') left center no-repeat;
+  background: url('./img/footer-location.png') left center no-repeat;
 }
 .footer--contact-us {
   max-width: 280px;
@@ -648,15 +673,141 @@ header {
 .footer--site-map .footer-top-section--item:hover {
   opacity: .6;
 }
+footer {
+  .footer-form--inputs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .mdc-text-field {
+      @include mdc-text-field-textarea-fill-color(transparent);
+      @include mdc-text-field-bottom-line-color(transparent);
+      border-radius: 23px;
+      height: 45px;
+      color: rgba(255, 255, 255, 0.7) !important;
+      border: 1px solid rgba(155, 143, 143, 0.7) !important;
+      font-family: 'Titillium Web', sans-serif !important;
+      width: calc((100% - 20px)/2);
+      &:hover {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7) !important;
+      }
+      &:not(.mdc-text-field--disabled) .mdc-floating-label {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 14px;
+      }
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 24px;
+      }
 
-
+    }
+  }
+}
+.payment-types {
+  display: flex;
+  align-items: center;
+  padding-left: 34px;
+}
 .visa {
-  // background: url('./img/visa.png');
+  background: url('./img/visa.png');
   width: 96px;
   height: 32px;
+  margin-right: 20px;
 }
 .mastercard {
-  // background: url('img/mastercard.png');
+  background: url('img/mastercard.png');
   width: 64px;
   height: 50px;
+}
+.footer-form {
+  max-width: 410px;
+  background-color: #455463;
+  border-radius: 9px;
+  padding: 30px 45px;
+  &-submit {
+    height: 54px;
+    border-radius: 27px;
+    border: 2px solid #fff;
+    font-size: 16px;
+    color: #fff !important;
+    text-transform: none;
+    font-weight: 600;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif !important;
+    margin-top: 34px;
+  }
+  &-title {
+    background: url(img/footer-form.png) -22px -4px no-repeat;
+    margin-bottom: 40px;
+    p {
+      font-weight: 600;
+      &:nth-child(1) {
+        font-size: 26px;
+      }
+      &:nth-child(2) {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+
+  }
+  &-title {
+    padding-left: 75px;
+  // background: url('./img/footer-location.png') left center no-repeat;
+
+  }
+}
+/*Media for footer*/
+@media screen and (max-width: 1300px) {
+  .footer {
+    &-bottom {
+      padding: 25px 50px;
+    }
+    &-top {
+      padding: 50px 50px;
+    }
+    &-form {
+      max-width: 280px;
+      background-color: #455463;
+      border-radius: 9px;
+      padding: 30px 30px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer {
+    &-bottom {
+      padding: 35px 30px;
+      flex-direction: column;
+    }
+    &-top {
+      padding: 35px 30px;
+    }
+    &-copyright {
+      margin-bottom: 15px;
+      p:nth-child(1) {
+        margin-bottom: 7px;
+      }
+    }
+  }
+  .footer-top {
+    flex-direction: column;
+    &-section--items {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    &-section--item {
+      padding: 10px 10px;
+    }
+  }
+  .footer--site-map,
+  .footer--courses {
+    .footer-top-section--item {
+      &:nth-child(1) {
+        padding-left: 0;
+      }
+    }
+  }
+  .footer-top-section--title {
+    margin-bottom: 5px;
+  }
 }
