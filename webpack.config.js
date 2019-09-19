@@ -8,7 +8,7 @@ module.exports = {
    entry: [
        './app.scss',
        './app.js',
-       './scripts/my-request.js',
+       './scripts/my-requests.js',
        './scripts/jquery-3.4.1.min.js'
    ],
    output: {

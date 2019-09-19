@@ -314,9 +314,9 @@ padding: 10px 30px;
 }
 
 
-
 .dashboard-sidebar {
   display: flex;
+  position: fixed;
   flex-direction: column;
   min-width: 170px;
   color: #5b9de3;
@@ -340,7 +340,7 @@ padding: 10px 30px;
     }
     &--request svg {
       position: relative;
-      left: 6px;
+      left: 5px;
     }
     &:hover {
       background: #5b9de3;
@@ -520,6 +520,21 @@ padding: 10px 30px;
     }
   }
 }
+
+/*if screen height is less then 650px and width is more then 1024px then 
+make dashboard sidebar icons smaller*/
+@media screen and (max-height: 650px) and (min-width: 1024px) {
+  .dashboard-sidebar-item--icon {
+    width: 30px;
+  }
+  .dashboard-sidebar-item--icon {
+    margin-bottom: 0;
+  }
+  .mdc-drawer .mdc-list-item {
+    padding: 13px 8px;
+  }
+}
+/*PAGINATION FOR ALL PAGES*/
 .pagination {
   display: flex;
   justify-content: space-between;
@@ -602,6 +617,14 @@ padding: 10px 30px;
   font-family: 'Titillium Web', sans-serif !important;
   width: 100%;
   color: #fff;
+  &-link {
+    color: #fff;
+    text-decoration: none;
+    transition: .4s ease;
+    &:hover {
+      opacity: .6;
+    }
+  }
   &-top {
     display: flex;
     justify-content: space-between;
@@ -705,9 +728,6 @@ padding: 10px 30px;
   }
 }
 
-.footer--site-map .footer-top-section--item:hover {
-  opacity: .6;
-}
 footer {
   .footer-form--inputs-wrapper {
     display: flex;

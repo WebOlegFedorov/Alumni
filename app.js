@@ -11,7 +11,6 @@ window.onload = function() {
     /*Drawer*/ 
     $(window).on("resize", function() {
         if($('.sidebar-page-header .mdc-top-app-bar__navigation-icon').css('display')=='block') {
-            console.log('drawer is visible');
             $('.mdc-drawer-requests').addClass('mdc-drawer--modal');
             const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
             const topAppBar = MDCTopAppBar.attachTo(document.getElementById('app-bar'));
@@ -21,8 +20,6 @@ window.onload = function() {
             });
         } else {
             $('.mdc-drawer-requests').removeClass('mdc-drawer--modal');
-
-            console.log('drawer is hidden');
         }
     }).resize();
   
