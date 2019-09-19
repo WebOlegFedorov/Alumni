@@ -1681,7 +1681,7 @@ a.mdc-list-item {
   /* @alternate */
   background-color: var(--mdc-theme-secondary, #4ca0e9); }
 
-@-webkit-keyframes mdc-checkbox-fade-in-background-u58f86edc {
+@-webkit-keyframes mdc-checkbox-fade-in-background-ucf6a05dd {
   0% {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; }
@@ -1693,7 +1693,7 @@ a.mdc-list-item {
     /* @alternate */
     background-color: var(--mdc-theme-secondary, #4ca0e9); } }
 
-@keyframes mdc-checkbox-fade-in-background-u58f86edc {
+@keyframes mdc-checkbox-fade-in-background-ucf6a05dd {
   0% {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; }
@@ -1705,7 +1705,7 @@ a.mdc-list-item {
     /* @alternate */
     background-color: var(--mdc-theme-secondary, #4ca0e9); } }
 
-@-webkit-keyframes mdc-checkbox-fade-out-background-u58f86edc {
+@-webkit-keyframes mdc-checkbox-fade-out-background-ucf6a05dd {
   0%,
   80% {
     border-color: #4ca0e9;
@@ -1718,7 +1718,7 @@ a.mdc-list-item {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; } }
 
-@keyframes mdc-checkbox-fade-out-background-u58f86edc {
+@keyframes mdc-checkbox-fade-out-background-ucf6a05dd {
   0%,
   80% {
     border-color: #4ca0e9;
@@ -1732,12 +1732,12 @@ a.mdc-list-item {
     background-color: transparent; } }
 
 .mdc-checkbox--anim-unchecked-checked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background, .mdc-checkbox--anim-unchecked-indeterminate .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background {
-  -webkit-animation-name: mdc-checkbox-fade-in-background-u58f86edc;
-          animation-name: mdc-checkbox-fade-in-background-u58f86edc; }
+  -webkit-animation-name: mdc-checkbox-fade-in-background-ucf6a05dd;
+          animation-name: mdc-checkbox-fade-in-background-ucf6a05dd; }
 
 .mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background, .mdc-checkbox--anim-indeterminate-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background {
-  -webkit-animation-name: mdc-checkbox-fade-out-background-u58f86edc;
-          animation-name: mdc-checkbox-fade-out-background-u58f86edc; }
+  -webkit-animation-name: mdc-checkbox-fade-out-background-ucf6a05dd;
+          animation-name: mdc-checkbox-fade-out-background-ucf6a05dd; }
 
 .mdc-checkbox__checkmark {
   color: #4ca0e9; }
@@ -2185,7 +2185,7 @@ a.mdc-list-item {
   /* @alternate */
   background-color: var(--mdc-theme-primary, #4ca0e9); }
 
-@-webkit-keyframes mdc-checkbox-fade-in-background-u87935ff2 {
+@-webkit-keyframes mdc-checkbox-fade-in-background-ucea7b4f5 {
   0% {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; }
@@ -2197,7 +2197,7 @@ a.mdc-list-item {
     /* @alternate */
     background-color: var(--mdc-theme-primary, #4ca0e9); } }
 
-@keyframes mdc-checkbox-fade-in-background-u87935ff2 {
+@keyframes mdc-checkbox-fade-in-background-ucea7b4f5 {
   0% {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; }
@@ -2209,7 +2209,7 @@ a.mdc-list-item {
     /* @alternate */
     background-color: var(--mdc-theme-primary, #4ca0e9); } }
 
-@-webkit-keyframes mdc-checkbox-fade-out-background-u87935ff2 {
+@-webkit-keyframes mdc-checkbox-fade-out-background-ucea7b4f5 {
   0%,
   80% {
     border-color: #4ca0e9;
@@ -2222,7 +2222,7 @@ a.mdc-list-item {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; } }
 
-@keyframes mdc-checkbox-fade-out-background-u87935ff2 {
+@keyframes mdc-checkbox-fade-out-background-ucea7b4f5 {
   0%,
   80% {
     border-color: #4ca0e9;
@@ -2238,14 +2238,14 @@ a.mdc-list-item {
 .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-unchecked-checked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background, .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-unchecked-indeterminate .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
 .mdc-data-table__row-checkbox.mdc-checkbox--anim-unchecked-checked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
 .mdc-data-table__row-checkbox.mdc-checkbox--anim-unchecked-indeterminate .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background {
-  -webkit-animation-name: mdc-checkbox-fade-in-background-u87935ff2;
-          animation-name: mdc-checkbox-fade-in-background-u87935ff2; }
+  -webkit-animation-name: mdc-checkbox-fade-in-background-ucea7b4f5;
+          animation-name: mdc-checkbox-fade-in-background-ucea7b4f5; }
 
 .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background, .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-indeterminate-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
 .mdc-data-table__row-checkbox.mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
 .mdc-data-table__row-checkbox.mdc-checkbox--anim-indeterminate-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background {
-  -webkit-animation-name: mdc-checkbox-fade-out-background-u87935ff2;
-          animation-name: mdc-checkbox-fade-out-background-u87935ff2; }
+  -webkit-animation-name: mdc-checkbox-fade-out-background-ucea7b4f5;
+          animation-name: mdc-checkbox-fade-out-background-ucea7b4f5; }
 
 .mdc-menu-surface {
   display: none;
@@ -2987,7 +2987,7 @@ a.mdc-list-item {
     border-color: #88c2ff;
     background-color: #88c2ff; }
 
-@-webkit-keyframes mdc-checkbox-fade-in-background-ud6a25074 {
+@-webkit-keyframes mdc-checkbox-fade-in-background-u98bea2f8 {
   0% {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; }
@@ -2995,7 +2995,7 @@ a.mdc-list-item {
     border-color: #88c2ff;
     background-color: #88c2ff; } }
 
-@keyframes mdc-checkbox-fade-in-background-ud6a25074 {
+@keyframes mdc-checkbox-fade-in-background-u98bea2f8 {
   0% {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; }
@@ -3003,7 +3003,7 @@ a.mdc-list-item {
     border-color: #88c2ff;
     background-color: #88c2ff; } }
 
-@-webkit-keyframes mdc-checkbox-fade-out-background-ud6a25074 {
+@-webkit-keyframes mdc-checkbox-fade-out-background-u98bea2f8 {
   0%,
   80% {
     border-color: #88c2ff;
@@ -3012,7 +3012,7 @@ a.mdc-list-item {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; } }
 
-@keyframes mdc-checkbox-fade-out-background-ud6a25074 {
+@keyframes mdc-checkbox-fade-out-background-u98bea2f8 {
   0%,
   80% {
     border-color: #88c2ff;
@@ -3023,13 +3023,13 @@ a.mdc-list-item {
   .request-table .mdc-data-table__table .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-unchecked-checked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background, .request-table .mdc-data-table__table .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-unchecked-indeterminate .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
   .request-table .mdc-data-table__table .mdc-data-table__row-checkbox.mdc-checkbox--anim-unchecked-checked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
   .request-table .mdc-data-table__table .mdc-data-table__row-checkbox.mdc-checkbox--anim-unchecked-indeterminate .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background {
-    -webkit-animation-name: mdc-checkbox-fade-in-background-ud6a25074;
-            animation-name: mdc-checkbox-fade-in-background-ud6a25074; }
+    -webkit-animation-name: mdc-checkbox-fade-in-background-u98bea2f8;
+            animation-name: mdc-checkbox-fade-in-background-u98bea2f8; }
   .request-table .mdc-data-table__table .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background, .request-table .mdc-data-table__table .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-indeterminate-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
   .request-table .mdc-data-table__table .mdc-data-table__row-checkbox.mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
   .request-table .mdc-data-table__table .mdc-data-table__row-checkbox.mdc-checkbox--anim-indeterminate-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background {
-    -webkit-animation-name: mdc-checkbox-fade-out-background-ud6a25074;
-            animation-name: mdc-checkbox-fade-out-background-ud6a25074; }
+    -webkit-animation-name: mdc-checkbox-fade-out-background-u98bea2f8;
+            animation-name: mdc-checkbox-fade-out-background-u98bea2f8; }
 
 .request-table .mdc-data-table__from--name {
   margin-bottom: 2px; }
@@ -5093,11 +5093,12 @@ header {
 .dashboard-main {
   padding: 30px 40px;
   background-color: #f3f6f9;
-  margin-top: 60px; }
-
-.dashboard-main .mdc-list-item__text {
-  color: #959595;
-  font-size: 14px; }
+  margin-top: 92px;
+  box-sizing: border-box;
+  min-height: calc(100vh - 92px); }
+  .dashboard-main .mdc-list-item__text {
+    color: #959595;
+    font-size: 14px; }
 
 .dashboard-sidebar {
   display: flex;
@@ -5149,22 +5150,22 @@ header {
     font-size: 32px;
     line-height: 32px;
     margin: 0 0 16px 12px; }
-  .main-and-sidebar-wrapper .dashboard-main {
+  .dashboard-main {
+    margin-top: 60px;
     padding: 10px 10px;
     width: 100%;
-    overflow-x: scroll; }
-  .main-and-sidebar-wrapper .dashboard-sidebar {
-    top: 60px;
-    min-width: 120px;
-    left: -150px;
+    overflow-x: scroll;
+    min-height: calc(100vh - 60px); }
+  .dashboard-sidebar {
     transition: .4s ease; }
-    .main-and-sidebar-wrapper .dashboard-sidebar .dashboard-sidebar-item {
+    .dashboard-sidebar .dashboard-sidebar-item {
       padding: 20px 0; }
   .sidebar-page-header {
     font-size: 16px;
     padding: 10px 10px;
     max-height: 60px;
-    min-height: 60px; }
+    min-height: 60px;
+    z-index: 5; }
     .sidebar-page-header .header-logout .mdc-button {
       padding: 18px 22px; }
     .sidebar-page-header .header-user {
@@ -5213,34 +5214,6 @@ header {
         line-height: 17px; }
   .notifications-and-user--wraper {
     width: 172px; } }
-
-/*Height media for left sidebar(pages with left sidebar)*/
-@media screen and (max-height: 660px) {
-  .main-and-sidebar-wrapper .dashboard-sidebar .dashboard-sidebar-item {
-    padding: 10px 0; }
-    .main-and-sidebar-wrapper .dashboard-sidebar .dashboard-sidebar-item-name {
-      font-size: 14px; }
-    .main-and-sidebar-wrapper .dashboard-sidebar .dashboard-sidebar-item--icon {
-      margin-bottom: 0px;
-      width: 30px; }
-    .main-and-sidebar-wrapper .dashboard-sidebar .dashboard-sidebar-item--request svg {
-      position: relative;
-      left: 3px; } }
-
-@media screen and (max-height: 460px) {
-  .main-and-sidebar-wrapper .dashboard-sidebar {
-    min-width: 100px; }
-    .main-and-sidebar-wrapper .dashboard-sidebar-item {
-      padding: 7px 0; }
-      .main-and-sidebar-wrapper .dashboard-sidebar-item-name {
-        font-size: 12px; }
-      .main-and-sidebar-wrapper .dashboard-sidebar-item--icon {
-        margin-bottom: 0px;
-        width: 25px;
-        height: 31px; }
-      .main-and-sidebar-wrapper .dashboard-sidebar-item--request svg {
-        position: relative;
-        left: 3px; } }
 
 /*if screen height is less then 650px and width is more then 1024px then 
 make dashboard sidebar icons smaller*/

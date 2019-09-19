@@ -306,13 +306,14 @@ padding: 10px 30px;
 .dashboard-main {
   padding: 30px 40px;
   background-color: #f3f6f9;
-  margin-top: 60px;
+  margin-top: 92px;
+  box-sizing: border-box;
+  min-height: calc(100vh - 92px);
+  .mdc-list-item__text {
+    color: #959595;
+    font-size: 14px;
+  }
 }
-.dashboard-main .mdc-list-item__text {
-  color: #959595;
-  font-size: 14px;
-}
-
 
 .dashboard-sidebar {
   display: flex;
@@ -384,20 +385,20 @@ padding: 10px 30px;
     line-height: 32px;
     margin: 0 0 16px 12px;
   }
-  .main-and-sidebar-wrapper {
-    .dashboard-main {
-      padding: 10px 10px;
-      width: 100%;
-      overflow-x: scroll;
-    }
-    .dashboard-sidebar {
-      top: 60px;
-      min-width: 120px;
-      left: -150px;
-      transition: .4s ease;
-      .dashboard-sidebar-item {
-        padding: 20px 0;
-      }
+  .dashboard-main {
+    margin-top: 60px;
+    padding: 10px 10px;
+    width: 100%;
+    overflow-x: scroll;
+    min-height: calc(100vh - 60px);
+  }
+  .dashboard-sidebar {
+    // top: 60px;
+    // min-width: 120px;
+    // left: -150px;
+    transition: .4s ease;
+    .dashboard-sidebar-item {
+      padding: 20px 0;
     }
   }
   .sidebar-page-header {
@@ -405,6 +406,7 @@ padding: 10px 30px;
     padding: 10px 10px;
     max-height: 60px;
     min-height: 60px;
+    z-index: 5;
     .header-logout .mdc-button {
       padding: 18px 22px;
     }
@@ -478,48 +480,7 @@ padding: 10px 30px;
   }
 }
 
-/*Height media for left sidebar(pages with left sidebar)*/
-@media screen and (max-height: 660px) {
-  .main-and-sidebar-wrapper .dashboard-sidebar {
-    .dashboard-sidebar-item {
-      padding: 10px 0;
-      &-name {
-        font-size: 14px;
-      }
-      &--icon {
-        margin-bottom: 0px;
-        width: 30px;
-      }
-      &--request svg {
-        position: relative;
-        left: 3px;
-      }
-    }
-  }
-}
 
-@media screen and (max-height: 460px) {
-  .main-and-sidebar-wrapper {
-    .dashboard-sidebar {
-      min-width: 100px;
-      &-item {
-        padding: 7px 0;
-        &-name {
-          font-size: 12px;
-        }
-        &--icon {
-          margin-bottom: 0px;
-          width: 25px;
-          height: 31px;
-        }
-        &--request svg {
-          position: relative;
-          left: 3px;
-        }
-      }
-    }
-  }
-}
 
 /*if screen height is less then 650px and width is more then 1024px then 
 make dashboard sidebar icons smaller*/
