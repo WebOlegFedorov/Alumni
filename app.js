@@ -37,7 +37,10 @@ window.onload = function() {
     }
     
     if($('div').hasClass('mdc-text-field')) { /* Check if current page contains inputs*/
-        const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
+        const textField1 = new MDCTextField(document.querySelector('.mdc-text-field1'));
+        const textField2 = new MDCTextField(document.querySelector('.mdc-text-field2'));
+        const textField3 = new MDCTextField(document.querySelector('.mdc-text-field3'));
+        const textField4 = new MDCTextField(document.querySelector('.mdc-text-field4'));
     }
     
 

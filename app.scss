@@ -718,14 +718,38 @@ footer {
       }
       .mdc-floating-label {
         top: 13px !important;
+        font-size: 13px !important;
+        &--float-above {
+          top: 10px !important;
+        }
       }
       &:not(.mdc-text-field--disabled) .mdc-text-field__input {
         color: #fff;
       }
+      &__input {
+        padding: 20px 0 20px 0;
+        align-self: center;
+      }
     }
   }
 }
-
+.footer-top-select .selectBox {
+  width: 100%;
+  border-radius: 23px;
+  height: 45px;
+  background: transparent;
+  color: #fff !important;
+  border: 1px solid rgba(155, 143, 143, 0.7) !important;
+  margin-bottom: 24px;
+  outline: none;
+  padding-left: 11px;
+  font-family: 'Titillium Web', sans-serif !important;
+  font-size: 16px;
+  font-weight: 600;
+  option {
+    background: #455463;
+  }
+}
 
 .payment-types {
   display: flex;
