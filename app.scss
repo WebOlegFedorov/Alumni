@@ -19,6 +19,8 @@ $mdc-theme-on-secondary: #4ca0e9;
 @import "@material/card/mdc-card";
 @import "@material/textfield/mdc-text-field";
 
+
+
 .my-card-content {
   padding: 16px;
 }
@@ -638,23 +640,21 @@ make dashboard sidebar icons smaller*/
         margin-right: 12px;
       }
       width: 34px;
+      min-width: 34px;
       height: 34px;
-      &:hover {
-        opacity: .7;
-      }
     }
   }
   &-facebook {
-    background: url('img/facebook.png');
+    background: url('img/facebook.png') no-repeat;
   }
   &-twitter {
-    background: url('img/twitter.png');
+    background: url('img/twitter.png') no-repeat;
   }
   &-google-plus {
-    background: url('img/google-plus.png');
+    background: url('img/google-plus.png') no-repeat;
   }
   &-insta {
-    background: url('img/insta.png');
+    background: url('img/insta.png') no-repeat;
   }
 }
 .footer--courses {
@@ -754,7 +754,7 @@ footer {
 .footer-top-wrapper {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .payment-types {
@@ -776,6 +776,7 @@ footer {
 .footer-form {
   max-width: 410px;
   min-width: 280px;
+  margin-left: 240px;
   background-color: #455463;
   border-radius: 9px;
   padding: 30px 45px;
@@ -817,6 +818,26 @@ footer {
   }
 }
 /*Media for footer*/
+@media screen and (max-width: 1750px) {
+  .footer-form {
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .footer-form {
+    margin-left: 170px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .footer-form {
+    margin-left: 150px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .footer-form {
+    margin-left: 120px;
+  }
+}
 @media screen and (max-width: 1300px) {
   .footer {
     &-bottom {
@@ -830,7 +851,17 @@ footer {
       background-color: #455463;
       border-radius: 9px;
       padding: 30px 30px;
+      margin-left: 60px;
+
     }
+  }
+}
+@media screen and (max-width: 1150px) {
+  .footer-form {
+    background-color: #455463;
+    border-radius: 9px;
+    padding: 30px 30px;
+    margin-left: 40px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -883,7 +914,7 @@ footer {
   }
 
   .footer--site-map {
-    margin-bottom: 15px; 
+    margin-bottom: 25px; 
   }
 
   .contact-us-secure,
@@ -901,9 +932,10 @@ footer {
       max-width: 350px;
       width: initial;
       min-width: initial;
+      margin-left: 0;
     }
     &-top-section--item {
-      margin-bottom: 5px;
+      margin-bottom: 0;
     }
   }
 }
