@@ -749,6 +749,12 @@ footer {
   option {
     background: #455463;
   }
+
+}
+.footer-top-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .payment-types {
@@ -769,6 +775,7 @@ footer {
 }
 .footer-form {
   max-width: 410px;
+  min-width: 280px;
   background-color: #455463;
   border-radius: 9px;
   padding: 30px 45px;
@@ -783,6 +790,10 @@ footer {
     width: 100%;
     font-family: 'Titillium Web', sans-serif !important;
     margin-top: 34px;
+    &::before,
+    &::after {
+      background-color: #aab1b7;
+    }
   }
   &-title {
     background: url(img/footer-form.png) -22px -4px no-repeat;
@@ -815,7 +826,7 @@ footer {
       padding: 50px 50px;
     }
     &-form {
-      max-width: 280px;
+      // max-width: 280px;
       background-color: #455463;
       border-radius: 9px;
       padding: 30px 30px;
@@ -829,7 +840,16 @@ footer {
       flex-direction: column;
     }
     &-top {
+      justify-content: space-around;
       padding: 35px 30px;
+      &-wrapper {
+        flex-direction: column;
+        width: initial;
+      }
+    }
+    &-form {
+      max-width: 350px;
+      padding: 20px 15px;
     }
     &-copyright {
       margin-bottom: 15px;
@@ -837,9 +857,11 @@ footer {
         margin-bottom: 7px;
       }
     }
+    &--courses {
+      display: none;
+    }
   }
   .footer-top {
-    flex-direction: column;
     &-section--items {
       flex-wrap: wrap;
       flex-direction: row;
@@ -847,6 +869,9 @@ footer {
     &-section--item {
       padding: 10px 10px;
     }
+  }
+  .footer-top-section--title {
+    margin-bottom: 5px;
   }
   .footer--site-map,
   .footer--courses {
@@ -856,7 +881,35 @@ footer {
       }
     }
   }
-  .footer-top-section--title {
-    margin-bottom: 5px;
+
+  .footer--site-map {
+    margin-bottom: 15px; 
   }
+
+  .contact-us-secure,
+  .payment-types {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer {
+    &-top {
+      padding: 35px 20px;
+      flex-direction: column;
+    }
+    &-form {
+      max-width: 350px;
+      width: initial;
+      min-width: initial;
+    }
+    &-top-section--item {
+      margin-bottom: 5px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  footer .footer-form--inputs-wrapper .mdc-text-field {
+    width: calc((100% - 10px)/2);
+  }
+
 }
