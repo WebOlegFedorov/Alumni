@@ -6,29 +6,19 @@ import { MDCMenu } from '@material/menu';
 import { MDCTextField } from '@material/textfield';
 
 
-
 window.onload = function() {
+    
+    if ($('div').hasClass('mdc-chip-set')) {
+        const chipSetEl = document.querySelector('.mdc-chip-set');
+        const chipSet = new MDCChipSet(chipSetEl);
+    }
+
     /*Dropdown menu*/
     const menu = new MDCMenu(document.querySelector('.mdc-menu'));
     $('#header-menu-button').click(function() {
         console.log("asd");
         $('#header-dropdown-menu').toggleClass('mdc-menu-surface--open');
     })
-
-    // /*Top App Bar - header*/ 
-    // const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-    // const topAppBar = new MDCTopAppBar(topAppBarElement);
-
-   
-
-    // if($('aside').hasClass('mdc-drawer')) { /* Check if current page contains drawer(left sidebar) */
-    //     const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
-    //     const topAppBar = MDCTopAppBar.attachTo(document.getElementById('app-bar'));
-    //     topAppBar.setScrollTarget(document.getElementById('main-content'));
-    //     topAppBar.listen('MDCTopAppBar:nav', () => {
-    //         drawer.open = !drawer.open;
-    //     });
-    // }
 
     if($('div').hasClass('mdc-button')) { /* Check if current page contains mdc-button  - then initialize Ripple effect*/
         const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));//button

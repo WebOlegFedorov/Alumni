@@ -928,15 +928,18 @@ footer {
     &-top {
       padding: 35px 20px;
       flex-direction: column;
+      &-wrapper {
+        margin-bottom: 20px;
+      }
+      &-section--item {
+        margin-bottom: 0;
+      }
     }
     &-form {
       max-width: 350px;
       width: initial;
       min-width: initial;
       margin-left: 0;
-    }
-    &-top-section--item {
-      margin-bottom: 0;
     }
   }
 }
@@ -948,12 +951,138 @@ footer {
 }
 
 
-/*--------------------
-  INDEX PAGE STYLES
----------------------*/
+/*--------------------------
+  INDEX PAGE (find Alumni)
+--------------------------*/
+/*SEARCHBAR (index page "Find Alumni")*/
+.find-alumni {
+ 
+  &--search {
+    padding: 55px 20px 80px 20px;
+    background-color: rgba(91, 157, 227, 0.08);
+    font-family: 'Titillium Web', sans-serif !important;
+    margin-bottom: 75px;
 
+    &-wrapper {
+      max-width: 780px;
+      margin: auto;
+    }
+
+    &-header {
+      text-align: center;
+      color: #343d42;
+      font-size: 56px;
+      font-weight: 400;
+      line-height: 72px;
+    }
+
+    &-results {
+      text-align: right;
+      color: #4a4a4a;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 37px;
+      font-weight: 400;
+      span {
+        font-weight: 700;
+      }
+    }
+
+    &-input {
+      width: 780px;
+      height: 50px;
+      padding: 0 57px 0 25px;
+      box-sizing: border-box;
+      border-radius: 25px;
+      border: 1px solid #aed4f4;
+      background: #fff url(assets/images/search.png) right 21px center no-repeat;
+      outline: none;
+      color: #343d42;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: 'Titillium Web', sans-serif !important;
+    }
+
+    &-filters {
+      display: block;
+      color: #aed4f4;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 37px;
+      position: absolute;
+      right: -94px;
+      top: 5px;
+      padding-left: 36px;
+      background: url(assets/images/filters.png) left center no-repeat;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .input-and-filters {
+      position: relative;
+      margin-bottom: 20px;
+    }
+  }
+
+  &--skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &--one-skill {
+    background: rgba(69, 157, 233, 0.38);
+    margin-right: 16px;
+    padding: 0 6px 0 13px;
+    margin-bottom: 10px;
+    span {
+      color: #fff;
+      font-size: 13px;
+      top: -1px;
+      font-weight: 700;
+      margin-right: 5px;
+    }
+    i {
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+}
+
+.find-alumni--search-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #343d42;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif !important;
+}
+.find-alumni--search-input::-moz-placeholder { /* Firefox 19+ */
+  color: #343d42;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif !important;
+}
+.find-alumni--search-input:-ms-input-placeholder { /* IE 10+ */
+  color: #343d42;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif !important;
+}
+.find-alumni--search-input:-moz-placeholder { /* Firefox 18- */
+  color: #343d42;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif !important;
+}
+
+.find-alumni--skills-wrapper {
+  font-family: 'Titillium Web', sans-serif !important;
+}
+/*end of SEARCHBAR (index page "Find Alumni")*/
+
+
+/*CANDIDATES BLOCK(index page "Find Alumni")*/
 .find-alumni--candidates {
   background: #fff;
+  margin-bottom: 55px;
   &--wraper {
     max-width: 1600px;
     width: calc(100% - 50px);
@@ -1031,6 +1160,14 @@ footer {
     }
   }
 }
+.find-alumni--pagination-top {
+  margin-bottom: 50px;
+}
+/*end of CANDIDATES BLOCK(index page "Find Alumni")*/
+
+
+
+/*MEDIA FOR INDEX PAGE(Find Alumni page with candidates)*/
 @media screen and (max-width: 1700px) {
   .find-alumni--candidates {
     &--wraper {
@@ -1052,6 +1189,23 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .find-alumni--search {
+    &-filters {
+      position: static;
+      margin-top: 10px;
+    }
+    &-input {
+      width: 100%;
+    }
+    &-header {
+      font-size: 42px;
+      line-height: 40px;
+    }
+  }
+}
+
 @media screen and (max-width: 900px) {
   .find-alumni--candidates .one-candidate {
     width: calc(50% - 30px);
@@ -1062,6 +1216,7 @@ footer {
 
 @media screen and (max-width: 700px) {
   .find-alumni--candidates {
+    margin-bottom: 25px;
     .one-candidate {
       width: calc(50% - 20px);    
       margin-bottom: 35px;
@@ -1080,24 +1235,47 @@ footer {
       }
     }
   }
+  .find-alumni--pagination-top {
+    margin-bottom: 20px;
+  }
+  .find-alumni--search-header {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
-.find-alumni--candidates .one-candidate {
-  width: calc(50% - 10px);
-  padding: 20px 10px 20px 10px;
+@media screen and (max-width: 500px) {
+  .find-alumni--candidates {
+    .one-candidate {
+      width: calc(50% - 10px);
+      padding: 20px 10px 20px 10px;
+    }
+    .candidate {
+      &-photo {
+        width: 90px;
+        height: 90px;
+      }
+      &-name {
+        font-size: 19px;
+        line-height: 23px;
+        margin-bottom: 12px;
+      }
+      &-position {
+        font-size: 13px;
+        line-height: 15px;
+      }
+      &-photo {
+        margin-bottom: 13px;
+      }
+      &--view-profile {
+        padding: 15px 10px;
+        font-size: 14px;
+        margin-bottom: 13px;
+      }
+      &--download-resume a {
+        font-size: 12px;
+      }
+    }
+  }
 }
-.find-alumni--candidates .candidate-photo {
-  width: 90px;
-  height: 90px;
-}
-.find-alumni--candidates .candidate-name {
-  font-size: 21px;
-  line-height: 23px;
-  margin-bottom: 12px;
-}
-.find-alumni--candidates .candidate-position {
-  font-size: 13px;
-  line-height: 15px;
-}
-.find-alumni--candidates .candidate-photo {
-  margin-bottom: 13px;
-}
+
+
