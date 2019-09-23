@@ -1,16 +1,16 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const webpack = require('webpack');
 const path = require('path');
+
 module.exports = {
    watch: true,
    mode: 'development',
    context: path.resolve(__dirname, ''),
-   entry: [
-       './app.scss',
-       './app.js',
-       './scripts/my-requests.js',
-       './scripts/jquery-3.4.1.min.js'
-   ],
+   entry: {
+       app: ['./app.js', './app.scss','./scripts/jquery-3.4.1.min.js'],
+       myRequests: ['./my-requests/my-requests.js', './scripts/jquery-3.4.1.min.js']
+   },
    output: {
        filename: '[name].js',
        path: path.resolve(__dirname, 'dist'),
@@ -19,8 +19,8 @@ module.exports = {
        port: 3000,
        historyApiFallback: {
            rewrites: [
-               { from: /^\/main/, to: '/index.html' },
-               { from: /^\/my-requests/, to: '/my-requests.html' }
+               { from: /^\/app/, to: '/index.html' },
+               { from: /^\/myRequests/, to: './my-requests/my-requests.html' }
            ]
        }
    },
@@ -28,6 +28,16 @@ module.exports = {
        new webpack.ProvidePlugin({
            $: 'jquery',
            jQuery: 'jquery'
+       }),
+       new HtmlWebpackPlugin({
+           chunks: ['app'],
+           template: './index.html',
+           filename: './index.html',
+       }),
+       new HtmlWebpackPlugin({
+           chunks: ['myRequests'],
+           template: './my-requests/my-requests.html',
+           filename: './my-requests.html',
        })
    ],
    module: {

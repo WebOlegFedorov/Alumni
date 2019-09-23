@@ -3,23 +3,26 @@ $mdc-theme-secondary: #4ca0e9;
 
 $mdc-theme-on-primary: #4ca0e9;
 $mdc-theme-on-secondary: #4ca0e9;
-@import "@material/drawer/mdc-drawer";//drawer
-@import "@material/button/mdc-button";//button
-@import "@material/list/mdc-list";
-@import "@material/fab/mdc-fab";
-@import "@material/chips/mdc-chips";//chips
-@import "@material/checkbox/mdc-checkbox"; //checkbox for data-table (My Requests page)
-@import "@material/data-table/mdc-data-table";// data-table (My Requests page)
-@import "@material/menu-surface/mdc-menu-surface";
-@import "@material/layout-grid/mdc-layout-grid";
-@import "@material/menu/mdc-menu";
-@import "./styles/index.scss";//INDEX page
-@import "./styles/my-requests.scss";//MY REQUESTS page
-@import "@material/grid-list/mdc-grid-list";
-@import "@material/card/mdc-card";
-@import "@material/textfield/mdc-text-field";
+@import "~@material/drawer/mdc-drawer";//drawer
+@import "~@material/button/mdc-button";//button
+@import "~@material/list/mdc-list";
+@import "~@material/fab/mdc-fab";
+@import "~@material/chips/mdc-chips";//chips
+@import "~@material/checkbox/mdc-checkbox"; //checkbox for data-table (My Requests page)
+@import "~@material/data-table/mdc-data-table";// data-table (My Requests page)
+@import "~@material/menu-surface/mdc-menu-surface";
+@import "~@material/layout-grid/mdc-layout-grid";
+@import "~@material/menu/mdc-menu";
+@import "~@material/grid-list/mdc-grid-list";
+@import "~@material/card/mdc-card";
+@import "~@material/textfield/mdc-text-field";
+@import "./my-requests/my-requests";//MY REQUESTS page
 
 
+
+.aaaa {
+  color: red;
+}
 
 .my-card-content {
   padding: 16px;
@@ -49,7 +52,7 @@ header {
 }
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 /* Hamburger(now is now usable!!!!!!!!!!!!!!!) */
@@ -176,7 +179,7 @@ padding: 10px 30px;
   width: 170px !important;
   &--modal {
     z-index: 100;
-    top: 0; 
+    top: 0;
     border: none;
   }
   .mdc-list-item {
@@ -270,7 +273,7 @@ padding: 10px 30px;
   }
   &--mob {
     display: none;
-    font-weight: 600; 
+    font-weight: 600;
     margin-right: 5px !important;
   }
 }
@@ -437,7 +440,7 @@ padding: 10px 30px;
     }
   }
   .header-notifications--icon {
-    display: none;  
+    display: none;
   }
   .header-notifications--mob {
     display: block;
@@ -457,7 +460,7 @@ padding: 10px 30px;
   }
   .notifications-and-user--wraper {
     flex-direction: column;
-    
+
   }
 }
 
@@ -484,7 +487,7 @@ padding: 10px 30px;
 
 
 
-/*if screen height is less then 650px and width is more then 1024px then 
+/*if screen height is less then 650px and width is more then 1024px then
 make dashboard sidebar icons smaller*/
 @media screen and (max-height: 650px) and (min-width: 1024px) {
   .dashboard-sidebar-item--icon {
@@ -524,7 +527,7 @@ make dashboard sidebar icons smaller*/
   // &::after {
   //   background: #5b9de357;
   // }
-  
+
 }
 .pagination-numbers {
   font-size: 14px;
@@ -914,7 +917,7 @@ footer {
   }
 
   .footer--site-map {
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
   }
 
   .contact-us-secure,

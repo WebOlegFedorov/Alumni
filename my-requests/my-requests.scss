@@ -1,3 +1,7 @@
+@import "~@material/checkbox/mdc-checkbox";
+@import "~@material/data-table/mdc-data-table";
+
+
 /*Styles for My request page*/
 .request-table {
     display: flex;
@@ -11,9 +15,9 @@
     }
     .mdc-list-item__text {
         font-family: 'Titillium Web', sans-serif !important;
-        font-size: 14px;  
+        font-size: 14px;
     }
-   
+
     .cell-dots-wrapper {
         position: relative;
     }
@@ -25,7 +29,7 @@
     :not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item--activated::before,
     :not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item--activated::after {
         background-color: #5b9de3;
-    }  
+    }
     .read-chip {
         background-color: #e2f9f3;
         color: #00c083 !important;
@@ -99,7 +103,7 @@
 
 /*Media for page My Requests*/
 @media screen and (max-width: 1024px) {
- 
+
     // .main-and-sidebar-wrapper {
     //     .mdc-data-table-inbox {
     //         padding: 10px;
@@ -150,7 +154,7 @@
         padding-right: 3px;
         padding-left: 3px;
     }
-    .mdc-data-table__from--name, 
+    .mdc-data-table__from--name,
     .request-table .mdc-data-table_subject {
         font-size: 13px;
     }
@@ -158,5 +162,4 @@
 
 
 
-  
-  
+
