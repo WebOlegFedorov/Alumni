@@ -222,27 +222,30 @@ padding: 10px 30px;
   .header-logout {
     display: flex;
     align-items: center;
-    .mdc-button  {
-      text-transform: none;
-      font-family: 'Titillium Web', sans-serif !important;
-      font-size: 16px;
-      color: #4ca0e9;
-      letter-spacing: initial;
-      border-radius: 25px;
-      padding: 23px 44px;
-      border: 2px solid #459de9;
-      &:hover,
-      &:active,
-      &:focus {
-        &::before,
-        &::after {
-          background-color: #459de9;
-        }
-      }
-    }
+
 
   }
 }
+/*button with blue border*/
+.blue-border-btn  {
+  text-transform: none;
+  font-family: 'Titillium Web', sans-serif !important;
+  font-size: 16px;
+  color: #4ca0e9;
+  letter-spacing: initial;
+  border-radius: 25px;
+  padding: 23px 44px;
+  border: 2px solid #459de9;
+  &:hover,
+  &:active,
+  &:focus {
+    &::before,
+    &::after {
+      background-color: #459de9;
+    }
+  }
+}
+
 /*(pages with sidebar)*/
 .sidebar-page-header--wrapper {
   display: flex;
@@ -950,7 +953,153 @@ footer {
 /*--------------------
   INDEX PAGE STYLES
 ---------------------*/
-.find-alumni--candidates--wraper {
-  max-width: 1600px;
-  width: calc(100% - 30px);
+
+.find-alumni--candidates {
+  background: #fff;
+  &--wraper {
+    max-width: 1600px;
+    width: calc(100% - 50px);
+    margin: auto;
+  }
+  &-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .one-candidate {
+    font-family: 'Titillium Web', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 40px 20px;
+    width: 410px;
+    box-shadow: 0 15px 30px rgba(25, 71, 128, 0.2);
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 65px;
+  }
+  .candidate {
+    &-name {
+      color: #494949;
+      font-size: 25px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    &-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 100%;
+      overflow: hidden;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-position {
+      color: #4a5054;
+      font-size: 20px;
+      font-weight: 700;
+      max-width: 240px;
+      text-align: center;
+      line-height: 23px;
+    }
+    &-experience {
+      color: #8b8b8b;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-top: -5px;
+      margin-bottom: 16px;
+    }
+    &--view-profile {
+      transition: .4s ease;
+      font-weight: 700;
+      color: #4ca0e9;
+      margin-bottom: 18px;
+    }
+    &--download-resume {
+      a {
+        font-family: 'Titillium Web', sans-serif !important;
+        color: #acacac;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: underline;
+        transition: .4s ease;
+        &:hover {
+          opacity: .85;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1700px) {
+  .find-alumni--candidates {
+    &--wraper {
+      max-width: 1300px;
+    }
+    .one-candidate {
+      width: 310px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .find-alumni--candidates {
+    &--wraper {
+      max-width: 900px;
+    }
+    .one-candidate {
+      width: 210px;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .find-alumni--candidates .one-candidate {
+    width: calc(50% - 30px);
+    max-width: 400px !important;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .find-alumni--candidates {
+    .one-candidate {
+      width: calc(50% - 20px);    
+      margin-bottom: 35px;
+    }     
+    .candidate {
+      &-photo {
+        width: 120px;
+        height: 120px;
+      }
+      &--view-profile {
+        padding: 20px;
+      }
+      &-position {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+.find-alumni--candidates .one-candidate {
+  width: calc(50% - 10px);
+  padding: 20px 10px 20px 10px;
+}
+.find-alumni--candidates .candidate-photo {
+  width: 90px;
+  height: 90px;
+}
+.find-alumni--candidates .candidate-name {
+  font-size: 21px;
+  line-height: 23px;
+  margin-bottom: 12px;
+}
+.find-alumni--candidates .candidate-position {
+  font-size: 13px;
+  line-height: 15px;
+}
+.find-alumni--candidates .candidate-photo {
+  margin-bottom: 13px;
 }

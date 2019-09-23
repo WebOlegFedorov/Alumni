@@ -1681,7 +1681,7 @@ a.mdc-list-item {
   /* @alternate */
   background-color: var(--mdc-theme-secondary, #4ca0e9); }
 
-@-webkit-keyframes mdc-checkbox-fade-in-background-u84a67895 {
+@-webkit-keyframes mdc-checkbox-fade-in-background-u9cb2ca58 {
   0% {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; }
@@ -1693,7 +1693,7 @@ a.mdc-list-item {
     /* @alternate */
     background-color: var(--mdc-theme-secondary, #4ca0e9); } }
 
-@keyframes mdc-checkbox-fade-in-background-u84a67895 {
+@keyframes mdc-checkbox-fade-in-background-u9cb2ca58 {
   0% {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; }
@@ -1705,7 +1705,7 @@ a.mdc-list-item {
     /* @alternate */
     background-color: var(--mdc-theme-secondary, #4ca0e9); } }
 
-@-webkit-keyframes mdc-checkbox-fade-out-background-u84a67895 {
+@-webkit-keyframes mdc-checkbox-fade-out-background-u9cb2ca58 {
   0%,
   80% {
     border-color: #4ca0e9;
@@ -1718,7 +1718,7 @@ a.mdc-list-item {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; } }
 
-@keyframes mdc-checkbox-fade-out-background-u84a67895 {
+@keyframes mdc-checkbox-fade-out-background-u9cb2ca58 {
   0%,
   80% {
     border-color: #4ca0e9;
@@ -1732,12 +1732,12 @@ a.mdc-list-item {
     background-color: transparent; } }
 
 .mdc-checkbox--anim-unchecked-checked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background, .mdc-checkbox--anim-unchecked-indeterminate .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background {
-  -webkit-animation-name: mdc-checkbox-fade-in-background-u84a67895;
-          animation-name: mdc-checkbox-fade-in-background-u84a67895; }
+  -webkit-animation-name: mdc-checkbox-fade-in-background-u9cb2ca58;
+          animation-name: mdc-checkbox-fade-in-background-u9cb2ca58; }
 
 .mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background, .mdc-checkbox--anim-indeterminate-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background {
-  -webkit-animation-name: mdc-checkbox-fade-out-background-u84a67895;
-          animation-name: mdc-checkbox-fade-out-background-u84a67895; }
+  -webkit-animation-name: mdc-checkbox-fade-out-background-u9cb2ca58;
+          animation-name: mdc-checkbox-fade-out-background-u9cb2ca58; }
 
 .mdc-checkbox__checkmark {
   color: #4ca0e9; }
@@ -2185,7 +2185,7 @@ a.mdc-list-item {
   /* @alternate */
   background-color: var(--mdc-theme-primary, #4ca0e9); }
 
-@-webkit-keyframes mdc-checkbox-fade-in-background-ucc768627 {
+@-webkit-keyframes mdc-checkbox-fade-in-background-u88f13731 {
   0% {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; }
@@ -2197,7 +2197,7 @@ a.mdc-list-item {
     /* @alternate */
     background-color: var(--mdc-theme-primary, #4ca0e9); } }
 
-@keyframes mdc-checkbox-fade-in-background-ucc768627 {
+@keyframes mdc-checkbox-fade-in-background-u88f13731 {
   0% {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; }
@@ -2209,7 +2209,7 @@ a.mdc-list-item {
     /* @alternate */
     background-color: var(--mdc-theme-primary, #4ca0e9); } }
 
-@-webkit-keyframes mdc-checkbox-fade-out-background-ucc768627 {
+@-webkit-keyframes mdc-checkbox-fade-out-background-u88f13731 {
   0%,
   80% {
     border-color: #4ca0e9;
@@ -2222,7 +2222,7 @@ a.mdc-list-item {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; } }
 
-@keyframes mdc-checkbox-fade-out-background-ucc768627 {
+@keyframes mdc-checkbox-fade-out-background-u88f13731 {
   0%,
   80% {
     border-color: #4ca0e9;
@@ -2238,14 +2238,14 @@ a.mdc-list-item {
 .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-unchecked-checked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background, .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-unchecked-indeterminate .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
 .mdc-data-table__row-checkbox.mdc-checkbox--anim-unchecked-checked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
 .mdc-data-table__row-checkbox.mdc-checkbox--anim-unchecked-indeterminate .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background {
-  -webkit-animation-name: mdc-checkbox-fade-in-background-ucc768627;
-          animation-name: mdc-checkbox-fade-in-background-ucc768627; }
+  -webkit-animation-name: mdc-checkbox-fade-in-background-u88f13731;
+          animation-name: mdc-checkbox-fade-in-background-u88f13731; }
 
 .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background, .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-indeterminate-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
 .mdc-data-table__row-checkbox.mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
 .mdc-data-table__row-checkbox.mdc-checkbox--anim-indeterminate-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background {
-  -webkit-animation-name: mdc-checkbox-fade-out-background-ucc768627;
-          animation-name: mdc-checkbox-fade-out-background-ucc768627; }
+  -webkit-animation-name: mdc-checkbox-fade-out-background-u88f13731;
+          animation-name: mdc-checkbox-fade-out-background-u88f13731; }
 
 .mdc-menu-surface {
   display: none;
@@ -2987,7 +2987,7 @@ a.mdc-list-item {
     border-color: #88c2ff;
     background-color: #88c2ff; }
 
-@-webkit-keyframes mdc-checkbox-fade-in-background-u509b82df {
+@-webkit-keyframes mdc-checkbox-fade-in-background-u288432b6 {
   0% {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; }
@@ -2995,7 +2995,7 @@ a.mdc-list-item {
     border-color: #88c2ff;
     background-color: #88c2ff; } }
 
-@keyframes mdc-checkbox-fade-in-background-u509b82df {
+@keyframes mdc-checkbox-fade-in-background-u288432b6 {
   0% {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; }
@@ -3003,7 +3003,7 @@ a.mdc-list-item {
     border-color: #88c2ff;
     background-color: #88c2ff; } }
 
-@-webkit-keyframes mdc-checkbox-fade-out-background-u509b82df {
+@-webkit-keyframes mdc-checkbox-fade-out-background-u288432b6 {
   0%,
   80% {
     border-color: #88c2ff;
@@ -3012,7 +3012,7 @@ a.mdc-list-item {
     border-color: rgba(0, 0, 0, 0.54);
     background-color: transparent; } }
 
-@keyframes mdc-checkbox-fade-out-background-u509b82df {
+@keyframes mdc-checkbox-fade-out-background-u288432b6 {
   0%,
   80% {
     border-color: #88c2ff;
@@ -3023,13 +3023,13 @@ a.mdc-list-item {
   .request-table .mdc-data-table__table .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-unchecked-checked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background, .request-table .mdc-data-table__table .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-unchecked-indeterminate .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
   .request-table .mdc-data-table__table .mdc-data-table__row-checkbox.mdc-checkbox--anim-unchecked-checked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
   .request-table .mdc-data-table__table .mdc-data-table__row-checkbox.mdc-checkbox--anim-unchecked-indeterminate .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background {
-    -webkit-animation-name: mdc-checkbox-fade-in-background-u509b82df;
-            animation-name: mdc-checkbox-fade-in-background-u509b82df; }
+    -webkit-animation-name: mdc-checkbox-fade-in-background-u288432b6;
+            animation-name: mdc-checkbox-fade-in-background-u288432b6; }
   .request-table .mdc-data-table__table .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background, .request-table .mdc-data-table__table .mdc-data-table__header-row-checkbox.mdc-checkbox--anim-indeterminate-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
   .request-table .mdc-data-table__table .mdc-data-table__row-checkbox.mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background,
   .request-table .mdc-data-table__table .mdc-data-table__row-checkbox.mdc-checkbox--anim-indeterminate-unchecked .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background {
-    -webkit-animation-name: mdc-checkbox-fade-out-background-u509b82df;
-            animation-name: mdc-checkbox-fade-out-background-u509b82df; }
+    -webkit-animation-name: mdc-checkbox-fade-out-background-u288432b6;
+            animation-name: mdc-checkbox-fade-out-background-u288432b6; }
 
 .request-table .mdc-data-table__from--name {
   margin-bottom: 2px; }
@@ -5023,17 +5023,19 @@ header {
   .sidebar-page-header .header-logout {
     display: flex;
     align-items: center; }
-    .sidebar-page-header .header-logout .mdc-button {
-      text-transform: none;
-      font-family: 'Titillium Web', sans-serif !important;
-      font-size: 16px;
-      color: #4ca0e9;
-      letter-spacing: initial;
-      border-radius: 25px;
-      padding: 23px 44px;
-      border: 2px solid #459de9; }
-      .sidebar-page-header .header-logout .mdc-button:hover::before, .sidebar-page-header .header-logout .mdc-button:hover::after, .sidebar-page-header .header-logout .mdc-button:active::before, .sidebar-page-header .header-logout .mdc-button:active::after, .sidebar-page-header .header-logout .mdc-button:focus::before, .sidebar-page-header .header-logout .mdc-button:focus::after {
-        background-color: #459de9; }
+
+/*button with blue border*/
+.blue-border-btn {
+  text-transform: none;
+  font-family: 'Titillium Web', sans-serif !important;
+  font-size: 16px;
+  color: #4ca0e9;
+  letter-spacing: initial;
+  border-radius: 25px;
+  padding: 23px 44px;
+  border: 2px solid #459de9; }
+  .blue-border-btn:hover::before, .blue-border-btn:hover::after, .blue-border-btn:active::before, .blue-border-btn:active::after, .blue-border-btn:focus::before, .blue-border-btn:focus::after {
+    background-color: #459de9; }
 
 /*(pages with sidebar)*/
 .sidebar-page-header--wrapper {
@@ -5563,6 +5565,117 @@ footer .footer-form--inputs-wrapper {
 /*--------------------
   INDEX PAGE STYLES
 ---------------------*/
-.find-alumni--candidates--wraper {
-  max-width: 1600px;
-  width: calc(100% - 30px); }
+.find-alumni--candidates {
+  background: #fff; }
+  .find-alumni--candidates--wraper {
+    max-width: 1600px;
+    width: calc(100% - 50px);
+    margin: auto; }
+  .find-alumni--candidates-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .find-alumni--candidates .one-candidate {
+    font-family: 'Titillium Web', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 40px 20px;
+    width: 410px;
+    box-shadow: 0 15px 30px rgba(25, 71, 128, 0.2);
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 65px; }
+  .find-alumni--candidates .candidate-name {
+    color: #494949;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px; }
+  .find-alumni--candidates .candidate-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 20px; }
+    .find-alumni--candidates .candidate-photo img {
+      width: 100%;
+      height: 100%; }
+  .find-alumni--candidates .candidate-position {
+    color: #4a5054;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 240px;
+    text-align: center;
+    line-height: 23px; }
+  .find-alumni--candidates .candidate-experience {
+    color: #8b8b8b;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: -5px;
+    margin-bottom: 16px; }
+  .find-alumni--candidates .candidate--view-profile {
+    transition: .4s ease;
+    font-weight: 700;
+    color: #4ca0e9;
+    margin-bottom: 18px; }
+  .find-alumni--candidates .candidate--download-resume a {
+    font-family: 'Titillium Web', sans-serif !important;
+    color: #acacac;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: .4s ease; }
+    .find-alumni--candidates .candidate--download-resume a:hover {
+      opacity: .85; }
+
+@media screen and (max-width: 1700px) {
+  .find-alumni--candidates--wraper {
+    max-width: 1300px; }
+  .find-alumni--candidates .one-candidate {
+    width: 310px; } }
+
+@media screen and (max-width: 1200px) {
+  .find-alumni--candidates--wraper {
+    max-width: 900px; }
+  .find-alumni--candidates .one-candidate {
+    width: 210px; } }
+
+@media screen and (max-width: 900px) {
+  .find-alumni--candidates .one-candidate {
+    width: calc(50% - 30px);
+    max-width: 400px !important;
+    box-sizing: border-box; } }
+
+@media screen and (max-width: 700px) {
+  .find-alumni--candidates .one-candidate {
+    width: calc(50% - 20px);
+    margin-bottom: 35px; }
+  .find-alumni--candidates .candidate-photo {
+    width: 120px;
+    height: 120px; }
+  .find-alumni--candidates .candidate--view-profile {
+    padding: 20px; }
+  .find-alumni--candidates .candidate-position {
+    font-size: 16px;
+    line-height: 20px; } }
+
+.find-alumni--candidates .one-candidate {
+  width: calc(50% - 10px);
+  padding: 20px 10px 20px 10px; }
+
+.find-alumni--candidates .candidate-photo {
+  width: 90px;
+  height: 90px; }
+
+.find-alumni--candidates .candidate-name {
+  font-size: 21px;
+  line-height: 23px;
+  margin-bottom: 12px; }
+
+.find-alumni--candidates .candidate-position {
+  font-size: 13px;
+  line-height: 15px; }
+
+.find-alumni--candidates .candidate-photo {
+  margin-bottom: 13px; }
