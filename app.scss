@@ -933,15 +933,18 @@ footer {
     &-top {
       padding: 35px 20px;
       flex-direction: column;
+      &-wrapper {
+        margin-bottom: 20px;
+      }
+      &-section--item {
+        margin-bottom: 0;
+      }
     }
     &-form {
       max-width: 350px;
       width: initial;
       min-width: initial;
       margin-left: 0;
-    }
-    &-top-section--item {
-      margin-bottom: 0;
     }
   }
 }
@@ -959,6 +962,7 @@ footer {
 
 .find-alumni--candidates {
   background: #fff;
+  margin-bottom: 55px;
   &--wraper {
     max-width: 1600px;
     width: calc(100% - 50px);
@@ -1036,6 +1040,11 @@ footer {
     }
   }
 }
+.find-alumni--pagination-top {
+  margin-bottom: 50px;
+}
+
+/*Media for Index page(Find Alumni page with candidates)*/
 @media screen and (max-width: 1700px) {
   .find-alumni--candidates {
     &--wraper {
@@ -1067,6 +1076,7 @@ footer {
 
 @media screen and (max-width: 700px) {
   .find-alumni--candidates {
+    margin-bottom: 25px;
     .one-candidate {
       width: calc(50% - 20px);    
       margin-bottom: 35px;
@@ -1085,24 +1095,43 @@ footer {
       }
     }
   }
+  .find-alumni--pagination-top {
+    margin-bottom: 20px;
+  }
 }
-.find-alumni--candidates .one-candidate {
-  width: calc(50% - 10px);
-  padding: 20px 10px 20px 10px;
+@media screen and (max-width: 500px) {
+  .find-alumni--candidates {
+    .one-candidate {
+      width: calc(50% - 10px);
+      padding: 20px 10px 20px 10px;
+    }
+    .candidate {
+      &-photo {
+        width: 90px;
+        height: 90px;
+      }
+      &-name {
+        font-size: 19px;
+        line-height: 23px;
+        margin-bottom: 12px;
+      }
+      &-position {
+        font-size: 13px;
+        line-height: 15px;
+      }
+      &-photo {
+        margin-bottom: 13px;
+      }
+      &--view-profile {
+        padding: 15px 10px;
+        font-size: 14px;
+        margin-bottom: 13px;
+      }
+      &--download-resume a {
+        font-size: 12px;
+      }
+    }
+  }
 }
-.find-alumni--candidates .candidate-photo {
-  width: 90px;
-  height: 90px;
-}
-.find-alumni--candidates .candidate-name {
-  font-size: 21px;
-  line-height: 23px;
-  margin-bottom: 12px;
-}
-.find-alumni--candidates .candidate-position {
-  font-size: 13px;
-  line-height: 15px;
-}
-.find-alumni--candidates .candidate-photo {
-  margin-bottom: 13px;
-}
+
+
