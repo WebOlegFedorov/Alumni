@@ -20,7 +20,9 @@ module.exports = {
        historyApiFallback: {
            rewrites: [
                { from: /^\/app/, to: '/index.html' },
-               { from: /^\/myRequests/, to: './my-requests/my-requests.html' }
+               { from: /^\/myRequests/, to: './my-requests/my-requests.html' },
+               { from: /^\/dashboard/, to: './dashboard/dashboard.html' }
+
            ]
        }
    },
@@ -38,7 +40,12 @@ module.exports = {
            chunks: ['myRequests'],
            template: './my-requests/my-requests.html',
            filename: './my-requests.html',
-       })
+       }),
+       new HtmlWebpackPlugin({
+            chunks: ['dashboard'],
+            template: './dashboard/dashboard.html',
+            filename: './dashboard.html',
+        })
    ],
    module: {
        rules: [
