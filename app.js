@@ -6,7 +6,6 @@ import { MDCMenu } from '@material/menu';
 import { MDCTextField } from '@material/textfield';
 
 
-
 window.onload = function() {
     console.log("app js file");
     const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
@@ -16,6 +15,12 @@ window.onload = function() {
         drawer.open = !drawer.open;
     });
     
+    if ($('div').hasClass('mdc-chip-set')) {
+        const chipSetEl = document.querySelector('.mdc-chip-set');
+        const chipSet = new MDCChipSet(chipSetEl);
+    }
+
+
     /*Drawer*/ 
     // $(window).on("resize", function() {
         
