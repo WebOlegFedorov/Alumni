@@ -1045,6 +1045,14 @@ footer {
       color: #fff;
       font-size: 16px;
     }
+    &:active,
+    &:focus,
+    &:hover {
+      &::before,
+      &::after {
+        background-color: #3798ff;
+      }
+    }
   }
 }
 
@@ -1192,6 +1200,8 @@ footer {
 
 @media screen and (max-width: 1024px) {
   .find-alumni--search {
+    padding: 25px 20px 30px 20px;
+    margin-bottom: 35px;
     &-filters {
       position: static;
       margin-top: 10px;
@@ -1243,6 +1253,7 @@ footer {
     line-height: 35px;
   }
 }
+
 @media screen and (max-width: 500px) {
   .find-alumni--candidates {
     .one-candidate {
