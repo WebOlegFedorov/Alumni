@@ -8,40 +8,6 @@ import { MDCTextField } from '@material/textfield';
 
 
 window.onload = function() {
-    console.log("app js file");
-    const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
-    const topAppBar = MDCTopAppBar.attachTo(document.getElementById('app-bar'));
-    topAppBar.setScrollTarget(document.getElementById('main-content'));
-    topAppBar.listen('MDCTopAppBar:nav', () => {
-        drawer.open = !drawer.open;
-    });
-    
-    /*Drawer*/ 
-    // $(window).on("resize", function() {
-        
-    // }).resize();
-
-    setTimeout(() => {
-        initDrower();
-    });
-
-
-    function initDrower () {
-        // if($('.sidebar-page-header .mdc-top-app-bar__navigation-icon').css('display') === 'block') {
-        //     $('.mdc-drawer-requests').addClass('mdc-drawer--modal');
-        //     const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
-        //     const topAppBar = MDCTopAppBar.attachTo(document.getElementById('app-bar'));
-        //     topAppBar.setScrollTarget(document.getElementById('main-content'));
-        //     topAppBar.listen('MDCTopAppBar:nav', () => {
-        //         drawer.open = !drawer.open;
-        //     });
-        // } else {
-        //     $('.mdc-drawer-requests').removeClass('mdc-drawer--modal');
-        // }
-    }
-  
-
-
     /*Dropdown menu*/
     const menu = new MDCMenu(document.querySelector('.mdc-menu'));
     $('#header-menu-button').click(function() {

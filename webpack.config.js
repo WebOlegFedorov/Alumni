@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const webpack = require('webpack');
 const path = require('path');
@@ -8,8 +9,10 @@ module.exports = {
    mode: 'development',
    context: path.resolve(__dirname, ''),
    entry: {
-       app: ['./app.js', './app.scss','./scripts/jquery-3.4.1.min.js'],
-       myRequests: ['./my-requests/my-requests.js', './scripts/jquery-3.4.1.min.js']
+       stylesheets: ['./app.scss', './scripts/jquery-3.4.1.min.js'],
+       myRequests: ['./my-requests/my-requests.js'],
+       profile: ['./profile/profile.js'],
+       app: ['./app.js']
    },
    output: {
        filename: '[name].js',
@@ -20,7 +23,8 @@ module.exports = {
        historyApiFallback: {
            rewrites: [
                { from: /^\/app/, to: '/index.html' },
-               { from: /^\/myRequests/, to: './my-requests/my-requests.html' }
+               { from: /^\/myRequests/, to: './my-requests/my-requests.html' },
+               { from: /^\/profile/, to: './profile/profile.html' }
            ]
        }
    },
@@ -38,7 +42,15 @@ module.exports = {
            chunks: ['myRequests'],
            template: './my-requests/my-requests.html',
            filename: './my-requests.html',
-       })
+       }),
+       new HtmlWebpackPlugin({
+           chunks: ['profile'],
+           template: './profile/profile.html',
+           filename: './profile.html',
+       }),
+       new CopyPlugin([
+           { from: './assets', to: 'assets' },
+       ]),
    ],
    module: {
        rules: [
