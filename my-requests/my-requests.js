@@ -8,7 +8,7 @@ class myRequests {
 
     constructor () {
         this.state = {
-            sidebarAsModal: false,
+            fixedSideBar: true,
             drawer: null
         };
         this.drawer(this.state);
@@ -26,16 +26,26 @@ class myRequests {
     }
 
     changeSideBarType (context, state) {
-        if (context.innerWidth < 1024 && !state.sidebarAsModal) {
-            state.sidebarAsModal = true;
+        if (context.innerWidth < 1024 && state.fixedSideBar) {
+            console.log('hew1');
+            state.fixedSideBar = false;
             jQuery('.mdc-drawer').addClass('mdc-drawer--modal');
-            console.log('hide sidebar');
         }
 
-        if (context.innerWidth > 1024 && state.sidebarAsModal) {
-            state.sidebarAsModal = false;
-            jQuery('.mdc-drawer').removeClass('mdc-drawer--modal');
+        if (context.innerWidth > 1024 && !state.fixedSideBar) {
             state.drawer.open = false;
+            state.fixedSideBar = true;
+            jQuery('.mdc-drawer').removeClass('mdc-drawer--modal');
+        }
+    }
+
+    initSideBar (context, state) {
+        if (context.innerWidth < 1024) {
+            state.fixedSideBar = false;
+            jQuery('.mdc-drawer').addClass('mdc-drawer--modal');
+        } else {
+            state.fixedSideBar = true;
+            jQuery('.mdc-drawer').removeClass('mdc-drawer--modal');
         }
     }
 
@@ -45,7 +55,7 @@ class myRequests {
         jQuery('.mdc-data-table__cell-dots').click(function () { dropDown(this) });
         const changeSideBarType = this.changeSideBarType;
         jQuery(window).resize(function () { changeSideBarType(this, state) });
-        this.changeSideBarType(window, state);
+        this.initSideBar(window, state);
     }
 }
 
