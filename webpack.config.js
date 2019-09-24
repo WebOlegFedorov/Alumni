@@ -9,10 +9,9 @@ module.exports = {
    mode: 'development',
    context: path.resolve(__dirname, ''),
    entry: {
-       stylesheets: ['./app.scss', './scripts/jquery-3.4.1.min.js'],
-       myRequests: ['./my-requests/my-requests.js'],
-       dashboard: ['./dashboard/dashboard.js'],
-       profile: ['./profile/profile.js'],
+       stylesheets: ['./app.scss'],
+       myRequestsApp: ['./my-requests/my-requests.js'],
+       dashboardApp: ['./dashboard/dashboard.js'],
        app: ['./app.js']
    },
    output: {
@@ -25,8 +24,7 @@ module.exports = {
            rewrites: [
                { from: /^\/app/, to: '/index.html' },
                { from: /^\/myRequests/, to: './my-requests/my-requests.html' },
-               { from: /^\/profile/, to: './profile/profile.html' },
-               { from: /^\/dashboard/, to: './dashboard/dashboard.html' }
+               { from: /^\/dashboardApp/, to: './dashboard/dashboard.html' },
            ]
        }
    },
@@ -36,25 +34,20 @@ module.exports = {
            jQuery: 'jquery'
        }),
        new HtmlWebpackPlugin({
-           chunks: ['app', 'stylesheets'],
+           chunks: ['app'],
            template: './index.html',
            filename: './index.html',
        }),
        new HtmlWebpackPlugin({
-           chunks: ['myRequests', 'stylesheets'],
+           chunks: ['myRequestsApp'],
            template: './my-requests/my-requests.html',
            filename: './my-requests.html',
        }),
        new HtmlWebpackPlugin({
-           chunks: ['profile', 'stylesheets'],
-           template: './profile/profile.html',
-           filename: './profile.html',
+           chunks: ['dashboardApp'],
+           template: './dashboard/dashboard.html',
+           filename: './dashboard.html',
        }),
-       new HtmlWebpackPlugin({
-        chunks: ['profile', 'stylesheets'],
-        template: './dashboard/dashboard.html',
-        filename: './dashboard.html',
-    }),
        new CopyPlugin([
            { from: './assets', to: 'assets' },
        ]),
