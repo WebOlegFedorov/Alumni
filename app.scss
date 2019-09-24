@@ -3,21 +3,22 @@ $mdc-theme-secondary: #4ca0e9;
 
 $mdc-theme-on-primary: #4ca0e9;
 $mdc-theme-on-secondary: #4ca0e9;
-@import "~@material/drawer/mdc-drawer";//drawer
-@import "~@material/button/mdc-button";//button
+@import "~@material/drawer/mdc-drawer";
+@import "~@material/button/mdc-button";
 @import "~@material/list/mdc-list";
 @import "~@material/fab/mdc-fab";
-@import "~@material/chips/mdc-chips";//chips
-@import "~@material/checkbox/mdc-checkbox"; //checkbox for data-table (My Requests page)
-@import "~@material/data-table/mdc-data-table";// data-table (My Requests page)
+@import "~@material/chips/mdc-chips";
+@import "~@material/checkbox/mdc-checkbox";
+@import "~@material/data-table/mdc-data-table";
 @import "~@material/menu-surface/mdc-menu-surface";
 @import "~@material/layout-grid/mdc-layout-grid";
 @import "~@material/menu/mdc-menu";
 @import "~@material/grid-list/mdc-grid-list";
 @import "~@material/card/mdc-card";
 @import "~@material/textfield/mdc-text-field";
-@import "./my-requests/my-requests";//MY REQUESTS page
-
+@import "./my-requests/my-requests";
+@import "./dashboard/dashboard.scss";
+@import "./profile/profile";
 
 .my-card-content {
   padding: 16px;
@@ -646,16 +647,16 @@ make dashboard sidebar icons smaller*/
     }
   }
   &-facebook {
-    background: url('img/facebook.png') no-repeat;
+    background: url('assets/images/facebook.png') no-repeat;
   }
   &-twitter {
-    background: url('img/twitter.png') no-repeat;
+    background: url('assets/images/twitter.png') no-repeat;
   }
   &-google-plus {
-    background: url('img/google-plus.png') no-repeat;
+    background: url('assets/images/google-plus.png') no-repeat;
   }
   &-insta {
-    background: url('img/insta.png') no-repeat;
+    background: url('assets/images/insta.png') no-repeat;
   }
 }
 .footer--courses {
@@ -671,17 +672,17 @@ make dashboard sidebar icons smaller*/
 
 .contact-us-phone {
   font-size: 22px;
-  background: url('./img/footer-phone.png') left center no-repeat;
+  background: url('assets/images/footer-phone.png') left center no-repeat;
 }
 .contact-us-secure {
   text-transform: uppercase;
-  background: url('./img/footer-secure.png') left center no-repeat;
+  background: url('assets/images/footer-secure.png') left center no-repeat;
 }
 .contact-us-email {
-  background: url('./img/footer-email.png') left center no-repeat;
+  background: url('assets/images/footer-email.png') left center no-repeat;
 }
 .contact-us-location {
-  background: url('./img/footer-location.png') left center no-repeat;
+  background: url('assets/images/footer-location.png') left center no-repeat;
 }
 .footer--contact-us {
   max-width: 280px;
@@ -764,13 +765,13 @@ footer {
   padding-left: 34px;
 }
 .visa {
-  background: url('./img/visa.png');
+  background: url('assets/images/visa.png');
   width: 96px;
   height: 32px;
   margin-right: 20px;
 }
 .mastercard {
-  background: url('img/mastercard.png');
+  background: url('assets/images/mastercard.png');
   width: 64px;
   height: 50px;
 }
@@ -798,7 +799,7 @@ footer {
     }
   }
   &-title {
-    background: url(img/footer-form.png) -22px -4px no-repeat;
+    background: url(assets/images/footer-form.png) -22px -4px no-repeat;
     margin-bottom: 40px;
     p {
       font-weight: 600;
@@ -995,7 +996,7 @@ footer {
       box-sizing: border-box;
       border-radius: 25px;
       border: 1px solid #aed4f4;
-      background: #fff url(img/search.png) right 21px center no-repeat;
+      background: #fff url(assets/images/search.png) right 21px center no-repeat;
       outline: none;
       color: #343d42;
       font-size: 14px;
@@ -1013,7 +1014,7 @@ footer {
       right: -94px;
       top: 5px;
       padding-left: 36px;
-      background: url(img/filters.png) left center no-repeat;
+      background: url(assets/images/filters.png) left center no-repeat;
       cursor: pointer;
       text-decoration: none;
     }

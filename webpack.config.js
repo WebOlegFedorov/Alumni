@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const webpack = require('webpack');
 const path = require('path');
@@ -8,8 +9,11 @@ module.exports = {
    mode: 'development',
    context: path.resolve(__dirname, ''),
    entry: {
-       app: ['./app.js', './app.scss','./scripts/jquery-3.4.1.min.js'],
-       myRequests: ['./my-requests/my-requests.js', './scripts/jquery-3.4.1.min.js']
+       stylesheets: ['./app.scss', './scripts/jquery-3.4.1.min.js'],
+       myRequests: ['./my-requests/my-requests.js'],
+       dashboard: ['./dashboard/dashboard.js'],
+       profile: ['./profile/profile.js'],
+       app: ['./app.js']
    },
    output: {
        filename: '[name].js',
@@ -21,8 +25,8 @@ module.exports = {
            rewrites: [
                { from: /^\/app/, to: '/index.html' },
                { from: /^\/myRequests/, to: './my-requests/my-requests.html' },
+               { from: /^\/profile/, to: './profile/profile.html' },
                { from: /^\/dashboard/, to: './dashboard/dashboard.html' }
-
            ]
        }
    },
@@ -32,20 +36,28 @@ module.exports = {
            jQuery: 'jquery'
        }),
        new HtmlWebpackPlugin({
-           chunks: ['app'],
+           chunks: ['app', 'stylesheets'],
            template: './index.html',
            filename: './index.html',
        }),
        new HtmlWebpackPlugin({
-           chunks: ['myRequests'],
+           chunks: ['myRequests', 'stylesheets'],
            template: './my-requests/my-requests.html',
            filename: './my-requests.html',
        }),
        new HtmlWebpackPlugin({
-            chunks: ['dashboard'],
-            template: './dashboard/dashboard.html',
-            filename: './dashboard.html',
-        })
+           chunks: ['profile', 'stylesheets'],
+           template: './profile/profile.html',
+           filename: './profile.html',
+       }),
+       new HtmlWebpackPlugin({
+        chunks: ['profile', 'stylesheets'],
+        template: './dashboard/dashboard.html',
+        filename: './dashboard.html',
+    }),
+       new CopyPlugin([
+           { from: './assets', to: 'assets' },
+       ]),
    ],
    module: {
        rules: [
