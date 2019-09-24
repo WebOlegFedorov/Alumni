@@ -9,9 +9,9 @@ module.exports = {
    mode: 'development',
    context: path.resolve(__dirname, ''),
    entry: {
-       stylesheets: ['./app.scss'],
        myRequestsApp: ['./my-requests/my-requests.js'],
        dashboardApp: ['./dashboard/dashboard.js'],
+       stylesheets: ['./app.scss'],
        app: ['./app.js']
    },
    output: {

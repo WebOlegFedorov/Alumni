@@ -17,6 +17,7 @@ $mdc-theme-on-secondary: #4ca0e9;
 @import "~@material/card/mdc-card";
 @import "~@material/textfield/mdc-text-field";
 @import "./my-requests/my-requests";
+@import "./dashboard/dashboard";
 
 .my-card-content {
   padding: 16px;
