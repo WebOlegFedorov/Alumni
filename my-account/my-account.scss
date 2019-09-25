@@ -2,21 +2,189 @@
 @import "~@material/data-table/mdc-data-table";
 
 /*Styles for My account page*/
-.my-account--info-wrapper {
-    padding: 40px 50px;
-    max-width: 1271px;
-    box-shadow: 0 15px 30px rgba(25, 71, 128, 0.2);
-    border-radius: 5px;
-    background-color: #ffffff;
+
+.my-account {
+    &--form {
+        width: 100%;
+        margin-right: 70px;
+    }
+    &--personal-info {
+        margin-bottom: 50px;
+    }
+    &--info-wrapper {
+        padding: 35px 50px;
+        max-width: 1270px;
+        box-shadow: 0 15px 30px rgba(25, 71, 128, 0.2);
+        border-radius: 5px;
+        background-color: #ffffff;
+        justify-content: space-between;
+        display: flex;
+        align-items: flex-start;
+    }
+    &-title {
+        color: #343d42;
+        font-family: 'Titillium Web', sans-serif !important;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    &-graph--color {
+        min-width: 20px;
+        height: 5px;
+        border-radius: 5px;
+        display: block;
+        margin-right: 20px;
+        background: #00c3a1;
+
+    }
+    &-graph--text {
+        color: #454545;
+        font-family: 'Titillium Web', sans-serif !important;
+        font-size: 16px;
+        font-weight: 400;
+        
+    }
+    &--info-graph {
+        padding: 30px 30px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        min-width: 475px;
+        height: 224px;
+        box-shadow: 0 15px 30px rgba(25, 71, 128, 0.2);
+        border-radius: 5px;
+        background-color: #fff;
+        
+    }
+    &-graph {
+        margin-right: 30px;
+        &--descrip {
+            display: flex;
+            align-items: center;
+        }
+    }
 }
-
-
+.my-account--info-wrapper {
+    .change-password {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 40px;
+        a {
+            color: #4ca0e9;
+            font-family: 'Titillium Web', sans-serif !important;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: underline;
+        }
+    }
+    .my-account-update {
+        display: flex;
+        justify-content: flex-end;  
+    }
+    .info-row {
+        display: flex;
+        align-items: center;
+        font-family: 'Titillium Web', sans-serif !important;
+        color: #777171;
+        margin-bottom: 15px;
+        label {
+            font-size: 15px;
+            font-weight: 400;
+            min-width: 300px;
+        }
+        input {
+            width: 100%; 
+            height: 37px;
+            border-radius: 15px;
+            border: 1px solid rgba(151, 151, 151, 0.34);
+            background-color: #fff;
+            padding: 0 10px;
+            box-sizing: border-box;
+            outline: none;
+            font-size: 12px;
+            font-weight: 400;
+            font-family: 'Titillium Web', sans-serif !important;
+            color: #9f9f9f;
+        }
+        select {
+            width: 206px;
+            height: 41px;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            font-family: 'Titillium Web', sans-serif !important;
+            color: #949494;
+            font-weight: 400;
+            font-size: 12px;
+            outline: none;
+            padding: 4px;
+        }
+    }
+}
 
 
 
 /*Media for My account page*/
 
-
-
-
-
+@media screen and (max-width: 1500px) {
+    .my-account--info-wrapper .info-row {
+        label {
+            min-width: 200px;
+        }
+        select {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 1320px) {
+    .my-account {
+        &--info-wrapper {
+            padding: 20px 20px;
+            .info-row {
+                label {
+                    min-width: 120px;
+                }
+            }
+        }
+        &--info-graph {
+            padding: 20px 20px;
+            min-width: initial;
+            height: initial;
+        }
+        &--form {
+            margin-right: 40px;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .my-account--info-wrapper .change-password {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .my-account {
+        &--info-wrapper {
+            flex-direction: column;
+        }
+        &--info-graph {
+            order: -1;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .my-account {
+        &--info-graph {
+            width: 100%; 
+            flex-direction: column;
+        }
+        &-graph {
+            margin-right: 0; 
+            margin-bottom: 15px;
+            &--text {
+                font-size: 14px;
+            }
+        }
+    }
+}
