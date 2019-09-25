@@ -17,6 +17,7 @@ $mdc-theme-on-secondary: #4ca0e9;
 @import "~@material/card/mdc-card";
 @import "~@material/textfield/mdc-text-field";
 @import "./my-requests/my-requests";
+@import "./profile/profile";
 
 .my-card-content {
   padding: 16px;
@@ -955,7 +956,7 @@ footer {
 --------------------------*/
 /*SEARCHBAR (index page "Find Alumni")*/
 .find-alumni {
- 
+
   &--search {
     padding: 55px 20px 80px 20px;
     background-color: rgba(91, 157, 227, 0.08);
@@ -1227,9 +1228,9 @@ footer {
   .find-alumni--candidates {
     margin-bottom: 25px;
     .one-candidate {
-      width: calc(50% - 20px);    
+      width: calc(50% - 20px);
       margin-bottom: 35px;
-    }     
+    }
     .candidate {
       &-photo {
         width: 120px;
