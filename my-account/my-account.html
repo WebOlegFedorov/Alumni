@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./bundle.css">
+</head>
+<body class="sidebar-page-body">
+        
+    <header class="mdc-top-app-bar app-bar sidebar-page-header" id="app-bar">
+          <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          <div class="sidebar-page-header--wrapper">
+            <div class="notifications-and-user--wraper">
+                <!-- Header notifications block -->
+                <div class="header-notifications">
+                    <div class="header-notifications--icon">
+                        <p><img src="../assets/images/notifications.png" alt=""></p>
+                        <p class="header-notifications--number" id="header-notifications--number">9</p>
+                    </div>
+                    <p class="header-notifications--mob">9</p>
+                    <p class="header-notifications--text">Notifications</p>
+                </div>
+
+                <!-- Header user block -->
+                <div class="header-user">
+                    <div class="header-user--photo">
+                        <img class="header-user--photo-img" src="../assets/images/user-photo.jpg" alt="">
+                    </div>
+                    <div class="header-user--text">
+                        <span class="header-user--descrip">Welcome back</span>
+                        <span class="header-user--name">Caroline </span>
+                    </div>
+                </div>
+            </div><!--end of notifications-and-user--wraper -->
+
+            <!-- Header logout button -->
+            <div class="header-logout">
+                <div class="mdc-button blue-border-btn">Logout</div>
+            </div>
+        </div><!--end of sidebar-page-header--wrapper -->
+    </header>
+    <aside class="mdc-drawer mdc-drawer--modal">
+        <div class="mdc-drawer__content">
+            <nav class="mdc-list">
+                <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+                    <span class="mdc-list-item__text">Inbox</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+                    <span class="mdc-list-item__text">Outgoing</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+                    <span class="mdc-list-item__text">Drafts</span>
+                </a>
+            </nav>
+        </div>
+    </aside>
+    <div class="mdc-drawer-scrim"></div>
+  
+    <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+        <main class="main-content dashboard-main my-account--main-content" id="main-content">
+            <h1 class="pages-main-title">My Account</h1>
+
+            <!-- Main information block with shadow("My account" page) -->
+            <div class="my-account--info-wrapper">
+                <form class="my-account--form">
+                    <!-- Personal info("My account" page) -->
+                    <div class="my-account--personal-info">
+                        <p class="my-account-title">Personal Info</p>
+                        <div class="my-account--info-block">
+                            <!-- Your Name -->
+                            <p class="personal-info--row">
+                                <label for="my-acc-name">Your Name</label><br>
+                                <input type="text" name="my-acc-name" id="my-acc-name">
+                            </p>
+
+                            <!-- Your Surname -->
+                            <p class="personal-info--row">
+                                <label for="my-acc-surname">Your Surname</label><br>
+                                <input type="text" name="my-acc-surname" id="my-acc-surname">
+                            </p>
+
+                            <!-- Nationality -->
+                            <p class="personal-info--row">
+                                <label for="my-acc-nationality">Nationality</label><br>
+                                <select id="my-acc-nationality">
+                                    <option value="south-africa">South Africa</option>
+                                    <option value="geogria">Geogria</option>
+                                    <option value="china">China</option>
+                                </select>
+                            </p>
+
+                            <!-- Contact number -->
+                            <p class="personal-info--row">
+                                <label for="my-acc-phone">Contact number</label><br>
+                                <input type="tel" name="my-acc-phone" id="my-acc-phone">
+                            </p>
+
+                            <!-- Email -->
+                            <p class="personal-info--row">
+                                <label for="my-acc-email">Email address</label><br>
+                                <input type="email" name="my-acc-email" id="my-acc-email">
+                            </p>
+                        </div><!-- end of my-account--info-block -->
+                    </div><!-- end of Personal info -->
+
+                    <!-- Username and Password("My account" page) -->
+                    <div class="my-account--user-info">
+                        <p class="my-account-title">Username & Password</p>
+                        <div class="my-account--info-block">
+                            <!-- Username -->
+                            <p class="personal-info--row">
+                                    <label for="my-acc-username">Username</label><br>
+                                    <input type="text" name="my-acc-username" id="my-acc-username">
+                                </p>
+
+                                <!-- Password -->
+                                <p class="personal-info--row">
+                                    <label for="my-acc-username">Username</label><br>
+                                    <input type="password" name="my-acc-username" id="my-acc-username">
+                                </p>
+                            <p class="change-password"><a href="#">Change password</a></p>
+                            <div>
+                                <div class="mdc-button blue-border-btn">Update</div>
+                            </div>
+                        </div><!-- end of my-account--info-block -->
+                    </div><!-- end of Username and Password-->
+                </form>
+
+                <!-- Graph("My account" page)-->
+                <div class="my-account--info-graph">
+                    <div class="my-account-graph">
+                        <img src="../assets/images/my-account-graph.png" alt="">
+                    </div>
+                    <div class="my-account-graph--descrip">
+                        <p class="my-account-graph--color"></p>
+                        <p class="my-account-graph--text">100 % Personal Information</p>
+                    </div>
+                </div><!-- end of my-account--info-graph -->
+            </div><!-- end of my-account--info-wrapper -->
+        </main>
+    </div><!-- end of mdc-top-app-bar--fixed-adjust -->
+    <script type=text/javascript src="./myRequestsApp.js"></script>
+  </body>
+
+</html>

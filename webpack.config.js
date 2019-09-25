@@ -10,6 +10,7 @@ module.exports = {
    context: path.resolve(__dirname, ''),
    entry: {
        myRequestsApp: ['./my-requests/my-requests.js'],
+       myAccountApp: ['./my-account/my-account.js'],
        dashboardApp: ['./dashboard/dashboard.js'],
        stylesheets: ['./app.scss'],
        app: ['./app.js']
@@ -23,8 +24,10 @@ module.exports = {
        historyApiFallback: {
            rewrites: [
                { from: /^\/app/, to: '/index.html' },
+               { from: /^\/myAccount/, to: './my-account/my-account.html' },
                { from: /^\/myRequests/, to: './my-requests/my-requests.html' },
                { from: /^\/dashboardApp/, to: './dashboard/dashboard.html' },
+
            ]
        }
    },
@@ -48,6 +51,11 @@ module.exports = {
            template: './dashboard/dashboard.html',
            filename: './dashboard.html',
        }),
+       new HtmlWebpackPlugin({
+        chunks: ['myAccountApp'],
+        template: './my-account/my-account.html',
+        filename: './my-account.html',
+    }),
        new CopyPlugin([
            { from: './assets', to: 'assets' },
        ]),
