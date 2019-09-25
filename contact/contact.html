@@ -9,349 +9,102 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./bundle.css">
 </head>
-<body class="sidebar-page-body">
-    <header class="mdc-top-app-bar app-bar sidebar-page-header" id="app-bar">
-        <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
-        <div class="sidebar-page-header--wrapper">
-            <div class="notifications-and-user--wraper">
-                <!-- Header notifications block -->
-                <div class="header-notifications">
-                    <div class="header-notifications--icon">
-                        <p><img src="../assets/images/notifications.png" alt=""></p>
-                        <p class="header-notifications--number" id="header-notifications--number">9</p>
-                    </div>
-                    <p class="header-notifications--mob">9</p>
-                    <p class="header-notifications--text">Notifications</p>
-                </div>
-
-                <!-- Header user block -->
-                <div class="header-user">
-                    <div class="header-user--photo">
-                        <img class="header-user--photo-img" src="../assets/images/user-photo.jpg" alt="">
-                    </div>
-                    <div class="header-user--text">
-                        <span class="header-user--descrip">Welcome back</span>
-                        <span class="header-user--name">Caroline </span>
-                    </div>
-                </div>
-            </div><!--end of notifications-and-user--wraper -->
-
-            <!-- Header logout button -->
-            <div class="header-logout">
-                <div class="mdc-button blue-border-btn">Logout</div>
-            </div>
-        </div><!--end of sidebar-page-header--wrapper -->
-    </header>
-    <aside class="mdc-drawer mdc-drawer--modal">
-        <div class="mdc-drawer__content">
-            <nav class="mdc-list">
-                <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
-                    <span class="mdc-list-item__text">Inbox</span>
-                </a>
-                <a class="mdc-list-item" href="#">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
-                    <span class="mdc-list-item__text">Outgoing</span>
-                </a>
-                <a class="mdc-list-item" href="#">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-                    <span class="mdc-list-item__text">Drafts</span>
-                </a>
-            </nav>
+<body>
+    <div class="contact-page">
+        <!-- row with "previous" btn -->
+        <div class="contact-top-row">
+            <button class="pagination-btn mdc-button pagination-btn-previous">
+                <span class="mdc-button__label">Previous</span>
+            </button>
         </div>
-    </aside>
-    <div class="mdc-drawer-scrim"></div>
 
-    <!-- DRAWER -->
-    <div class="dashboard-top-app-bar mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
-        <main class="main-content dashboard-main dashboard-wrapper" id="main-content">
-            <h1 class="pages-main-title">My Dashboard</h1>
+        <!-- MAIN CONTENT OF CONTACT PAGE -->
+        <div class="contact-main">
+            <!-- LEFT BLOCK(with photo) -->
+            <div class="contact-photo-block">
+                     
+            </div><!-- end of contact-info-block -->
 
-            <!-- Wrapper for graphs and table of Dashboard page-->
-            <div class="dashboard--main-content">
+            <!-- RIGHT BLOCK (with form) -->
+            <form class="contact-page-form">
+                <p class="form-title">
+                    <span class="form-title-bold">Request to contact</span>
+                    <span class="form-title-name">Irinia Kurkina</span>
+                </p>
+                <!-- GENERAL INFO  -->
+                <div class="contact--general-info">
+                    <p class="contact--info-title">general info</p>
+                    <div class="contact--info-wrapper">
+                        <!-- Your Name -->
+                        <p class="info-row">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" name="contact-name" id="contact-name">
+                        </p>
 
-                <div class="graphs-wrapper">
-                    <!-- GRAPH BLOCK -->
-                    <div class="graph-block">
-                        <div class="graph-block--top">
-                            <p class="graph-block--title">My CV</p>
+                        <!-- Company name -->
+                        <p class="info-row">
+                            <label for="contact-company-name">Company name</label>
+                            <input type="text" name="contact-company-name" id="contact-company-name">
+                        </p>
 
-                            <!-- Tabs -->
-                            <div class="mdc-tab-bar" role="tablist">
-                                <div class="mdc-tab-scroller">
-                                    <div class="mdc-tab-scroller__scroll-area">
-                                        <div class="mdc-tab-scroller__scroll-content dashboard-tabs-wrapper">
-                                            <button class="mdc-tab graph-tab graph-tab-active" role="tab" aria-selected="true" tabindex="0">
-                                                <span class="mdc-tab__content">
-                                                    <span class="mdc-tab__text-label">Today</span>
-                                                </span>
-                                                <span class="mdc-tab__ripple"></span>
-                                            </button>
-            
-                                            <button class="mdc-tab graph-tab" role="tab" aria-selected="true" tabindex="0">
-                                                <span class="mdc-tab__content">
-                                                    <span class="mdc-tab__text-label">Week</span>
-                                                </span>
-                                                <span class="mdc-tab__ripple"></span>
-                                            </button>
-            
-                                            <button class="mdc-tab graph-tab" role="tab" aria-selected="true" tabindex="0">
-                                                <span class="mdc-tab__content">
-                                                    <span class="mdc-tab__text-label">Month</span>
-                                                </span>
-                                                <span class="mdc-tab__ripple"></span>
-                                            </button>
-                                        </div><!--tabs wrapper-->
-                                    </div><!--end of mdc-tab-scroller__scroll-area-->
-                                </div><!--end of mdc-tab-scroller -->
-                            </div><!--end of mdc-tab-bar -->
-                        </div><!--end of graph-block--top -->
+                        <!-- Country -->
+                        <p class="info-row">
+                            <label for="contact-country">Country</label>
+                            <select id="contact-country">
+                                <option value="south-africa">South Africa</option>
+                                <option value="geogria">Geogria</option>
+                                <option value="china">China</option>
+                            </select>
+                        </p>
 
-                        <!-- Wrapper for all tabs info -->
-                        <div class="tabs-info--wrapper">
-                            <!-- One tab info -->
-                            <div class="one-tab-info">
-                                <p class="graph-block--amount">45</p>
-                                <p class="graph-block--diagram graph-block--diagram-left">
-                                    <img src="../assets/images/graph1.png" alt="">
-                                </p>
-                            </div>
+                        <!-- Company address -->
+                        <p class="info-row">
+                            <label for="contact-company-address">Company address</label>
+                            <input type="text" name="contact-company-address" id="contact-company-address">
+                        </p>
 
-                            <!-- One tab info -->
-                            <div class="one-tab-info">
-                                <p class="graph-block--amount">65</p>
-                                <p class="graph-block--diagram graph-block--diagram-left">
-                                    <img src="../assets/images/graph1.png" alt="">
-                                </p>
-                            </div>
+                        <!-- Contact number -->
+                        <p class="info-row">
+                            <label for="contact-phone">Contact number</label>
+                            <input type="tel" name="contact-phone" id="contact-phone">
+                        </p>
 
-                            <!-- One tab info -->
-                            <div class="one-tab-info">
-                                <p class="graph-block--amount">75</p>
-                                <p class="graph-block--diagram graph-block--diagram-left">
-                                    <img src="../assets/images/graph1.png" alt="">
-                                </p>
-                            </div>
-                        </div><!--end of graph-block--tabs-info-->
-                    </div><!--end of graph-block-->
+                        <!-- Email address-->
+                        <p class="info-row">
+                            <label for="contact-email">Email address</label>
+                            <input type="email" name="contact-email" id="contact-email">
+                        </p>
+                    </div><!-- end of contact--info-block -->
+                </div><!-- end of contact--general-info -->
 
-                    <!-- GRAPH BLOCK -->
-                    <div class="graph-block graph-block--right">
-                        <p class="graph-block--title">My CV</p>
-                        <div class="graph-block-main">
-                            <p class="graph-block--diagram">
-                                <img src="../assets/images/graph2.png" alt="">
-                            </p>
-                            <div class="diagram--info-items-wrapper">
-                                <div class="diagram--info-item"><p class="diagram--info-item-color"></p><p class="diagram--info-item-text">10 % Personal Information </p></div>
-                                <div class="diagram--info-item"><p class="diagram--info-item-color"></p><p class="diagram--info-item-text">30 % Educartion </p></div>
-                                <div class="diagram--info-item"><p class="diagram--info-item-color"></p><p class="diagram--info-item-text">100 % Work History </p></div>
-                            </div><!--end of diagram--info-items-wrapper-->
-                        </div><!--end of graph-block-main -->
-                        
-                        <div class="graph-block--btn-wrapper">
-                            <div class="graph-block--btn mdc-button blue-border-btn">Complete</div>  
-                        </div>
-                    </div><!--end of graph-block-->
-                </div><!--end of graphs-wrapper-->
-
-                <div class="my-inbox-table">
-                    <div class="mdc-data-table mdc-data-table-inbox request-table dashboard-table">
-                        <p class="request-table-title">My Requests</p>
-                        <table class="mdc-data-table__table" aria-label="Dessert calories">
-                            <thead>
-                                <tr class="mdc-data-table__header-row">
-                                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Select:</th>
-                                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">From:</th>
-                                    <th class="mdc-data-table__header-cell header-cell--date" role="columnheader" scope="col">Date:</th>
-                                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Status</th>
-                                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody class="mdc-data-table__content">
-                                <tr class="mdc-data-table__row" data-row-id="u0">
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--checkbox">
-                                        <div class="mdc-checkbox mdc-data-table__row-checkbox">
-                                            <input type="checkbox" class="mdc-checkbox__native-control" aria-labelledby="r0" />
-                                            <div class="mdc-checkbox__background">
-                                                <svg class="mdc-checkbox__checkmark" viewbox="0 0 24 24">
-                                                <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
-                                                </svg>
-                                                <div class="mdc-checkbox__mixedmark"></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="mdc-data-table__cell" id="r0">
-                                        <p class="mdc-data-table__from--name">Morgan Goddard</p>
-                                        <p class="mdc-data-table_subject">Subject: <span>Angular</span></p>
-                                    </td>
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric mdc-data-table--date">Fri, 05 August 2019</td>
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric mdc-data-table__cell-button">
-                                        <div class="mdc-chip-set">
-                                            <button class="mdc-chip my-inbox-chip read-chip">
-                                                <span class="mdc-chip__text">Read</span>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric cell-dots-wrapper">
-                                        <div class="mdc-data-table__cell-dots"><span></span><span></span><span></span></div>
-                                        <!-- Hidden menu -->
-                                        <div class="mdc-menu mdc-menu-surface">
-                                            <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
-                                                <li class="mdc-list-item" role="menuitem">
-                                                <span class="mdc-list-item__text">Reply</span>
-                                                </li>
-                                                <li class="mdc-list-item" role="menuitem">
-                                                <span class="mdc-list-item__text">Delete</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                                <tr class="mdc-data-table__row" data-row-id="u1">
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--checkbox">
-                                        <div class="mdc-checkbox mdc-data-table__row-checkbox">
-                                            <input type="checkbox" class="mdc-checkbox__native-control" aria-labelledby="r1" />
-                                            <div class="mdc-checkbox__background">
-                                                <svg class="mdc-checkbox__checkmark" viewbox="0 0 24 24">
-                                                <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
-                                                </svg>
-                                                <div class="mdc-checkbox__mixedmark"></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="mdc-data-table__cell" id="r1">
-                                        <p class="mdc-data-table__from--name">Morgan Goddard</p>
-                                        <p class="mdc-data-table_subject">Subject: <span>Angular</span></p>
-                                    </td>
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric mdc-data-table--date">Fri, 05 August 2019</td>
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric mdc-data-table__cell-button">
-                                        <div class="mdc-chip-set">
-                                            <button class="mdc-chip my-inbox-chip unread-chip">
-                                                <span class="mdc-chip__text">Unread</span>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric cell-dots-wrapper">
-                                        <div class="mdc-data-table__cell-dots"><span></span><span></span><span></span></div>
-                                        <!-- Hidden menu -->
-                                        <div class="mdc-menu mdc-menu-surface">
-                                            <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
-                                                <li class="mdc-list-item" role="menuitem">
-                                                <span class="mdc-list-item__text">Reply</span>
-                                                </li>
-                                                <li class="mdc-list-item" role="menuitem">
-                                                <span class="mdc-list-item__text">Delete</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                                <tr class="mdc-data-table__row" data-row-id="u2">
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--checkbox">
-                                        <div class="mdc-checkbox mdc-data-table__row-checkbox">
-                                            <input type="checkbox" class="mdc-checkbox__native-control" aria-labelledby="r2" />
-                                            <div class="mdc-checkbox__background">
-                                                <svg class="mdc-checkbox__checkmark" viewbox="0 0 24 24">
-                                                <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
-                                                </svg>
-                                                <div class="mdc-checkbox__mixedmark"></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="mdc-data-table__cell" id="r2">
-                                        <p class="mdc-data-table__from--name">Morgan Goddard</p>
-                                        <p class="mdc-data-table_subject">Subject: <span>Angular</span></p>
-                                    </td>
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric mdc-data-table--date">Fri, 05 August 2019</td>
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric mdc-data-table__cell-button">
-                                        <div class="mdc-chip-set">
-                                            <button class="mdc-chip my-inbox-chip unread-chip">
-                                                <span class="mdc-chip__text">Unread</span>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric cell-dots-wrapper">
-                                        <div class="mdc-data-table__cell-dots"><span></span><span></span><span></span></div>
-                                        <!-- Hidden menu -->
-                                        <div class="mdc-menu mdc-menu-surface">
-                                            <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
-                                                <li class="mdc-list-item" role="menuitem">
-                                                <span class="mdc-list-item__text">Reply</span>
-                                                </li>
-                                                <li class="mdc-list-item" role="menuitem">
-                                                <span class="mdc-list-item__text">Delete</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                                <tr class="mdc-data-table__row" data-row-id="u3">
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--checkbox">
-                                        <div class="mdc-checkbox mdc-data-table__row-checkbox">
-                                            <input type="checkbox" class="mdc-checkbox__native-control" aria-labelledby="r3" />
-                                            <div class="mdc-checkbox__background">
-                                                <svg class="mdc-checkbox__checkmark" viewbox="0 0 24 24">
-                                                <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
-                                                </svg>
-                                                <div class="mdc-checkbox__mixedmark"></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="mdc-data-table__cell" id="r3">
-                                        <p class="mdc-data-table__from--name">Morgan Goddard</p>
-                                        <p class="mdc-data-table_subject">Subject: <span>Angular</span></p>
-                                    </td>
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric mdc-data-table--date">Fri, 05 August 2019</td>
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric mdc-data-table__cell-button">
-                                        <div class="mdc-chip-set">
-                                            <button class="mdc-chip my-inbox-chip unread-chip">
-                                                <span class="mdc-chip__text">Unread</span>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric cell-dots-wrapper">
-                                        <div class="mdc-data-table__cell-dots"><span></span><span></span><span></span></div>
-                                        <!-- Hidden menu -->
-                                        <div class="mdc-menu mdc-menu-surface">
-                                            <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
-                                                <li class="mdc-list-item" role="menuitem">
-                                                <span class="mdc-list-item__text">Reply</span>
-                                                </li>
-                                                <li class="mdc-list-item" role="menuitem">
-                                                <span class="mdc-list-item__text">Delete</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                                
-                            </tbody>
-                            <div class="pagination">
-                                <button class="pagination-btn mdc-button pagination-btn-previous">
-                                    <span class="mdc-button__label">Previous</span>
+                <!-- WORK REQUIRED  -->
+                <div class="contact--work-required">
+                    <p class="contact--info-title">work required</p>
+                    <!-- Key technologies required -->
+                    <div class="info-row info-row-skills">
+                        <label for="contact-technologies">Key technologies required</label>
+                        <div class="skills-block">
+                            <input placeholder="Type skill in here" type="text" name="contact-technologies" id="contact-technologies">
+                            <div class="skills-wrapper">
+                                <button class="mdc-chip find-alumni--one-skill">
+                                    <span class="mdc-chip__text">Javascript</span>
+                                    <i class="material-icons">highlight_off</i>
                                 </button>
-                                <div class="pagination-numbers">
-                                    <span class="pagination-numbers--item">1</span>    
-                                    <span class="pagination-numbers--item">2</span>  
-                                    <span class="pagination-numbers--item pagination-numbers--item-active">3</span>  
-                                    <span class="pagination-numbers--item">4</span>  
-                                    <span class="pagination-numbers--item">5</span>  
-                                </div>
-                                <button class="pagination-btn mdc-button pagination-btn-next">
-                                    <span class="mdc-button__label">Next</span>
+                                <button class="mdc-chip find-alumni--one-skill">
+                                    <span class="mdc-chip__text">HTML 5</span>
+                                    <i class="material-icons">highlight_off</i>
                                 </button>
-                            </div><!--end of paginaton-->
-                        </table>
-                    </div><!--end of mdc-data-table-->
-                </div><!--end of My inbox table-->
-
-            </div><!--end of dashboard--main-content(contains graphs and table)-->
-        </main>
-    </div><!--end of dashboard-top-app-bar-->
+                                <button class="mdc-chip find-alumni--one-skill">
+                                    <span class="mdc-chip__text">CSS3</span>
+                                    <i class="material-icons">highlight_off</i>
+                                </button>
+                            </div><!-- end of skills-wrapper -->
+                        </div><!-- end of skills-block -->
+                    </div><!-- end of info-row -->
+                </div><!-- end of contact--work-required -->
+            </form><!-- end of contact-page-form -->
+        </div><!--end of contact-main-->
+    </div>
 </body>
 
 </html>
