@@ -51,6 +51,74 @@ header {
   padding: 0;
 }
 
+// Chips with skills for any page(JavaScript,html5,css3 chips)
+.mdc-chip {
+  height: 25px;
+  border-radius: 13px;
+  &--one-skill {
+    padding: 0 6px 0 13px;
+    margin-bottom: 10px;
+    span {
+      color: #fff;
+      font-size: 13px;
+      top: -1px;
+      font-weight: 550;
+      position: relative;
+      margin-right: 5px;
+    }
+    i {
+      color: #fff;
+      font-size: 16px;
+      top: 0px;
+      position: relative;
+    }
+  }
+}
+/* Info row(with label and input(or textarea, or select) for any page*/
+.info-row {
+  display: flex;
+  align-items: center;
+  font-family: 'Titillium Web', sans-serif !important;
+  color: #777171;
+  margin-bottom: 19px;
+  label {
+    font-size: 15px;
+    font-weight: 400;
+    min-width: 300px;
+  }
+  input,
+  textarea {
+    width: 100%; 
+    height: 37px;
+    border-radius: 15px;
+    border: 1px solid rgba(151, 151, 151, 0.34);
+    background-color: #fff;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif !important;
+    color: #777171;
+  }
+  textarea {
+    height: 180px;
+    padding: 10px;
+  }
+  select {
+    width: 206px;
+    height: 41px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    font-family: 'Titillium Web', sans-serif !important;
+    color: #777171;
+    font-weight: 400;
+    font-size: 15px;
+    outline: none;
+    padding: 4px;
+  }
+}
+
 /* Hamburger(now is now usable!!!!!!!!!!!!!!!) */
  #nav-icon3 {
   width: 45px;
@@ -1033,19 +1101,6 @@ footer {
   &--one-skill {
     background: rgba(69, 157, 233, 0.38);
     margin-right: 16px;
-    padding: 0 6px 0 13px;
-    margin-bottom: 10px;
-    span {
-      color: #fff;
-      font-size: 13px;
-      top: -1px;
-      font-weight: 700;
-      margin-right: 5px;
-    }
-    i {
-      color: #fff;
-      font-size: 16px;
-    }
     &:active,
     &:focus,
     &:hover {
@@ -1056,6 +1111,9 @@ footer {
     }
   }
 }
+
+
+
 
 .find-alumni--search-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #343d42;
