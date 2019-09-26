@@ -14,16 +14,15 @@ class myRequests {
         this.drawer(this.state);
     }
 
-    dropDown (context) {
-        console.log(jQuery(context).parent().find('.mdc-menu')[0]);
-        new MDCMenu(jQuery(context).parent().find('.mdc-menu')[0]).open = true;
-    }
-
     drawer (state) {
         state.drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
         const topAppBar = MDCTopAppBar.attachTo(document.getElementById('app-bar'));
         topAppBar.setScrollTarget(document.getElementById('main-content'));
         topAppBar.listen('MDCTopAppBar:nav', () => state.drawer.open = !state.drawer.open);
+    }
+
+    dropDown (context) {
+        new MDCMenu(jQuery(context).parent().find('.mdc-menu')[0]).open = true;
     }
 
     changeSideBarType (context, state) {
@@ -50,28 +49,13 @@ class myRequests {
         }
     }
 
-    changeTab (context) {//context = clicked element
-        console.log(context);
-        $('.graph-tab').removeClass("graph-tab-active");
-        $(context).addClass("graph-tab-active");
-		var currentId = $('.graph-tab').index(context);
-        console.log(currentId);
-        $('.one-tab-info').css('display','none');
-        $('.one-tab-info').eq(currentId).css('display','block');
-    }
-
     init () {
         const state = this.state;
         const dropDown = this.dropDown;
         jQuery('.mdc-data-table__cell-dots').click(function () { dropDown(this) });
         const changeSideBarType = this.changeSideBarType;
         jQuery(window).resize(function () { changeSideBarType(this, state) });
-        setTimeout(() => {
-            this.initSideBar(window, state);
-        })
-
-        const changeTab = this.changeTab;
-        jQuery('.graph-tab').click(function () { changeTab(this) })
+        this.initSideBar(window, state);
     }
 }
 

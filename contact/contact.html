@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./bundle.css">
+</head>
+<body>
+    <div class="contact-page">
+        <!-- row with "previous" btn -->
+        <div class="contact-top-row">
+            <button class="pagination-btn mdc-button pagination-btn-previous">
+                <span class="mdc-button__label">Previous</span>
+            </button>
+        </div>
+
+        <!-- MAIN CONTENT OF CONTACT PAGE -->
+        <div class="contact-main">
+            <!-- LEFT BLOCK(with photo) -->
+            <div class="contact-photo-block">
+                     
+            </div><!-- end of contact-info-block -->
+
+            <!-- RIGHT BLOCK (with form) -->
+            <form class="contact-page-form">
+                <p class="form-title">
+                    <span class="form-title-bold">Request to contact</span>
+                    <span class="form-title-name">Irinia Kurkina</span>
+                </p>
+                <!-- GENERAL INFO  -->
+                <div class="contact--general-info">
+                    <p class="contact--info-title">general info</p>
+                    <div class="contact--info-wrapper">
+                        <!-- Your Name -->
+                        <p class="info-row">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" name="contact-name" id="contact-name">
+                        </p>
+
+                        <!-- Company name -->
+                        <p class="info-row">
+                            <label for="contact-company-name">Company name</label>
+                            <input type="text" name="contact-company-name" id="contact-company-name">
+                        </p>
+
+                        <!-- Country -->
+                        <p class="info-row">
+                            <label for="contact-country">Country</label>
+                            <select id="contact-country">
+                                <option value="south-africa">South Africa</option>
+                                <option value="geogria">Geogria</option>
+                                <option value="china">China</option>
+                            </select>
+                        </p>
+
+                        <!-- Company address -->
+                        <p class="info-row">
+                            <label for="contact-company-address">Company address</label>
+                            <input type="text" name="contact-company-address" id="contact-company-address">
+                        </p>
+
+                        <!-- Contact number -->
+                        <p class="info-row">
+                            <label for="contact-phone">Contact number</label>
+                            <input type="tel" name="contact-phone" id="contact-phone">
+                        </p>
+
+                        <!-- Email address-->
+                        <p class="info-row">
+                            <label for="contact-email">Email address</label>
+                            <input type="email" name="contact-email" id="contact-email">
+                        </p>
+                    </div><!-- end of contact--info-block -->
+                </div><!-- end of contact--general-info -->
+
+                <!-- WORK REQUIRED  -->
+                <div class="contact--work-required">
+                    <p class="contact--info-title">work required</p>
+                    <!-- Key technologies required -->
+                    <div class="info-row info-row-skills">
+                        <label for="contact-technologies">Key technologies required</label>
+                        <div class="skills-block">
+                            <input placeholder="Type skill in here" type="text" name="contact-technologies" id="contact-technologies">
+                            <div class="skills-wrapper">
+                                <button class="mdc-chip find-alumni--one-skill">
+                                    <span class="mdc-chip__text">Javascript</span>
+                                    <i class="material-icons">highlight_off</i>
+                                </button>
+                                <button class="mdc-chip find-alumni--one-skill">
+                                    <span class="mdc-chip__text">HTML 5</span>
+                                    <i class="material-icons">highlight_off</i>
+                                </button>
+                                <button class="mdc-chip find-alumni--one-skill">
+                                    <span class="mdc-chip__text">CSS3</span>
+                                    <i class="material-icons">highlight_off</i>
+                                </button>
+                            </div><!-- end of skills-wrapper -->
+                        </div><!-- end of skills-block -->
+                    </div><!-- end of info-row -->
+                </div><!-- end of contact--work-required -->
+            </form><!-- end of contact-page-form -->
+        </div><!--end of contact-main-->
+    </div>
+</body>
+
+</html>
