@@ -13,6 +13,7 @@ module.exports = {
         myAccountApp: ['./my-account/my-account.js'],
         dashboardApp: ['./dashboard/dashboard.js'],
         contactApp: ['./contact/contact.js'],
+        profileApp: ['./profile/profile.js'],
         stylesheets: ['./app.scss'],
         app: ['./app.js']
     },
@@ -29,6 +30,7 @@ module.exports = {
                 { from: /^\/myRequests/, to: './my-requests/my-requests.html' },
                 { from: /^\/dashboardApp/, to: './dashboard/dashboard.html' },
                 { from: /^\/contactApp/, to: './contact/contact.html' },
+                { from: /^\/profile/, to: './profile/profile.html' },
             ]
         }
    },
@@ -62,6 +64,11 @@ module.exports = {
             template: './contact/contact.html',
             filename: './contact.html',
         }),
+       new HtmlWebpackPlugin({
+           chunks: ['profileApp'],
+           template: './profile/profile.html',
+           filename: './profile.html',
+       }),
         new CopyPlugin([
             { from: './assets', to: 'assets' },
         ]),

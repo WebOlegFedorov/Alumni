@@ -20,6 +20,7 @@ $mdc-theme-on-secondary: #4ca0e9;
 @import "./my-account/my-account";
 @import "./dashboard/dashboard";
 @import "./contact/contact";
+<<<<<<< HEAD
 .mdc-drawer-scrim {
   z-index: 11;
 }
@@ -27,6 +28,9 @@ $mdc-theme-on-secondary: #4ca0e9;
 .mdc-left-drawer {
   position: fixed;
 }
+=======
+@import "./profile/profile";
+>>>>>>> 2e81c2648f5cb2a00d8653cd3159450cbde146dd
 
 .my-card-content {
   padding: 16px;
@@ -1032,7 +1036,7 @@ footer {
 --------------------------*/
 /*SEARCHBAR (index page "Find Alumni")*/
 .find-alumni {
- 
+
   &--search {
     padding: 55px 20px 80px 20px;
     background-color: rgba(91, 157, 227, 0.08);
@@ -1297,9 +1301,9 @@ footer {
   .find-alumni--candidates {
     margin-bottom: 25px;
     .one-candidate {
-      width: calc(50% - 20px);    
+      width: calc(50% - 20px);
       margin-bottom: 35px;
-    }     
+    }
     .candidate {
       &-photo {
         width: 120px;

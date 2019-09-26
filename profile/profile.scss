@@ -1,0 +1,397 @@
+.profile {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    &__header {
+        justify-content: flex-end;
+        background: #36414C;
+        align-items: center;
+        display: flex;
+        height: 70px;
+    }
+
+    &__header-button {
+        background: transparent !important;
+        color: #fff !important;
+        margin-right: 18px;
+        font-size: 11px;
+        &.blue {
+            background: #5B9DE3 !important;
+            text-transform: capitalize;
+            color: #fff !important;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 17px;
+            padding: 0 20px;
+            height: 49px;
+        }
+        &.link {
+            color: #4498E1 !important;
+        }
+    }
+
+    &__main {
+        max-width: 1249px;
+        width: 100%;
+    }
+
+    &__find {
+        justify-content: space-between;
+        margin-top: 29px;
+        display: flex;
+        button {
+            font-family: 'Titillium Web', sans-serif !important;
+            color: #5b9de3 !important;
+            border: 2px solid #f2f8fd;
+            text-transform: none;
+            border-radius: 23px;
+            letter-spacing: 0;
+            margin-top: 25px;
+            font-weight: 700;
+            font-size: 13px;
+            width: 146px;
+            height: 40px;
+        }
+    }
+
+    &__title {
+        display: flex;
+        h2 {
+            font-family: 'Titillium Web', sans-serif !important;
+            text-align: center;
+            font-weight: 500;
+            font-size: 43px;
+            color: #343d42;
+        }
+    }
+
+    &__label {
+        justify-content: center;
+        align-items: center;
+        background: #5B9DE3;
+        border-radius: 50%;
+        position: relative;
+        margin-left: 15px;
+        display: flex;
+        height: 65px;
+        width: 65px;
+        top: 5px;
+        i {
+            font-size: 36px !important;
+            color: #fff;
+        }
+    }
+
+    &__user {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 49px;
+        height: 380px;
+        display: flex;
+        &:after {
+            background: #F2F8FD;
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            content: '';
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &__user-content {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        display: flex;
+        z-index: 1;
+    }
+
+    &__user-title {
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 17px;
+        font-weight: 500;
+        color: #494949;
+    }
+
+    &__user-avatar {
+        border-radius: 50%;
+        overflow: hidden;
+        height: 167px;
+        width: 167px;
+    }
+
+    &__user-description {
+        font-family: 'Titillium Web', sans-serif;
+        text-align: center;
+        line-height: 23px;
+        max-width: 290px;
+        font-weight: 900;
+        margin-top: 12px;
+        font-size: 22px;
+        color: #4A5054;
+    }
+
+    &__small-description {
+        font-family: 'Titillium Web', sans-serif;
+        position: relative;
+        font-size: 13px;
+        color: #8B8B8B;
+        top: -5px;
+    }
+
+    &__small-content {
+        margin-bottom: 5px;
+        padding: 0 75px;
+        &.clear {
+            & > .mdc-card {
+                box-shadow: none;
+            }
+        }
+
+        &.grey {
+            .profile__card-description {
+                background: #F7F7F7;
+            }
+            .profile__card-title {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__card-container {
+        margin-top: 24px;
+        display: flex;
+        & > div {
+            width: 33.3%;
+            margin: 0 16px;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__card-title {
+        font-family: 'Titillium Web', sans-serif;
+        padding-left: 18px;
+        position: relative;
+        margin-top: 21px;
+        margin-left: 6px;
+        font-weight: 900;
+        font-size: 21px;
+        color: #4A5054;
+        &:before {
+            height: calc(100% - 17px);
+            background: #459DE9;
+            position: absolute;
+            content: '';
+            width: 3px;
+            top: 9px;
+            left: 0;
+        }
+    }
+
+    &__card-description {
+        font-family: 'Titillium Web', sans-serif;
+        padding: 0 23px 34px;
+        color: #9B9B9B;
+        p {
+            line-height: 27px;
+            margin-top: 22px;
+        }
+    }
+
+    &__prev {
+        i {
+            position: absolute;
+            left: 12px;
+        }
+    }
+
+    &__next {
+        i {
+            position: absolute;
+            right: 12px;
+        }
+    }
+
+    &__in-card-logo {
+        width: 60px;
+        i {
+            font-size: 48px;
+            color: #459DE9;
+        }
+    }
+
+    &__in-card-content {
+        width: calc(100% - 60px);
+    }
+
+    &__in-card-title {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 900;
+        font-size: 15px;
+        color: #459DE9;
+        &.grey {
+            color: #A1A1A1;
+        }
+    }
+
+    &__in-card-subtitle {
+        font-family: 'Titillium Web', sans-serif;
+        line-height: 25px;
+        margin-top: 5px;
+        font-size: 14px;
+        color: #459DE9;
+    }
+
+    &__in-card-description {
+        font-family: 'Titillium Web', sans-serif;
+        margin-top: 33px;
+    }
+
+    &__in-card-point {
+        padding-left: 18px;
+        position: relative;
+        font-size: 14px;
+        margin-top: 4px;
+        color: #9B9B9B;
+        display: flex;
+        &:before {
+            background: #9B9B9B;
+            position: absolute;
+            margin-top: 10px;
+            display: block;
+            height: 3px;
+            content: '';
+            width: 3px;
+            left: 0;
+        }
+    }
+
+    .mdc-card {
+        &.in {
+            box-shadow: 0 15px 30px rgba(25, 71, 128, 0.2) !important;
+            flex-direction: row;
+            padding: 38px 24px;
+            display: flex;
+        }
+    }
+
+    &__card-partials {
+        display: flex;
+    }
+
+    &__card-left-part {
+        padding-top: 42px;
+        width: 325px;
+        div {
+            margin-bottom: 5px;
+            font-size: 15px;
+            span {
+                font-weight: 900;
+                color: #459DE9;
+            }
+        }
+    }
+
+    &__card-right-part {
+        padding-top: 42px;
+        width: calc(100% - 325px);
+    }
+
+    &__card-skills-container {
+        display: flex;
+        width: 100%;
+    }
+
+    &__card-skills-block {
+        width: 250px;
+    }
+
+    &__card-skills-list {
+        padding-left: 15px;
+    }
+
+    &__feature {
+        box-shadow: 0 15px 30px rgba(25, 71, 128, 0.2);
+        padding: 38px 60px;
+        display: flex;
+    }
+
+    &__feature-banner {
+        width: 360px;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__feature-description {
+        font-family: 'Titillium Web', sans-serif;
+        width: calc(100% - 360px);
+        line-height: 27px;
+        padding: 0 45px;
+        color: #9B9B9B;
+    }
+
+    &__feature-technologies {
+        display: flex;
+    }
+
+    &__tech {
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        height: 125px;
+        display: flex;
+        width: 125px;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.border-top {
+    border-top: 2px solid #F8F8F8;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #F8F8F8;
+}
