@@ -7,6 +7,25 @@
 
 /*Styles for Contact*/
 .contact {
+    &--send-btn-row {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &--one-skill {
+        span {
+            top: 0 !important;
+        }
+        background-color: rgba(155, 155, 155, 0.4);
+        margin-right: 8px;
+        &:active,
+        &:focus,
+        &:hover {
+            &::before,
+            &::after {
+                background-color: rgba(155, 155, 155, 0.65);
+            }
+        }
+    }
     &-page {
         padding: 55px 20px;
         max-width: 1200px;
@@ -21,7 +40,6 @@
         height: 200px;
         background: #ddd;
         margin-right: 40px;
-        padding-left: 20px;
     }
     &--info-wrapper {
         padding-left: 21px;
@@ -60,18 +78,69 @@
         line-height: 14px;
         margin-bottom: 30px;
     }
+ 
 }
-.info-row-skills {
+.contact-page .info-row {
+    label {
+        min-width: 210px;
+    }
+}
+.contact--work-required .skills-block {
+    width: 100%;
+}
+.contact--work-required .info-row-descrip span {
+    width: 125px;
+    display: block;
+}
+.contact--work-required .info-row-skills {
     align-items: flex-start;
 }
 #contact-technologies {
     margin-bottom: 10px;
 }
+.contact--work-required .info-row-descrip {
+    align-items: flex-start;
+}
 /*Media for Contact page */
 @media screen and (max-width: 1024px) {
-
+    .contact {
+        &-main {
+            flex-direction: column;
+        }
+        &-photo-block {
+            margin-right: 0;
+        }
+        &-top-row {
+            margin-bottom: 30px;
+        }
+    }
 }
-
+@media screen and (max-width: 700px) {
+    .contact-page .info-row label {
+        min-width: 190px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .contact-page-form {
+        padding-left: 0;
+        .info-row {
+            align-items: flex-start;
+            flex-direction: column;
+            label {
+                margin-bottom: 6px;
+            }
+            select {
+                width: 100%;
+            }
+            &-descrip span {
+                width: 100%;
+            }
+        }
+    }
+    .contact--info-wrapper {
+        padding-left: 0;
+    }
+}
 
 
 

@@ -80,27 +80,38 @@
                 <!-- WORK REQUIRED  -->
                 <div class="contact--work-required">
                     <p class="contact--info-title">work required</p>
+
                     <!-- Key technologies required -->
                     <div class="info-row info-row-skills">
                         <label for="contact-technologies">Key technologies required</label>
                         <div class="skills-block">
                             <input placeholder="Type skill in here" type="text" name="contact-technologies" id="contact-technologies">
                             <div class="skills-wrapper">
-                                <button class="mdc-chip find-alumni--one-skill">
+                                <button class="mdc-chip mdc-chip--one-skill contact--one-skill">
                                     <span class="mdc-chip__text">Javascript</span>
                                     <i class="material-icons">highlight_off</i>
                                 </button>
-                                <button class="mdc-chip find-alumni--one-skill">
+                                <button class="mdc-chip mdc-chip--one-skill contact--one-skill">
                                     <span class="mdc-chip__text">HTML 5</span>
                                     <i class="material-icons">highlight_off</i>
                                 </button>
-                                <button class="mdc-chip find-alumni--one-skill">
+                                <button class="mdc-chip mdc-chip--one-skill contact--one-skill">
                                     <span class="mdc-chip__text">CSS3</span>
                                     <i class="material-icons">highlight_off</i>
                                 </button>
                             </div><!-- end of skills-wrapper -->
                         </div><!-- end of skills-block -->
                     </div><!-- end of info-row -->
+
+                    <!-- Brief description of the work / job.  -->
+                    <p class="info-row info-row-descrip">
+                        <label for="work-descrip"><span>Brief description of the work / job.</span></label>
+                        <textarea name="work-descrip" id="work-descrip"></textarea>
+                    </p>
+
+                    <div class="contact--send-btn-row">
+                        <div class="mdc-button blue-border-btn">Send Enquiry </div>
+                    </div>
                 </div><!-- end of contact--work-required -->
             </form><!-- end of contact-page-form -->
         </div><!--end of contact-main-->
