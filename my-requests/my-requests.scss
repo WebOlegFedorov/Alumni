@@ -4,9 +4,7 @@
 /*Styles for My request page*/
 .request-table {
     display: flex;
-
     box-shadow: 0 15px 30px rgba(25, 71, 128, 0.2);
-    max-width: 1300px;
     width: 100%;
     padding: 25px;
     .pagination {
@@ -96,34 +94,24 @@
     }
 }
 
-
-
-
-
-/*Media for page My Requests*/
-@media screen and (max-width: 1024px) {
-
-    // .main-and-sidebar-wrapper {
-    //     .mdc-data-table-inbox {
-    //         padding: 10px;
-    //     }
-    // }
-    // .request-table-title {
-    //     line-height: 35px;
-    // }
-    // .sidebar-page-header {
-    //     z-index: 4;
-    // }
-}
+/*Media for My Requests page*/
 @media screen and (max-width: 700px) {
     .mdc-data-table--date,
     .header-cell--date {
         display: none;
     }
+    .mdc-data-table__table .mdc-menu {
+        min-width: 75px;
+    }
+    .mdc-data-table__table .mdc-list-item {
+        height: 30px;
+        padding: 0 8px;
+    }
+   
 }
 @media screen and (max-width: 530px) {
-    .mdc-data-table__cell,
-    .mdc-data-table__header-cell {
+    .my-inbox-table .mdc-data-table__cell,
+    .my-inbox-table .mdc-data-table__header-cell {
         padding-right: 5px;
         padding-left: 5px;
     }
@@ -140,6 +128,9 @@
     }
 }
 @media screen and (max-width: 400px) {
+    .mdc-data-table__table .mdc-menu {
+        min-width: 60px;
+    }
     .mdc-data-table__cell {
         font-size: 14px !important;
     }
@@ -148,8 +139,8 @@
         height: 23px;
         font-size: 12px;
     }
-    .mdc-data-table__cell,
-    .mdc-data-table__header-cell {
+    .my-inbox-table .mdc-data-table__cell,
+    .my-inbox-table .mdc-data-table__header-cell {
         padding-right: 3px;
         padding-left: 3px;
     }

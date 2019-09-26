@@ -20,7 +20,13 @@ $mdc-theme-on-secondary: #4ca0e9;
 @import "./my-account/my-account";
 @import "./dashboard/dashboard";
 @import "./contact/contact";
-
+.mdc-drawer-scrim {
+  z-index: 11;
+}
+/*for all pages with left drawer(sidebar menu)*/
+.mdc-left-drawer {
+  position: fixed;
+}
 
 .my-card-content {
   padding: 16px;
@@ -275,7 +281,7 @@ padding: 10px 30px;
   color: #343d42;
   padding: 10px 20px;
   box-sizing: border-box;
-  z-index: 7;
+  z-index: 10;
   p {
     margin: 0;
   }
@@ -381,6 +387,7 @@ padding: 10px 30px;
   margin-top: 92px;
   box-sizing: border-box;
   min-height: calc(100vh - 92px);
+  margin-left: 170px;
   .mdc-list-item__text {
     color: #959595;
     font-size: 14px;
@@ -478,7 +485,7 @@ padding: 10px 30px;
     padding: 10px 10px;
     max-height: 60px;
     min-height: 60px;
-    z-index: 5;
+    z-index: 10;
     .header-logout .mdc-button {
       padding: 18px 22px;
     }
@@ -1258,6 +1265,9 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+  .dashboard-main {
+    margin-left: 0;
+  }
   .find-alumni--search {
     padding: 25px 20px 30px 20px;
     margin-bottom: 35px;
