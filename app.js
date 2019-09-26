@@ -16,7 +16,6 @@ window.onload = function() {
     /*Dropdown menu*/
     const menu = new MDCMenu(document.querySelector('.mdc-menu'));
     $('#header-menu-button').click(function() {
-        console.log("asd");
         $('#header-dropdown-menu').toggleClass('mdc-menu-surface--open');
     })
 

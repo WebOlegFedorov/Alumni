@@ -37,8 +37,6 @@
     }
     &-photo-block {
         min-width: 390px;
-        height: 200px;
-        background: #ddd;
         margin-right: 40px;
     }
     &--info-wrapper {
@@ -79,7 +77,30 @@
         margin-bottom: 30px;
     }
 }
-
+.contact-photo-block {
+    .profile__user {
+        margin-top: 0;
+        &-location {
+            display: flex;
+            align-items: center;
+            color: #b2b2b2;
+            font-family: 'Titillium Web', sans-serif !important;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: -7px;
+            margin-bottom: 10px;
+            .material-icons {
+                font-size: 20px;
+            }
+        }
+        &-title {
+            margin-bottom: 3px;
+        }
+    }
+    .profile__small-description {
+        top: -2px;
+    }
+}
 .contact-page .info-row {
     label {
         min-width: 210px;
