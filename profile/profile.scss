@@ -7,14 +7,27 @@
         background: #36414C;
         align-items: center;
         display: flex;
-        padding: 11px;
+        padding: 11px 25px;
+        box-sizing: border-box;
+        &-menu {
+            display: flex;
+            margin-right: 58px;
+            .mdc-list-item__text {
+                color: #959595;
+                font-size: 14px;
+                font-family: 'Titillium Web', sans-serif !important;
+            }
+        }
     }
-
+    
     &__header-button {
         background: transparent !important;
         color: #fff !important;
-        margin-right: 18px;
-        font-size: 11px;
+        font-size: 12px;
+        font-family: 'Titillium Web', sans-serif !important;
+        &:not(:last-child) {
+            margin-right: 18px;
+        }
         &.blue {
             background: #5B9DE3 !important;
             text-transform: capitalize;
@@ -22,11 +35,14 @@
             border-radius: 25px;
             font-weight: 600;
             font-size: 17px;
-            padding: 0 20px;
+            padding: 0 33px;
             height: 49px;
+            letter-spacing: 0;
         }
         &.link {
             color: #4498E1 !important;
+            font-weight: 600;
+            font-size: 12.5px;
         }
     }
 
@@ -36,9 +52,11 @@
     }
 
     &__find {
-        justify-content: space-between;
-        margin-top: 29px;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        padding: 0 20px;
         button {
             font-family: 'Titillium Web', sans-serif !important;
             color: #5b9de3 !important;
@@ -46,7 +64,6 @@
             text-transform: none;
             border-radius: 23px;
             letter-spacing: 0;
-            margin-top: 25px;
             font-weight: 700;
             font-size: 13px;
             width: 146px;
@@ -56,6 +73,7 @@
 
     &__title {
         display: flex;
+        align-items: center;
         h2 {
             font-family: 'Titillium Web', sans-serif !important;
             text-align: center;
@@ -70,12 +88,10 @@
         align-items: center;
         background: #5B9DE3;
         border-radius: 50%;
-        position: relative;
         margin-left: 15px;
         display: flex;
         height: 65px;
         width: 65px;
-        top: 5px;
         i {
             font-size: 36px !important;
             color: #fff;
@@ -104,6 +120,11 @@
         position: relative;
         .mdc-menu {
             margin-top: 37px;
+            background: #36414C;
+            border: 1px solid #8e8e8e;
+            .mdc-list-item__text {
+                color: #fff;
+            }
         }
     }
 
@@ -401,4 +422,99 @@
 
 .border-bottom {
     border-bottom: 2px solid #F8F8F8;
+}
+@media screen and (max-width: 1350px) {
+    .profile__feature {
+        margin: 0 20px;
+    }
+
+}
+@media screen and (max-width: 1300px) {
+    .profile__small-content {
+        padding: 30px 40px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .profile__small-content {
+        padding: 20px;
+    }
+    .profile__feature {
+        padding: 20px;
+        &-description {
+            padding: 0 25px;
+        }
+    }
+    .profile__feature-banner {
+        min-width: 250px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .profile__in-card-logo {
+        width: 47px;
+        i {
+            font-size: 35px;
+        }
+    }
+    .profile .mdc-card.in {
+        padding: 25px 13px;
+
+    }
+    .profile__in-card-description {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .profile__card-container {
+        flex-direction: column;
+        &> div {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .profile__in-card-logo {
+        width: 65px;
+        i {
+            font-size: 45px;
+        }
+    }
+    .profile__card-partials {
+        flex-direction: column;
+    }
+    .profile__card-right-part {
+        width: 100%;
+        padding-top: 22px;
+    }
+    .profile__card-left-part {
+        padding-top: 22px;
+    }
+    .profile__card-description {
+        padding: 0 23px 20px;
+    }
+    .profile__card-skills-block:not(:last-child) {
+        margin-right: 20px;
+    }
+    .profile__label {
+        height: 45px;
+        width: 45px;
+        i {
+            font-size: 25px !important;
+        }
+    }
+    .profile__title h2 {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .profile__card-skills-container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .profile__card-skills-block {
+        margin-right: 10px;
+        width: initial;
+    }
+}
+@media screen and (max-width: 650px) {
+
 }

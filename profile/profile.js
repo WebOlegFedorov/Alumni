@@ -14,10 +14,8 @@ class Profile {
 
     openMenu () {
         const menu = new MDCMenu(document.querySelector('.mdc-menu'));
-        menu.open = true;
+        menu.open = !menu.open;
     }
-
-
 
     init () {
         this.buttonAnimation();
