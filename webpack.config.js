@@ -14,6 +14,7 @@ module.exports = {
         dashboardApp: ['./dashboard/dashboard.js'],
         contactApp: ['./contact/contact.js'],
         profileApp: ['./profile/profile.js'],
+        cvApp: ['./cv/cv.js'],
         stylesheets: ['./app.scss'],
         app: ['./app.js']
     },
@@ -30,7 +31,8 @@ module.exports = {
                 { from: /^\/myRequests/, to: './my-requests/my-requests.html' },
                 { from: /^\/dashboardApp/, to: './dashboard/dashboard.html' },
                 { from: /^\/contactApp/, to: './contact/contact.html' },
-                { from: /^\/profile/, to: './profile/profile.html' },
+                { from: /^\/profileApp/, to: './profile/profile.html' },
+                { from: /^\/cvApp/, to: './cv/cv.html' },
             ]
         }
    },
@@ -68,6 +70,12 @@ module.exports = {
            chunks: ['profileApp'],
            template: './profile/profile.html',
            filename: './profile.html',
+       }),
+       new HtmlWebpackPlugin({
+           inject: true,
+           chunks: ['cvApp'],
+           template: './cv/cv.html',
+           filename: './cv.html',
        }),
         new CopyPlugin([
             { from: './assets', to: 'assets' },

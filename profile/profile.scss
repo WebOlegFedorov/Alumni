@@ -7,7 +7,7 @@
         background: #36414C;
         align-items: center;
         display: flex;
-        height: 70px;
+        padding: 11px;
     }
 
     &__header-button {
@@ -97,6 +97,13 @@
             content: '';
             left: 0;
             top: 0;
+        }
+    }
+
+    &__menu-container {
+        position: relative;
+        .mdc-menu {
+            margin-top: 37px;
         }
     }
 

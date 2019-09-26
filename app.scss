@@ -336,10 +336,16 @@ padding: 10px 30px;
     margin-right: 6px;
   }
   &--number {
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 3px;
     font-size: 12px;
+    display: flex;
     color: #fff;
+    height: 48%;
+    width: 65%;
+    right: 0;
+    top: 0;
   }
   &--text {
     font-weight: 600;
