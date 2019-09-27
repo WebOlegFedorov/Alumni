@@ -7,11 +7,60 @@ import { MDCTextField } from '@material/textfield';
 
 
 window.onload = function() {
+
+    var state = {
+        fixedSideBar: true,
+        drawer: null
+    };
     
     if ($('div').hasClass('mdc-chip-set')) {
         const chipSetEl = document.querySelector('.mdc-chip-set');
         const chipSet = new MDCChipSet(chipSetEl);
     }
+
+
+    function drawer (state) {
+        state.drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+        const topAppBar = MDCTopAppBar.attachTo(document.getElementById('app-bar'));
+        topAppBar.setScrollTarget(document.getElementById('main-content'));
+        topAppBar.listen('MDCTopAppBar:nav', () => state.drawer.open = !state.drawer.open);
+    }
+    drawer(state);
+
+    function openMenu () {
+        const menu = new MDCMenu(document.querySelector('.mdc-menu'));
+        menu.open = !menu.open;
+    }
+
+    jQuery('.open-submenu').click(() => openMenu());
+
+    function changeSideBarType (context, state) {
+        if (context.innerWidth < 1024 && state.fixedSideBar) {
+            console.log('hew1');
+            state.fixedSideBar = false;
+            jQuery('.mdc-drawer').addClass('mdc-drawer--modal');
+        }
+
+        if (context.innerWidth > 1024 && !state.fixedSideBar) {
+            state.drawer.open = false;
+            state.fixedSideBar = true;
+            jQuery('.mdc-drawer').removeClass('mdc-drawer--modal');
+        }
+    }
+
+    jQuery(window).resize(function () { changeSideBarType(this, state) });
+
+    function initSideBar (context, state) {
+        if (context.innerWidth < 1024) {
+            state.fixedSideBar = false;
+            jQuery('.mdc-drawer').addClass('mdc-drawer--modal');
+        } else {
+            state.fixedSideBar = true;
+            jQuery('.mdc-drawer').removeClass('mdc-drawer--modal');
+        }
+    }
+
+    initSideBar(window, state);
 
     /*Dropdown menu*/
     const menu = new MDCMenu(document.querySelector('.mdc-menu'));
