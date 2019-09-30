@@ -35,7 +35,7 @@ This is one of 2 types of drawers om the website.*/
   background: #36414c;
   &--main-content {
     padding-top: 70px;
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
   }
   .mdc-list {
     display: flex;
@@ -545,6 +545,9 @@ padding: 10px 30px;
       margin-right: 20px;
     }
   }
+  .universal-drawer--main-content {
+    padding-top: 60px;
+  }
 }
 @media screen and (max-width: 700px) {
   .sidebar-page-header .material-icons {
@@ -868,6 +871,7 @@ footer {
   font-weight: 600;
   option {
     background: #455463;
+    width: 200px;
   }
 
 }
