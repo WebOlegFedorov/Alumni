@@ -136,9 +136,13 @@
         }
         &-photo-block {
             margin-right: 0;
+            min-width: initial;
         }
         &-top-row {
             margin-bottom: 30px;
+        }
+        &-page {
+            padding: 20px 20px 0px 20px;
         }
     }
 }

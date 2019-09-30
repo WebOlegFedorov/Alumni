@@ -4,11 +4,11 @@
     display: flex;
     &__header {
         justify-content: flex-end;
-        background: #36414C;
         align-items: center;
         display: flex;
         padding: 11px 25px;
         box-sizing: border-box;
+        background: #36414c !important;
         &-menu {
             display: flex;
             margin-right: 58px;
@@ -47,8 +47,11 @@
     }
 
     &__main {
-        max-width: 1249px;
+        max-width: 1250px;
         width: 100%;
+        margin: auto;
+        padding: 0 40px;
+        box-sizing: border-box;
     }
 
     &__find {
@@ -194,6 +197,8 @@
         & > div {
             width: 33.3%;
             margin: 0 16px;
+            padding: 30px 20px;
+            box-shadow: 0 15px 30px rgba(25, 71, 128, 0.2);
             &:first-child {
                 margin-left: 0;
             }
@@ -232,7 +237,11 @@
             margin-top: 22px;
         }
     }
+    &-card--education {
+        display: flex;
+        flex-direction: row;
 
+    }
     &__prev {
         i {
             position: absolute;
@@ -249,6 +258,7 @@
 
     &__in-card-logo {
         width: 60px;
+        margin-right: 10px;
         i {
             font-size: 48px;
             color: #459DE9;
@@ -364,6 +374,7 @@
         line-height: 27px;
         padding: 0 45px;
         color: #9B9B9B;
+        box-sizing: border-box;
     }
 
     &__feature-technologies {
@@ -373,13 +384,14 @@
     &__tech {
         justify-content: center;
         align-items: center;
-        margin-left: 10px;
-        height: 125px;
         display: flex;
         width: 125px;
         img {
             height: 100%;
             width: 100%;
+        }
+        &:not(:first-child) {
+            margin-left: 10px;
         }
     }
 }
@@ -449,13 +461,16 @@
 }
 @media screen and (max-width: 1350px) {
     .profile__feature {
-        margin: 0 20px;
+        margin: 30px 20px 0 30px;
     }
-
 }
 @media screen and (max-width: 1300px) {
     .profile__small-content {
         padding: 30px 40px;
+    }
+    .profile__small-content--history,
+    .profile__small-content-skills {
+        margin-top: 0;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -464,27 +479,39 @@
     }
     .profile__feature {
         padding: 20px;
+        display: block;
+        margin-bottom: 25px;
         &-description {
             padding: 0 25px;
+            width: 100%;
+        }
+        &-banner {
+            width: 280px;
+            height: auto;
+            float: left;
+            margin-right: 20px;
         }
     }
-    .profile__feature-banner {
-        min-width: 250px;
+    .profile__main {
+        padding: 0;
     }
 }
 @media screen and (max-width: 900px) {
     .profile__in-card-logo {
-        width: 47px;
+        width: 40px;
         i {
-            font-size: 35px;
+            font-size: 37px;
         }
+    }
+    .profile__in-card-description {
+        margin-top: 15px;
     }
     .profile .mdc-card.in {
         padding: 25px 13px;
 
     }
-    .profile__in-card-description {
-        margin-top: 15px;
+    .profile__card-container > div {
+        padding: 20px 10px;
     }
 }
 @media screen and (max-width: 780px) {
@@ -494,29 +521,27 @@
             width: 100%;
             margin: 0;
             margin-bottom: 20px;
+            padding: 30px 20px;
         }
     }
-    .profile__in-card-logo {
-        width: 65px;
-        i {
-            font-size: 45px;
+
+    .profile__card {
+        &-partials {
+            flex-direction: column;
         }
-    }
-    .profile__card-partials {
-        flex-direction: column;
-    }
-    .profile__card-right-part {
-        width: 100%;
-        padding-top: 22px;
-    }
-    .profile__card-left-part {
-        padding-top: 22px;
-    }
-    .profile__card-description {
-        padding: 0 23px 20px;
-    }
-    .profile__card-skills-block:not(:last-child) {
-        margin-right: 20px;
+        &-right-part {
+            width: 100%;
+            padding-top: 22px;
+        }
+        &-left-part {
+            padding-top: 22px;
+        }
+        &-description {
+            padding: 0 23px 20px;
+        }
+        &-skills-block:not(:last-child) {
+            margin-right: 20px;
+        }
     }
     .profile__label {
         height: 45px;
@@ -525,20 +550,100 @@
             font-size: 25px !important;
         }
     }
+    .profile__in-card-logo {
+        width: 65px;
+        i {
+            font-size: 45px;
+        }
+    }
     .profile__title h2 {
         font-size: 35px;
     }
 }
 @media screen and (max-width: 700px) {
-    .profile__card-skills-container {
+    .profile__card-skills {
+        &-container {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        &-block {
+            margin-right: 10px;
+            width: initial;
+        }
+    }
+    .profile__feature {
+        &-banner {
+            float: none;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        &-description {
+            padding: 0 0px;
+        }
+        &-technologies {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+    .profile__tech {
+        width: 80px;
+        margin-bottom: 10px;
+        &:not(:first-child) {
+            margin-left: 0px; 
+        }
+    }
+    
+    .profile__find {
         flex-wrap: wrap;
-        justify-content: space-evenly;
     }
-    .profile__card-skills-block {
-        margin-right: 10px;
-        width: initial;
+    .profile__title {
+        display: flex;
+        width: 100%;
+        order: 5;
+        justify-content: center;
+        margin-top: 25px;
+    }
+   
+}
+@media screen and (max-width: 450px) {
+    .profile__find button {
+        width: 100px;
+    }
+    .profile__next i {
+        right: 0px;
+    }
+    .profile__prev i {
+        left: 0px;
+    }
+    .profile__title h2 {
+        font-size: 30px;
+    }
+    .profile__label {
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        i {
+            font-size: 17px !important;
+        }
     }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 400px) {
+    .profile__feature-banner {
+        width: 100%;
+    }
+}
 
+
+/* HEIGHT MEDIA for Profile page */
+@media screen and (max-height: 460px) {
+    
+    .universal-drawer {
+        .mdc-list-item {
+            padding: 6px 20px !important;
+            &.mdc-list-subitem {
+                padding: 6px 40px !important;
+            }
+        }
+    }
 }
+

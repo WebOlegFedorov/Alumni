@@ -9,123 +9,175 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./bundle.css">
 </head>
-<body>
-    <div class="contact-page">
-        <!-- row with "previous" btn -->
-        <div class="contact-top-row">
-            <button class="pagination-btn mdc-button pagination-btn-previous">
-                <span class="mdc-button__label">Previous</span>
-            </button>
-        </div>
+<body class="sidebar-page-body">
 
-        <!-- MAIN CONTENT OF CONTACT PAGE -->
-        <div class="contact-main">
-            <!-- LEFT BLOCK(with photo) -->
-            <div class="contact-photo-block">
-                <div class="profile__user">
-                    <div class="profile__user-content">
-                        <h2 class="profile__user-title">Irina Kurkina</h2>
-                        <p class="profile__user-location"><i class="material-icons">room</i>Ukraine, Kharkov</p>
-                        <div class="profile__user-avatar">
-                            <img src="../assets/images/candidate-photo.png" alt="avatar">
-                        </div>
-                        <h3 class="profile__user-description">Mid / Senior Angular Developer</h3>
-                        <span class="profile__small-description">6+ years experience</span>
-                    </div>
+    <!-- Header black menu(hidden if sreen size is less then 1024px) -->
+    <header class="mdc-top-app-bar app-bar sidebar-page-header profile__header" id="app-bar">
+        <!-- Humburger icon -->
+        <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+        <div class="profile__header-menu universal__header-menu">
+            <button class="profile__header-button mdc-button">Home</button>
+            <button class="profile__header-button mdc-button">Why us</button>
+            <div class="profile__menu-container">
+                <button class="profile__header-button mdc-button open-submenu">
+                    Courses
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </button>
+                <div class="mdc-menu mdc-menu-surface">
+                    <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+                        <li class="mdc-list-item" role="menuitem">
+                            <span class="mdc-list-item__text">A Menu Item</span>
+                        </li>
+                        <li class="mdc-list-item" role="menuitem">
+                            <span class="mdc-list-item__text">Another Menu Item</span>
+                        </li>
+                    </ul>
                 </div>
-            </div><!-- end of contact-info-block -->
+            </div>
+            <button class="profile__header-button mdc-button">Location</button>
+            <button class="profile__header-button mdc-button">Contact us</button>
+            <button class="profile__header-button mdc-button link">Alumni</button>
+        </div>
+        <button class="profile__header-button mdc-button blue universal__header-btn">Enrol now</button>
+    </header>
 
-            <!-- RIGHT BLOCK (with form) -->
-            <form class="contact-page-form">
-                <p class="form-title">
-                    <span class="form-title-bold">Request to contact</span>
-                    <span class="form-title-name">Irinia Kurkina</span>
-                </p>
-                <!-- GENERAL INFO  -->
-                <div class="contact--general-info">
-                    <p class="contact--info-title">general info</p>
-                    <div class="contact--info-wrapper">
-                        <!-- Your Name -->
-                        <p class="info-row">
-                            <label for="contact-name">Your Name</label>
-                            <input type="text" name="contact-name" id="contact-name">
+    <!-- Menu wich becomes visible if screen size is less then 1024px. Menu appears after click on humburger -->
+    <aside class="mdc-drawer mdc-drawer--modal universal-drawer">
+        <div class="mdc-drawer__content">
+            <nav class="mdc-list ">
+                <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">Home</a>
+                <a class="mdc-list-item href="#">Why us</a>
+                <a class="mdc-list-item href="#">Courses</a>
+                <a class="mdc-list-item mdc-list-subitem" href="#">Course 1</a>
+                <a class="mdc-list-item mdc-list-subitem" href="#">Course 2</a>
+                <a class="mdc-list-item href="#">Location</a>
+                <a class="mdc-list-item href="#">Contact us</a>
+                <a class="mdc-list-item href="#">Alumni</a>
+            </nav>
+        </div><!--end of mdc-drawer__content -->
+    </aside>
+    <div class="mdc-drawer-scrim"></div>
+  
+    <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+        <main class="main-content universal-drawer--main-content" id="main-content">
+            <div class="contact-page">
+                <!-- row with "previous" btn -->
+                <div class="contact-top-row">
+                    <button class="pagination-btn mdc-button pagination-btn-previous">
+                        <span class="mdc-button__label">Previous</span>
+                    </button>
+                </div>
+        
+                <!-- MAIN CONTENT OF CONTACT PAGE -->
+                <div class="contact-main">
+                    <!-- LEFT BLOCK(with photo) -->
+                    <div class="contact-photo-block">
+                        <div class="profile__user">
+                            <div class="profile__user-content">
+                                <h2 class="profile__user-title">Irina Kurkina</h2>
+                                <p class="profile__user-location"><i class="material-icons">room</i>Ukraine, Kharkov</p>
+                                <div class="profile__user-avatar">
+                                    <img src="../assets/images/candidate-photo.png" alt="avatar">
+                                </div>
+                                <h3 class="profile__user-description">Mid / Senior Angular Developer</h3>
+                                <span class="profile__small-description">6+ years experience</span>
+                            </div>
+                        </div>
+                    </div><!-- end of contact-info-block -->
+        
+                    <!-- RIGHT BLOCK (with form) -->
+                    <form class="contact-page-form">
+                        <p class="form-title">
+                            <span class="form-title-bold">Request to contact</span>
+                            <span class="form-title-name">Irinia Kurkina</span>
                         </p>
-
-                        <!-- Company name -->
-                        <p class="info-row">
-                            <label for="contact-company-name">Company name</label>
-                            <input type="text" name="contact-company-name" id="contact-company-name">
-                        </p>
-
-                        <!-- Country -->
-                        <p class="info-row">
-                            <label for="contact-country">Country</label>
-                            <select id="contact-country">
-                                <option value="south-africa">South Africa</option>
-                                <option value="geogria">Geogria</option>
-                                <option value="china">China</option>
-                            </select>
-                        </p>
-
-                        <!-- Company address -->
-                        <p class="info-row">
-                            <label for="contact-company-address">Company address</label>
-                            <input type="text" name="contact-company-address" id="contact-company-address">
-                        </p>
-
-                        <!-- Contact number -->
-                        <p class="info-row">
-                            <label for="contact-phone">Contact number</label>
-                            <input type="tel" name="contact-phone" id="contact-phone">
-                        </p>
-
-                        <!-- Email address-->
-                        <p class="info-row">
-                            <label for="contact-email">Email address</label>
-                            <input type="email" name="contact-email" id="contact-email">
-                        </p>
-                    </div><!-- end of contact--info-block -->
-                </div><!-- end of contact--general-info -->
-
-                <!-- WORK REQUIRED  -->
-                <div class="contact--work-required">
-                    <p class="contact--info-title">work required</p>
-
-                    <!-- Key technologies required -->
-                    <div class="info-row info-row-skills">
-                        <label for="contact-technologies">Key technologies required</label>
-                        <div class="skills-block">
-                            <input placeholder="Type skill in here" type="text" name="contact-technologies" id="contact-technologies">
-                            <div class="skills-wrapper">
-                                <button class="mdc-chip mdc-chip--one-skill contact--one-skill">
-                                    <span class="mdc-chip__text">Javascript</span>
-                                    <i class="material-icons">highlight_off</i>
-                                </button>
-                                <button class="mdc-chip mdc-chip--one-skill contact--one-skill">
-                                    <span class="mdc-chip__text">HTML 5</span>
-                                    <i class="material-icons">highlight_off</i>
-                                </button>
-                                <button class="mdc-chip mdc-chip--one-skill contact--one-skill">
-                                    <span class="mdc-chip__text">CSS3</span>
-                                    <i class="material-icons">highlight_off</i>
-                                </button>
-                            </div><!-- end of skills-wrapper -->
-                        </div><!-- end of skills-block -->
-                    </div><!-- end of info-row -->
-
-                    <!-- Brief description of the work / job.  -->
-                    <p class="info-row info-row-descrip">
-                        <label for="work-descrip"><span>Brief description of the work / job.</span></label>
-                        <textarea name="work-descrip" id="work-descrip"></textarea>
-                    </p>
-
-                    <div class="contact--send-btn-row">
-                        <div class="mdc-button blue-border-btn">Send Enquiry </div>
-                    </div>
-                </div><!-- end of contact--work-required -->
-            </form><!-- end of contact-page-form -->
-        </div><!--end of contact-main-->
-    </div>
+                        <!-- GENERAL INFO  -->
+                        <div class="contact--general-info">
+                            <p class="contact--info-title">general info</p>
+                            <div class="contact--info-wrapper">
+                                <!-- Your Name -->
+                                <p class="info-row">
+                                    <label for="contact-name">Your Name</label>
+                                    <input type="text" name="contact-name" id="contact-name">
+                                </p>
+        
+                                <!-- Company name -->
+                                <p class="info-row">
+                                    <label for="contact-company-name">Company name</label>
+                                    <input type="text" name="contact-company-name" id="contact-company-name">
+                                </p>
+        
+                                <!-- Country -->
+                                <p class="info-row">
+                                    <label for="contact-country">Country</label>
+                                    <select id="contact-country">
+                                        <option value="south-africa">South Africa</option>
+                                        <option value="geogria">Geogria</option>
+                                        <option value="china">China</option>
+                                    </select>
+                                </p>
+        
+                                <!-- Company address -->
+                                <p class="info-row">
+                                    <label for="contact-company-address">Company address</label>
+                                    <input type="text" name="contact-company-address" id="contact-company-address">
+                                </p>
+        
+                                <!-- Contact number -->
+                                <p class="info-row">
+                                    <label for="contact-phone">Contact number</label>
+                                    <input type="tel" name="contact-phone" id="contact-phone">
+                                </p>
+        
+                                <!-- Email address-->
+                                <p class="info-row">
+                                    <label for="contact-email">Email address</label>
+                                    <input type="email" name="contact-email" id="contact-email">
+                                </p>
+                            </div><!-- end of contact--info-block -->
+                        </div><!-- end of contact--general-info -->
+        
+                        <!-- WORK REQUIRED  -->
+                        <div class="contact--work-required">
+                            <p class="contact--info-title">work required</p>
+        
+                            <!-- Key technologies required -->
+                            <div class="info-row info-row-skills">
+                                <label for="contact-technologies">Key technologies required</label>
+                                <div class="skills-block">
+                                    <input placeholder="Type skill in here" type="text" name="contact-technologies" id="contact-technologies">
+                                    <div class="skills-wrapper">
+                                        <button class="mdc-chip mdc-chip--one-skill contact--one-skill">
+                                            <span class="mdc-chip__text">Javascript</span>
+                                            <i class="material-icons">highlight_off</i>
+                                        </button>
+                                        <button class="mdc-chip mdc-chip--one-skill contact--one-skill">
+                                            <span class="mdc-chip__text">HTML 5</span>
+                                            <i class="material-icons">highlight_off</i>
+                                        </button>
+                                        <button class="mdc-chip mdc-chip--one-skill contact--one-skill">
+                                            <span class="mdc-chip__text">CSS3</span>
+                                            <i class="material-icons">highlight_off</i>
+                                        </button>
+                                    </div><!-- end of skills-wrapper -->
+                                </div><!-- end of skills-block -->
+                            </div><!-- end of info-row -->
+        
+                            <!-- Brief description of the work / job.  -->
+                            <p class="info-row info-row-descrip">
+                                <label for="work-descrip"><span>Brief description of the work / job.</span></label>
+                                <textarea name="work-descrip" id="work-descrip"></textarea>
+                            </p>
+        
+                            <div class="contact--send-btn-row">
+                                <div class="mdc-button blue-border-btn">Send Enquiry </div>
+                            </div>
+                        </div><!-- end of contact--work-required -->
+                    </form><!-- end of contact-page-form -->
+                </div><!--end of contact-main-->
+            </div>
+        </main>
+    </div><!--end of mdc-drawer-app-content-->
+    <script type=text/javascript src="./contactApp.js"></script>
 </body>
-
 </html>

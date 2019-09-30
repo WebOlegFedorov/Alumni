@@ -23,10 +23,46 @@ $mdc-theme-on-secondary: #4ca0e9;
 @import "./contact/contact";
 @import "./profile/profile";
 @import "./cv/cv";
+
+
 .mdc-drawer-scrim {
   z-index: 11;
 }
-/*for all pages with left drawer(sidebar menu)*/
+
+/*drawer for pages with black header(with "Enrol now" button).
+This drawer is visible only if screen size is less then 1024px.
+This is one of 2 types of drawers om the website.*/
+.universal-drawer {
+  display: none;
+  background: #36414c;
+  &--main-content {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .mdc-list {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  a {
+    color: #fff !important;
+    font-size: 14px;
+    font-family: 'Titillium Web', sans-serif !important;
+    text-decoration: none;
+    padding: 14px 20px !important;
+    width: 100%;
+  }
+  .mdc-list-subitem {
+    padding: 14px 40px !important;
+  }
+  &--main-content {
+    overflow-x: hidden;
+  }
+}
+/*drawer for pages with white header. 
+This drawer takes place at the left part of the page.
+It is fixed on desktop. And becomes humburger menu is screen size is less then 1024px.
+This is one of 2 types of drawers on the website.*/
 .mdc-left-drawer {
   position: fixed;
 }
@@ -259,6 +295,7 @@ padding: 10px 30px;
     padding: 24px 8px;
     margin: 0;
     border-radius: 0;
+    color: #fff;
     &--activated {
       background-color: initial !important;
       color: #fff;
@@ -1273,6 +1310,13 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+  .universal__header-menu {
+    display: none;
+  }
+  .universal__header-btn.blue {
+    padding: 0 20px;
+    height: 43px;
+  }
   .dashboard-main {
     margin-left: 0;
   }
