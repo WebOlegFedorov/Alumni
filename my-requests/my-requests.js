@@ -1,5 +1,6 @@
 import { MDCTopAppBar } from "@material/top-app-bar";
-import { MDCDrawer } from "@material/drawer";
+import { MDCDrawer } from '@material/drawer';
+import { MDCDialog } from '@material/dialog';
 import { MDCMenu } from '@material/menu';
 
 jQuery(document).ready(() => new myRequests().init());
@@ -49,6 +50,10 @@ class myRequests {
         }
     }
 
+    openDialog () {
+        new MDCDialog(document.querySelector('.mdc-dialog')).open();
+    }
+
     init () {
         const state = this.state;
         const dropDown = this.dropDown;
@@ -56,6 +61,8 @@ class myRequests {
         const changeSideBarType = this.changeSideBarType;
         jQuery(window).resize(function () { changeSideBarType(this, state) });
         this.initSideBar(window, state);
+        const openDialog = this.openDialog;
+        jQuery('.reply').click(function () { openDialog() });
     }
 }
 
