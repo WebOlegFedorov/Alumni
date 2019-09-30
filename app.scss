@@ -315,7 +315,7 @@ padding: 10px 30px;
   font-size: 18px;
   box-shadow: 0 2px 13px rgba(0, 0, 0, 0.09);
   background: #fff;
-  top: 0;
+  top: 0 !important;
   font-family: 'Titillium Web', sans-serif !important;
   color: #343d42;
   padding: 10px 20px;
@@ -1414,4 +1414,23 @@ footer {
   }
 }
 
+/*Visible placeholder for all pages*/
+::-webkit-input-placehsolder {
+  opacity: 1 !important;
+}
 
+:-moz-placeholder { /* Firefox 18- */
+  opacity: 1 !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  opacity: 1 !important;
+}
+
+:-ms-input-placeholder {
+  opacity: 1 !important;
+}
+
+::placeholder {
+  opacity: 1 !important;
+}

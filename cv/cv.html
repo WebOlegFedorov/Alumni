@@ -43,39 +43,155 @@
         </div>
     </div><!--end of sidebar-page-header--wrapper -->
 </header>
-<aside class="mdc-drawer mdc-drawer--modal">
-    <div class="mdc-drawer__content">
-        <nav class="mdc-list">
-            <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
-                <span class="mdc-list-item__text">Inbox</span>
+
+<!-- DRAWER -->
+<aside class="mdc-drawer mdc-drawer--modal mdc-left-drawer">
+    <div class="mdc-drawer__content dashboard-sidebar">
+        <nav class="mdc-list ">
+            <a class="mdc-list-item dashboard-sidebar-item mdc-list-item--activated" href="#" aria-current="page">
+                <svg class="dashboard-sidebar-item--icon" xmlns="http://www.w3.org/2000/svg" width="45" height="49" viewBox="0 0 45 49">
+                    <g>
+                        <g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2" d="M13.47 25.93v1.525"/>
+                            </g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2" d="M31.67 25.93v1.525"/>
+                            </g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2" d="M40.773 22.871c0-4.067-36.403-4.067-36.403 0v-3.05c0-8.135 36.403-8.135 36.403 0z"/>
+                            </g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2" d="M31.67 3.38c7.177 2.991 12.134 8.987 12.134 13.392.065 2.745-.7 5.445-2.192 7.744"/>
+                            </g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2" d="M3.191 24.64a15.425 15.425 0 0 1-1.852-7.865c0-3.298 4.944-9.761 12.097-13.125"/>
+                            </g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2" d="M18.02 7.621v0l1.517-6.101v0l3.033 3.05v0l3.034-3.05v0l1.517 6.101v0"/>
+                            </g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2" d="M22.574 37.87c1.638 1.649 5.277 1.787 7.863 1.645.277-.015 2.536-.633.188-2.994-2.754-5.54-13.052-6.135-16.102 0-2.174 2.186-.362 2.963.186 2.994 2.587.144 6.225.004 7.865-1.646z"/>
+                            </g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2" d="M4.374 22.88v1.525a3.042 3.042 0 0 0-3.034 3.05 3.042 3.042 0 0 0 3.034 3.051c.026 0 .05-.014.076-.016.78 9.485 8.662 16.784 18.126 16.784s17.347-7.3 18.125-16.784c.027 0 .049.016.075.016a3.042 3.042 0 0 0 3.034-3.05 3.042 3.042 0 0 0-3.034-3.05V22.88v0"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <p class="dashboard-sidebar-item-name">Dashboard</p>
             </a>
-            <a class="mdc-list-item" href="#">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
-                <span class="mdc-list-item__text">Outgoing</span>
+            <a class="mdc-list-item dashboard-sidebar-item" href="#">
+                <svg class="dashboard-sidebar-item--icon" xmlns="http://www.w3.org/2000/svg" width="43" height="45" viewBox="0 0 43 45">
+                    <g>
+                        <g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2.5" d="M18.873 5.233a3.538 3.538 0 0 0 5.252 0l1.698-1.882a3.538 3.538 0 0 1 6.153 2.552l-.13 2.528a3.541 3.541 0 0 0 3.714 3.715l2.529-.13a3.538 3.538 0 0 1 2.555 6.162l-1.882 1.697a3.538 3.538 0 0 0 0 5.252l1.882 1.697a3.538 3.538 0 0 1-2.552 6.16l-2.528-.13a3.54 3.54 0 0 0-3.715 3.715l.13 2.529a3.538 3.538 0 0 1-6.156 2.546l-1.698-1.882a3.538 3.538 0 0 0-5.252 0l-1.697 1.882a3.538 3.538 0 0 1-6.16-2.552l.13-2.528a3.536 3.536 0 0 0-3.713-3.71l-2.529.13a3.538 3.538 0 0 1-2.546-6.16l1.88-1.697a3.538 3.538 0 0 0 0-5.252l-1.88-1.697A3.538 3.538 0 0 1 4.9 12.027l2.528.13a3.54 3.54 0 0 0 3.717-3.724l-.13-2.529a3.538 3.538 0 0 1 6.16-2.546z"/>
+                            </g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2.5" d="M21.497 30.624a8.127 8.127 0 1 0 0-16.254 8.127 8.127 0 0 0 0 16.254z"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <p class="dashboard-sidebar-item-name">My Profile</p>
             </a>
-            <a class="mdc-list-item" href="#">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-                <span class="mdc-list-item__text">Drafts</span>
+            <a class="mdc-list-item dashboard-sidebar-item" href="#">
+                <svg class="dashboard-sidebar-item--icon" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+                    <g>
+                        <g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2.5" d="M30 11a9 9 0 0 1-18 0V2v0h18v0z"/>
+                            </g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2.5" d="M4 41c0-9.389 7.611-17 17-17s17 7.611 17 17"/>
+                            </g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2.5" d="M2 2h39"/>
+                            </g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2.5" d="M12 10h18"/>
+                            </g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2.5" d="M5 2v13"/>
+                            </g>
+                            <g>
+                                <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2.5" d="M13 26v0l8.5 7v0l8.5-7v0"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <p class="dashboard-sidebar-item-name">My Cv</p>
+            </a>
+            <a class="mdc-list-item dashboard-sidebar-item dashboard-sidebar-item--request" href="#">
+                <svg class="dashboard-sidebar-item--icon" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+                    <g>
+                        <g>
+                            <path fill="none" stroke="#5b9de3" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-miterlimit="50" stroke-width="2.5" d="M14.855 24.16a5.315 5.315 0 1 0 0-10.63 5.315 5.315 0 0
+                            0 0 10.63z"/>
+                        </g>
+                        <g>
+                            <path fill="none" stroke="#5b9de3" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2.5" d="M22.824 34.782a7.972 7.972 0 0
+                            0-15.944 0"/>
+                        </g>
+                        <g>
+                            <path fill="none" stroke="#5b9de3" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2.5" d="M28.144 25.49v11.958a3.986 3.986
+                            0 0 1-3.986 3.986h-18.6a3.986 3.986 0 0 1-3.988-3.986V8.216A3.986 3.986 0 0 1
+                            5.558 4.23H12.2v0"/>
+                        </g>
+                        <g>
+                            <path fill="none" stroke="#5b9de3" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2.5" d="M30.799 20.17v0l-9.058-9.45a5.357
+                            5.357 0 0 1-1.005-6.187v0A5.36 5.36 0 0 1 29.32 3.14l1.479 1.48v0l1.48-1.48a5.36
+                            5.36 0 0 1 8.584 1.393v0a5.36 5.36 0 0 1-1.004 6.186z"/>
+                        </g>
+                    </g>
+                </svg>  
+                    
+                <p class="dashboard-sidebar-item-name">My Requests </p>
             </a>
         </nav>
-    </div>
+    </div><!--end of mdc-drawer__content -->
 </aside>
 <div class="mdc-drawer-scrim"></div>
 <main class="cv__main">
-    <h1 class="pages-main-title">My Requests</h1>
+    <!-- Page title and circles with percents -->
+    <div class="cv__main-top">
+        <h1 class="pages-main-title">My CV</h1>
+
+        <!-- Block with cirles(percents inside cirles) -->
+        <div class="cv__main-circles">
+            <div class="cv__main-circle-item">
+                <p class="cv__main-circle-percent">50%</p>
+                <p class="cv__main-circle-text">Personal Information </p>
+            </div>
+            <div class="cv__main-circle-item">
+                <p class="cv__main-circle-percent">24%</p>
+                <p class="cv__main-circle-text">Education </p>
+            </div>
+            <div class="cv__main-circle-item">
+                <p class="cv__main-circle-percent">56%</p>
+                <p class="cv__main-circle-text">Work History </p>
+            </div>
+        </div><!--end cv__main-circles -->
+    </div><!--end cv__main-top -->
+    
     <form class="cv__shadow-container">
         <div class="profile__small-content clear">
             <div class="mdc-card">
                 <div class="profile__card-title">Personal info</div>
                 <div class="profile__card-description mt-10">
-                    <div class="cv__title">1. Upload a profile photo</div>
+                    <div class="cv__title cv__personal-info-title">1. Upload a profile photo</div>
                     <div class="cv__upload small">
                         <div class="cv__upload-plus">
                             <i class="material-icons">
                                 add
                             </i>
                         </div>
+                        <input name="myFile" type="file" class="cv__upload-input">
                     </div>
                 </div>
                 <div class="profile__card-description">
@@ -84,9 +200,6 @@
                         <input type="text" id="name" class="mdc-text-field__input">
                         <div class="mdc-notched-outline">
                             <div class="mdc-notched-outline__leading"></div>
-                            <div class="mdc-notched-outline__notch">
-                                <label for="name" class="mdc-floating-label">Title</label>
-                            </div>
                             <div class="mdc-notched-outline__trailing"></div>
                         </div>
                     </div>
@@ -98,8 +211,7 @@
                 <div class="profile__card-title">About me</div>
                 <div class="profile__card-description mt-15">
                     <div class="mdc-text-field mdc-text-field--textarea cv__textarea full-width">
-                        <textarea class="mdc-text-field__input" placeholder="Any description" rows="8"
-                                  aria-label="Label"></textarea>
+                        <textarea class="mdc-text-field__input" placeholder="Please write a brief description of yourself here." aria-label="Label"></textarea>
                         <div class="mdc-notched-outline">
                             <div class="mdc-notched-outline__leading"></div>
                             <div class="mdc-notched-outline__trailing"></div>
@@ -112,7 +224,7 @@
             <div class="mdc-card">
                 <div class="profile__card-title">Education</div>
                 <div class="profile__card-description d-flex mt-10">
-                    <div class="cv__fields-container">
+                    <div class="cv__fields-container cv__fields-container-edu">
                         <div class="cv__logo">
                             <i class="material-icons">school</i>
                         </div>
@@ -163,6 +275,7 @@
                                 add
                             </i>
                         </div>
+                        <input name="myFile" type="file" class="cv__upload-input">
                     </div>
                 </div>
             </div>
@@ -170,7 +283,7 @@
         <div class="profile__small-content clear">
             <div class="mdc-card">
                 <div class="profile__card-title">Work History</div>
-                <div class="profile__card-description pb-0 d-flex mt-10">
+                <div class="profile__card-description cv__work-history-descrip pb-0 d-flex mt-10">
                     <div class="cv__fields-container clear">
                         <div class="cv__fields">
                             <div class="cv__title">Employed at:</div>
@@ -239,13 +352,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="profile__card-description">
+                <div class="profile__card-description cv__work-history-full-upload">
                     <div class="cv__upload full-width large">
                         <div class="cv__upload-plus">
                             <i class="material-icons">
                                 add
                             </i>
                         </div>
+                        <input name="myFile" type="file" class="cv__upload-input">
                     </div>
                 </div>
             </div>
@@ -258,45 +372,41 @@
                         <div class="cv__logo">
                             <i class="material-icons">school</i>
                         </div>
+
                         <div class="cv__fields">
-                            <div class="cv__title">Instition name</div>
+                            <div class="cv__title">Skill Category Title </div>
                             <div class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
-                                <input type="text" id="tf-outlined2" class="mdc-text-field__input">
+                                <input type="text" id="tf-outlined2" class="mdc-text-field__input" placeholder="eg. Front End development">
                                 <div class="mdc-notched-outline">
                                     <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="tf-outlined2" class="mdc-floating-label">Your Name</label>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+
+                            <div class="cv__sub-fields">
+                                <div class="cv__title">Skill</div>
+                                <div class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
+                                    <input type="text" id="tf-outlined2" class="mdc-text-field__input" placeholder="eg. Angular 8">
+                                    <div class="mdc-notched-outline">
+                                        <div class="mdc-notched-outline__leading"></div>
+                                        <div class="mdc-notched-outline__trailing"></div>
                                     </div>
-                                    <div class="mdc-notched-outline__trailing"></div>
                                 </div>
-                            </div>
-                            <div class="cv__title">Years attended</div>
-                            <div class="mdc-select mdc-select--outlined cv__select mt-10 mb-10">
-                                <i class="mdc-select__dropdown-icon"></i>
-                                <select class="mdc-select__native-control">
-                                    <option value="" disabled="">Some</option>
-                                    <option value="apple">Apple</option>
-                                    <option value="orange">Orange</option>
-                                    <option value="Banana">banana</option>
-                                </select>
-                                <div class="mdc-notched-outline mdc-notched-outline--upgraded mdc-notched-outline--notched">
-                                    <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch" style="width: 32.75px;"></div>
-                                    <div class="mdc-notched-outline__trailing"></div>
-                                </div>
-                            </div>
-                            <div class="cv__title">Subject</div>
-                            <div class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
-                                <input type="text" id="tf-outlined3" class="mdc-text-field__input">
-                                <div class="mdc-notched-outline">
-                                    <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="tf-outlined3" class="mdc-floating-label">Your Name</label>
+
+                                <div class="cv__title">Sub Category</div>
+                                <div class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
+                                    <input type="text" id="tf-outlined2" class="mdc-text-field__input" placeholder="eg.React.Js">
+                                    <div class="mdc-notched-outline">
+                                        <div class="mdc-notched-outline__leading"></div>
+                                        <div class="mdc-notched-outline__trailing"></div>
                                     </div>
-                                    <div class="mdc-notched-outline__trailing"></div>
                                 </div>
                             </div>
-                            <button class="mdc-button cv__subject-button">+ add more subjects</button>
+                            
+
+                          
+                          
+                            <button class="mdc-button cv__subject-button">+ add more</button>
                         </div>
                     </div>
                     <div class="cv__upload mid ml-45">
@@ -305,6 +415,7 @@
                                 add
                             </i>
                         </div>
+                        <input name="myFile" type="file" class="cv__upload-input">
                     </div>
                 </div>
             </div>
@@ -313,84 +424,82 @@
         <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
 
         <div class="profile__small-content clear">
-            <div class="mdc-card">
-                <div class="profile__card-title">Work History</div>
-                <div class="profile__card-description pb-0 d-flex mt-10">
-                    <div class="cv__upload mt-35">
+            <div class="mdc-card cv__featured-proj">
+                <div class="profile__card-title">Featured Project</div>
+                <div class="profile__card-description cv__featured-proj-descrip pb-0 d-flex mt-10">
+                    <div class="cv__upload cv__upload-top mt-35">
                         <div class="cv__upload-plus">
                             <i class="material-icons">
                                 add
                             </i>
                         </div>
+                        <input name="myFile" type="file" class="cv__upload-input">
                     </div>
+
                     <div class="cv__fields-container clear">
                         <div class="cv__fields">
-                            <div class="cv__title">Employed at:</div>
+                            <div class="cv__title">Name of client</div>
                             <div class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
                                 <input type="text" id="employed-at" class="mdc-text-field__input">
                                 <div class="mdc-notched-outline mdc-notched-outline--upgraded">
                                     <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch" style="">
-                                        <label for="employed-at" class="mdc-floating-label" style="">Employed at</label>
-                                    </div>
                                     <div class="mdc-notched-outline__trailing"></div>
                                 </div>
                             </div>
-                            <div class="cv__title">Job title</div>
-                            <div class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
-                                <input type="text" id="job-title" class="mdc-text-field__input">
-                                <div class="mdc-notched-outline mdc-notched-outline--upgraded">
-                                    <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="job-title" class="mdc-floating-label" style="">Title</label>
-                                    </div>
-                                    <div class="mdc-notched-outline__trailing"></div>
-                                </div>
-                            </div>
-                            <div class="cv__title">Start date</div>
-                            <div class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
-                                <i aria-hidden="true" class="material-icons mdc-text-field__icon">date_range</i>
-                                <input type="date" class="mdc-text-field__input">
+                            
+                            <div class="cv__title">Project Overview</div>
+                            <div class="mdc-text-field mdc-text-field--textarea cv__textarea mt-10">
+                                <textarea class="mdc-text-field__input" rows="8" aria-label="Label"></textarea>
                                 <div class="mdc-notched-outline mdc-notched-outline--no-label">
                                     <div class="mdc-notched-outline__leading"></div>
                                     <div class="mdc-notched-outline__trailing"></div>
                                 </div>
                             </div>
-                            <div class="cv__title">End date</div>
-                            <div class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
-                                <i aria-hidden="true" class="material-icons mdc-text-field__icon">date_range</i>
-                                <input type="date" class="mdc-text-field__input">
+
+                            <div class="cv__title">The key roles I played in the project</div>
+                            <div class="mdc-text-field mdc-text-field--textarea cv__textarea mt-10">
+                                <textarea class="mdc-text-field__input" rows="8" aria-label="Label"></textarea>
                                 <div class="mdc-notched-outline mdc-notched-outline--no-label">
                                     <div class="mdc-notched-outline__leading"></div>
                                     <div class="mdc-notched-outline__trailing"></div>
                                 </div>
                             </div>
-                            <div class="cv__title">Reason for leaving</div>
-                            <div class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
-                                <input type="text" id="reason-for-leaving" class="mdc-text-field__input">
-                                <div class="mdc-notched-outline mdc-notched-outline--upgraded">
-                                    <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="reason-for-leaving" class="mdc-floating-label" style="">Reason</label>
+
+                            <div class="cv__title">What technologies where used ?</div>
+                            <div class="cv__featured-proj--tech">
+                                <div><img src="../assets/images/tech1.jpg" alt="tech"></div>
+                                <div class="cv__featured-proj--tech-upload">
+                                    <div class="cv__upload mt-35">
+                                        <div class="cv__upload-plus">
+                                            <i class="material-icons">
+                                                add
+                                            </i>
+                                        </div>
+                                        <input name="myFile" type="file" class="cv__upload-input">
                                     </div>
-                                    <div class="mdc-notched-outline__trailing"></div>
                                 </div>
                             </div>
-                            <button class="mdc-button cv__subject-button mdc-ripple-upgraded">+ add more subjects</button>
+
                         </div>
                     </div>
+                    
                 </div>
-                <div class="profile__card-description">
+                <div class="profile__card-description cv__full-width-uploader">
                     <div class="cv__upload full-width large">
-                        <div class="cv__upload-plus">
-                            <i class="material-icons">
-                                add
-                            </i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <div class="cv__upload-inner">
+                            <div class="cv__upload-plus">
+                                <i class="material-icons">
+                                    add
+                                </i>
+                            </div>
+                            <p class="cv__upload-inner-text">Add more projects</p>
+                        </div><!--end cv__upload-inner -->
+                        <input name="myFile" type="file" class="cv__upload-input">
+                    </div><!--end cv__upload -->
+                </div><!--end profile__card-description -->
+
+            </div><!--end of mdc-card -->
+        </div><!--end of profile__small-content -->
     </form>
 </main>
 <script type=text/javascript src="./cvApp.js"></script>
