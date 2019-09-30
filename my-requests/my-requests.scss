@@ -94,6 +94,94 @@
     }
 }
 
+#my-dialog-title {
+    color: #5B9DE3;
+}
+
+.message {
+    width: 875px;
+    &__header {
+        border-bottom: 2px solid #F0F0F0;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        display: flex;
+    }
+
+    &__text {
+        box-sizing: border-box;
+        padding: 10px;
+        border: none;
+        width: 100%;
+    }
+
+    &__story {
+        border-top: 2px solid #F0F0F0;
+    }
+
+    &__item-title {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+    &__item-message {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 15px;
+    }
+
+    &__title {
+        color: #343D42;
+        font-size: 22px;
+    }
+
+    &__subject {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #343D42;
+    }
+
+    &__date {
+        font-weight: 100;
+        font-size: 12px;
+        color: #AFAFAF;
+    }
+
+    .mdc-button--raised {
+        color: #fff !important;
+    }
+}
+
+.dialog-title {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.dialog-footer {
+    border-top: 2px solid #F0F0F0;
+    padding: 15px 5px;
+}
+
+.modal-action-button {
+    background: #4CA0E9 !important;
+    color: #fff !important;
+}
+
+.mdc-dialog .mdc-dialog__surface {
+    max-width: 920px;
+}
+
+@media screen and (max-width: 1024px) {
+    .mdc-dialog .mdc-dialog__surface {
+        max-width: calc(100% - 32px);
+    }
+    .message {
+        width: auto;
+    }
+    .message__header {
+        flex-direction: column;
+    }
+}
+
 /*Media for My Requests page*/
 @media screen and (max-width: 700px) {
     .mdc-data-table--date,
