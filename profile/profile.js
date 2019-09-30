@@ -1,5 +1,7 @@
+import { MDCTextField } from '@material/textfield';
 import { MDCRipple } from '@material/ripple';
 import { MDCMenu } from '@material/menu';
+
 jQuery(document).ready(() => new Profile().init());
 
 class Profile {
