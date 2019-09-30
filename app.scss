@@ -16,13 +16,15 @@ $mdc-theme-on-secondary: #4ca0e9;
 @import "~@material/grid-list/mdc-grid-list";
 @import "~@material/card/mdc-card";
 @import "~@material/textfield/mdc-text-field";
+@import "~@material/select/mdc-select";
 @import "./my-requests/my-requests";
 @import "./my-account/my-account";
 @import "./dashboard/dashboard";
 @import "./contact/contact";
 @import "./profile/profile";
+@import "./cv/cv";
 
-/*Modal window fow drawers*/
+
 .mdc-drawer-scrim {
   z-index: 11;
 }

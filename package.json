@@ -16,6 +16,7 @@
     "@material/layout-grid": "^3.1.0",
     "@material/menu": "^3.2.0",
     "@material/ripple": "^3.1.0",
+    "@material/select": "^3.2.0",
     "@material/switch": "^3.1.0",
     "@material/tab-bar": "^3.2.0",
     "@material/tab-scroller": "^3.2.0",

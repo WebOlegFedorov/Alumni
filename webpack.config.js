@@ -14,8 +14,8 @@ module.exports = {
         dashboardApp: ['./dashboard/dashboard.js'],
         contactApp: ['./contact/contact.js'],
         profileApp: ['./profile/profile.js'],
-        cvApp: ['./cv/cv.js'],
         stylesheets: ['./app.scss'],
+        cvApp: ['./cv/cv.js'],
         app: ['./app.js']
     },
     output: {
