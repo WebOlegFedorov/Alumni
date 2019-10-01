@@ -25,14 +25,24 @@
     &--tech {
       display: flex;
       margin-top: 20px;
-      & > div:nth-child(1) {
-        margin-right: 15px;
+      flex-wrap: wrap;
+      & > div {
+        width: 125px;
+        height: 125px;
+        margin-bottom: 10px;
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+
+        }
       }
       &-upload {
         .cv__upload {
-          width: 125px;
           margin-right: 32px;
-          height: 117px;
+          height: 100%;
           margin-top: 0;
         }
       }
@@ -52,7 +62,7 @@
     padding: 0;
   }
   &__field {
-    height: 38px;
+    height: 37px;
     .mdc-floating-label {
       top: 10px;
     }
@@ -109,7 +119,10 @@
       padding-right: 52px;
       padding-top: 5px;
       padding-bottom: 4px;
-      color: rgba(0, 0, 0, 0.6) !important;
+      color: #459de9 !important;
+      font-family: 'Titillium Web', sans-serif !important;
+      font-size: 15px;
+      font-weight: 400;
     }
     .mdc-select__dropdown-icon {
       bottom: 6px;
@@ -292,6 +305,7 @@
     display: flex;
     width: 100%;
   }
+
 }
 
 .d-flex {
@@ -320,6 +334,33 @@
 .cv__main .mdc-select--outlined .mdc-notched-outline .mdc-notched-outline__trailing {
   border-radius: 0 15px 15px 0;
 }
+
+.mdc-card--key-skills {
+  input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #a0a0a0;
+    font-family: 'Titillium Web', sans-serif !important;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  input::-moz-placeholder { /* Firefox 19+ */
+    color: #a0a0a0;
+    font-family: 'Titillium Web', sans-serif !important;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  input:-ms-input-placeholder { /* IE 10+ */
+    color: #a0a0a0;
+    font-family: 'Titillium Web', sans-serif !important;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  input:-moz-placeholder { /* Firefox 18- */
+    color: #a0a0a0;
+    font-family: 'Titillium Web', sans-serif !important;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
 @media screen and (max-width: 1300px) {
   .cv__upload.mid {
     width: 100%;
@@ -330,9 +371,11 @@
   .cv__main {
     margin-left: 0;
     padding: 20px 20px;
+    margin-top: 60px;
   }
   .cv__shadow-container {
     margin-bottom: 20px;
+    padding-bottom: 20px;
   }
   .cv__main-top {
     flex-direction: column;
@@ -341,6 +384,7 @@
       margin-bottom: 20px;
     }
   }
+  
 }
 @media screen and (max-width: 830px) {
   .cv__main .profile__card-description {
@@ -360,6 +404,15 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  .cv__main {
+    padding: 10px;
+  }
+  .profile__small-content {
+    padding: 10px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .cv__main-circles {
     flex-direction: column;
@@ -374,4 +427,33 @@
   .cv__sub-fields {
     margin-left: 0;
   }
+  .cv__featured-proj--tech {
+    > div {
+      width: 85px;
+      height: 85px;
+    }
+  }
+  .cv__logo {
+    display: none;
+  }
+  .cv__fields-container {
+    padding: 15px 15px;
+  }
+  .cv__upload.large {
+    height: 150px;
+  }
+  .cv__shadow-container {
+    padding-bottom: 0px;
+  }
+  .cv__full-width-uploader {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .cv__fields-container {
+    margin-bottom: 0;
+  }
+  .cv__upload.mid {
+    margin-top: 15px;
+  }
 }
+

@@ -240,5 +240,139 @@
 }
 
 
+/*MODAL WINDOW*/
+.mdc-dialog__title {
+    border-bottom: none;
+}
+.message__header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.mdc-dialog--scrollable .mdc-dialog__title {
+    padding-bottom: 0;
+}
+.mdc-dialog__actions {
+    justify-content: space-between;
+}
+.dialog-footer {
+    padding: 20px 24px;
+}
+.mdc-dialog--send-btn {
+    width: 225px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #5b9de3;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: none;
+    letter-spacing: 0;
+    order: -2;
+    margin: 0 !important;
+}
+.mdc-dialog--stacked .mdc-dialog__actions {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mdc-dialog__button {
+    margin: 0 !important;
+}
+
+.dialog-footer {
+    padding: 20px 24px;
+}
+
+.message__date {
+    line-height: 16px;
+    margin-left: 10px;
+}
+
+.mdc-button__delete {
+    color: #9c9c9c !important;
+}
+
+.mdc-dialog__title + .mdc-dialog__content {
+    padding-top: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.mdc-dialog .mdc-dialog__title {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+// media for My request MODAL
+@media screen and (max-height: 900px) and (min-width: 1024px) {
+    .mdc-dialog .mdc-dialog__surface {
+        max-height: calc(100% - 120px);
+        margin-top: 92px;
+    }
+    .dialog-footer {
+        padding: 10px 24px;
+    }
+    .mdc-dialog--send-btn {
+        width: 150px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-height: 900px) and (max-width: 1024px) {
+    .mdc-dialog .mdc-dialog__surface {
+        max-height: calc(100% - 80px);
+        margin-top: 60px;
+    }
+    .dialog-footer {
+        padding: 10px 24px;
+    }
+    .mdc-dialog--send-btn {
+        width: 150px;
+        height: 50px;
+    }
+    .mdc-dialog__actions {
+        min-height: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .message__text {
+        height: 100px;
+    }
+    .mdc-dialog__title::before {
+        height: 26px;
+    }
+    .message .message__header {
+        margin-top: 0;
+    }
+    .mdc-dialog--send-btn {
+        width: 110px;
+        height: 45px;
+    }
+}
+@media screen and (max-height: 700px) {
+    .message__text {
+        height: 100px;
+    }
+}
+@media screen and (max-height: 500px) {
+    .dialog-footer {
+        padding: 5px 15px;
+    }
+    .mdc-dialog__content {
+        padding: 20px 15px;
+        padding: 0 15px 9px;
+    }
+    .mdc-dialog__title {
+        padding: 0 15px;
+    }
+    .message__text {
+        height: 50px;
+    }
+}
+
+
 
 

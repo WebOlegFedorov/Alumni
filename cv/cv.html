@@ -234,20 +234,16 @@
                                 <input type="text" id="instition-name" class="mdc-text-field__input">
                                 <div class="mdc-notched-outline">
                                     <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="instition-name" class="mdc-floating-label">Your Name</label>
-                                    </div>
                                     <div class="mdc-notched-outline__trailing"></div>
                                 </div>
                             </div>
                             <div class="cv__title">Years attended</div>
                             <div class="mdc-select mdc-select--outlined cv__select mt-10 mb-10">
                                 <i class="mdc-select__dropdown-icon"></i>
-                                <select id="years-attended" class="mdc-select__native-control">
-                                    <option value="" disabled="">Some</option>
-                                    <option value="apple">Apple</option>
-                                    <option value="orange">Orange</option>
-                                    <option value="Banana">banana</option>
+                                <select id="years-attended" class="cv__edu-select mdc-select__native-control">
+                                    <option value="value1">3 years</option>
+                                    <option value="value2">4 years</option>
+                                    <option value="value3">5 years</option>
                                 </select>
                                 <div class="mdc-notched-outline mdc-notched-outline--upgraded mdc-notched-outline--notched">
                                     <div class="mdc-notched-outline__leading"></div>
@@ -260,9 +256,6 @@
                                 <input type="text" id="subject" class="mdc-text-field__input">
                                 <div class="mdc-notched-outline">
                                     <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="subject" class="mdc-floating-label">Your Name</label>
-                                    </div>
                                     <div class="mdc-notched-outline__trailing"></div>
                                 </div>
                             </div>
@@ -291,24 +284,18 @@
                                 <input type="text" id="employed-at" class="mdc-text-field__input">
                                 <div class="mdc-notched-outline">
                                     <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="employed-at" class="mdc-floating-label">Employed at</label>
-                                    </div>
                                     <div class="mdc-notched-outline__trailing"></div>
                                 </div>
                             </div>
-                            <div class="cv__title">Job title</div>
+                            <div class="cv__title">Job title:</div>
                             <div class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
                                 <input type="text" id="job-title" class="mdc-text-field__input">
                                 <div class="mdc-notched-outline">
                                     <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="job-title" class="mdc-floating-label">Title</label>
-                                    </div>
                                     <div class="mdc-notched-outline__trailing"></div>
                                 </div>
                             </div>
-                            <div class="cv__title">Start date</div>
+                            <div class="cv__title">Start date:</div>
                             <div class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
                                 <i aria-hidden="true" class="material-icons mdc-text-field__icon">date_range</i>
                                 <input type="date" class="mdc-text-field__input">
@@ -317,7 +304,7 @@
                                     <div class="mdc-notched-outline__trailing"></div>
                                 </div>
                             </div>
-                            <div class="cv__title">End date</div>
+                            <div class="cv__title">End date:</div>
                             <div class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
                                 <i aria-hidden="true" class="material-icons mdc-text-field__icon">date_range</i>
                                 <input type="date" class="mdc-text-field__input">
@@ -331,20 +318,15 @@
                                 <input type="text" id="reason-for-leaving" class="mdc-text-field__input">
                                 <div class="mdc-notched-outline">
                                     <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="reason-for-leaving" class="mdc-floating-label">Reason</label>
-                                    </div>
                                     <div class="mdc-notched-outline__trailing"></div>
                                 </div>
                             </div>
-                            <button class="mdc-button cv__subject-button">+ add more subjects</button>
                         </div>
                     </div>
                     <div class="cv__work-area">
                         <div class="cv__title">Key Roles & Responsibilities</div>
                         <div class="mdc-text-field mdc-text-field--textarea cv__textarea mt-10">
-                            <textarea class="mdc-text-field__input" placeholder="Any description" rows="8"
-                                      aria-label="Label"></textarea>
+                            <textarea class="mdc-text-field__input" rows="8" aria-label="Label"></textarea>
                             <div class="mdc-notched-outline">
                                 <div class="mdc-notched-outline__leading"></div>
                                 <div class="mdc-notched-outline__trailing"></div>
@@ -365,14 +347,10 @@
             </div>
         </div>
         <div class="profile__small-content clear">
-            <div class="mdc-card">
+            <div class="mdc-card mdc-card--key-skills">
                 <div class="profile__card-title">Key skills</div>
                 <div class="profile__card-description d-flex mt-10">
                     <div class="cv__fields-container">
-                        <div class="cv__logo">
-                            <i class="material-icons">school</i>
-                        </div>
-
                         <div class="cv__fields">
                             <div class="cv__title">Skill Category Title </div>
                             <div class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
@@ -410,11 +388,14 @@
                         </div>
                     </div>
                     <div class="cv__upload mid ml-45">
-                        <div class="cv__upload-plus">
-                            <i class="material-icons">
-                                add
-                            </i>
-                        </div>
+                        <div class="cv__upload-inner">
+                            <div class="cv__upload-plus">
+                                <i class="material-icons">
+                                    add
+                                </i>
+                            </div>
+                            <p class="cv__upload-inner-text">Add new skill category</p>
+                        </div><!--end cv__upload-inner -->
                         <input name="myFile" type="file" class="cv__upload-input">
                     </div>
                 </div>
@@ -428,11 +409,14 @@
                 <div class="profile__card-title">Featured Project</div>
                 <div class="profile__card-description cv__featured-proj-descrip pb-0 d-flex mt-10">
                     <div class="cv__upload cv__upload-top mt-35">
-                        <div class="cv__upload-plus">
-                            <i class="material-icons">
-                                add
-                            </i>
-                        </div>
+                        <div class="cv__upload-inner">
+                            <div class="cv__upload-plus">
+                                <i class="material-icons">
+                                    add
+                                </i>
+                            </div>
+                            <p class="cv__upload-inner-text">Add project images</p>
+                        </div><!--end cv__upload-inner -->
                         <input name="myFile" type="file" class="cv__upload-input">
                     </div>
 
@@ -467,8 +451,8 @@
 
                             <div class="cv__title">What technologies where used ?</div>
                             <div class="cv__featured-proj--tech">
-                                <div><img src="../assets/images/tech1.jpg" alt="tech"></div>
-                                <div class="cv__featured-proj--tech-upload">
+                                <div class="cv__featured-proj--tech-item"><img src="../assets/images/tech1.jpg" alt="tech"></div>
+                                <div class="cv__featured-proj--tech-item cv__featured-proj--tech-upload">
                                     <div class="cv__upload mt-35">
                                         <div class="cv__upload-plus">
                                             <i class="material-icons">

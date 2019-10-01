@@ -7,11 +7,11 @@ import { MDCTextField } from '@material/textfield';
 
 
 window.onload = function() {
-
     var state = {
         fixedSideBar: true,
         drawer: null
     };
+
     
     if ($('div').hasClass('mdc-chip-set')) {
         const chipSetEl = document.querySelector('.mdc-chip-set');
@@ -35,6 +35,8 @@ window.onload = function() {
     jQuery('.open-submenu').click(() => openMenu());
 
     function changeSideBarType (context, state) {
+        
+    console.log(state);
         if (context.innerWidth < 1024 && state.fixedSideBar) {
             console.log('hew1');
             state.fixedSideBar = false;
