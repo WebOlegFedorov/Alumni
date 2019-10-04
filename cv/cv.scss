@@ -134,6 +134,7 @@
     margin-top: 92px;
     padding: 35px 40px;
     box-sizing: border-box;
+    overflow-x: hidden;
     &-top {
       display: flex;
       justify-content: space-between;
@@ -374,8 +375,11 @@
     margin-top: 60px;
   }
   .cv__shadow-container {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     padding-bottom: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
   }
   .cv__main-top {
     flex-direction: column;
@@ -416,7 +420,7 @@
 @media screen and (max-width: 600px) {
   .cv__main-circles {
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-start;
   }
   .cv__main-circle-item:not(:last-child) {
     margin-bottom: 15px;
@@ -456,4 +460,12 @@
     margin-top: 15px;
   }
 }
-
+/*--------------
+    EI fixes
+--------------*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .cv__upload-plus i {
+    position: relative;
+    top: 5px;
+  }
+}

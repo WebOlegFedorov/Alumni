@@ -94,7 +94,7 @@
     }
     input {
         width: 100%; 
-        min-width: 10px;
+        min-width: 120px;
         height: 37px;
         border-radius: 15px;
         border: 1px solid rgba(151, 151, 151, 0.34);
@@ -154,14 +154,7 @@
         }
     }
 }
-@media screen and (max-width: 1024px) {
-    .my-account--info-wrapper .change-password {
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: 20px;
-    }
-}
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
     .my-account {
         &--info-wrapper {
             flex-direction: column;
@@ -170,6 +163,21 @@
             order: -1;
             margin-bottom: 20px;
         }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .my-account--info-wrapper {
+        .change-password {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .my-account--info-graph {
+        min-width: 100px;
     }
 }
 @media screen and (max-width: 500px) {
