@@ -2,6 +2,7 @@ import { MDCRipple } from '@material/ripple';
 import { MDCMenu } from '@material/menu';
 import { MDCTopAppBar } from "@material/top-app-bar";
 import { MDCDrawer } from "@material/drawer";
+import { MDCTextField } from '@material/textfield';
 
 jQuery(document).ready(() => new Profile().init());
 
@@ -13,6 +14,13 @@ class Profile {
             drawer: null
         };
         this.drawer(this.state);
+            
+    if($('div').hasClass('mdc-text-field')) { /* Check if current page contains inputs*/
+        const textField1 = new MDCTextField(document.querySelector('.mdc-text-field1'));
+        const textField2 = new MDCTextField(document.querySelector('.mdc-text-field2'));
+        const textField3 = new MDCTextField(document.querySelector('.mdc-text-field3'));
+        const textField4 = new MDCTextField(document.querySelector('.mdc-text-field4'));
+    }
     }
 
     drawer (state) {

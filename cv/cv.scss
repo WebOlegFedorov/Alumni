@@ -228,7 +228,7 @@
       &-text {
         color: #459de9;
         font-size: 14px;
-        margin-top: 12px;
+        margin-top: 10px !important;
       }
     }
     &.small {
@@ -327,6 +327,13 @@
 .cv__main .mdc-text-field--textarea .mdc-notched-outline .mdc-notched-outline__leading {
   border-radius: 15px 0 0 15px;
 }
+.mdc-text-field--textarea.mdc-textarea--respons {
+  height: calc(100% - 76px);
+  margin-bottom: 30px;
+}
+#employed-at-wrapper {
+  width: 45%;
+}
 
 /*Cv page select*/
 .cv__main .mdc-select--outlined .mdc-notched-outline .mdc-notched-outline__leading {
@@ -407,7 +414,11 @@
     padding: 20px 0;
   }
 }
-
+@media screen and (max-width: 780px) {
+  .mdc-text-field--textarea.mdc-textarea--respons {
+    margin-bottom: 0;
+  }
+}
 @media screen and (max-width: 700px) {
   .cv__main {
     padding: 10px;
@@ -458,6 +469,12 @@
   }
   .cv__upload.mid {
     margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #employed-at-wrapper {
+    width: 100%;
   }
 }
 /*--------------

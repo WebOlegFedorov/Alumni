@@ -263,11 +263,14 @@
                         </div>
                     </div>
                     <div class="cv__upload mid ml-45">
-                        <div class="cv__upload-plus">
-                            <i class="material-icons">
-                                add
-                            </i>
-                        </div>
+                        <div class="cv__upload-inner">
+                            <div class="cv__upload-plus">
+                                <i class="material-icons">
+                                    add
+                                </i>
+                            </div>
+                            <p class="cv__upload-inner-text">Add more</p>
+                        </div><!--end cv__upload-inner -->
                         <input name="myFile" type="file" class="cv__upload-input">
                     </div>
                 </div>
@@ -325,7 +328,7 @@
                     </div>
                     <div class="cv__work-area">
                         <div class="cv__title">Key Roles & Responsibilities</div>
-                        <div class="mdc-text-field mdc-text-field--textarea cv__textarea mt-10">
+                        <div class="mdc-text-field mdc-text-field--textarea cv__textarea mt-10 mdc-textarea--respons">
                             <textarea class="mdc-text-field__input" rows="8" aria-label="Label"></textarea>
                             <div class="mdc-notched-outline">
                                 <div class="mdc-notched-outline__leading"></div>
@@ -336,11 +339,14 @@
                 </div>
                 <div class="profile__card-description cv__work-history-full-upload">
                     <div class="cv__upload full-width large">
-                        <div class="cv__upload-plus">
-                            <i class="material-icons">
-                                add
-                            </i>
-                        </div>
+                        <div class="cv__upload-inner">
+                            <div class="cv__upload-plus">
+                                <i class="material-icons">
+                                    add
+                                </i>
+                            </div>
+                            <p class="cv__upload-inner-text">Add</p>
+                        </div><!--end cv__upload-inner -->
                         <input name="myFile" type="file" class="cv__upload-input">
                     </div>
                 </div>
@@ -423,8 +429,8 @@
                     <div class="cv__fields-container clear">
                         <div class="cv__fields">
                             <div class="cv__title">Name of client</div>
-                            <div class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
-                                <input type="text" id="employed-at" class="mdc-text-field__input">
+                            <div id="employed-at-wrapper" class="mdc-text-field mdc-text-field--outlined cv__field mt-10 mb-10">
+                                <input type="text" id="employed-at" class="mdc-text-field__input" >
                                 <div class="mdc-notched-outline mdc-notched-outline--upgraded">
                                     <div class="mdc-notched-outline__leading"></div>
                                     <div class="mdc-notched-outline__trailing"></div>
@@ -485,6 +491,7 @@
             </div><!--end of mdc-card -->
         </div><!--end of profile__small-content -->
     </form>
+    
 </main>
 
 <script type=text/javascript src="./cvApp.js"></script>
