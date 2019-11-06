@@ -739,6 +739,96 @@ make dashboard sidebar icons smaller*/
   font-family: 'Titillium Web', sans-serif !important;
   width: 100%;
   color: #fff;
+
+  &__phone {
+    font-size: 22px !important;
+    &:hover {
+      color: #fff !important;
+    }
+    img {
+      margin-right: 15px;
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  &__email {
+    text-decoration: underline !important;
+    &:hover {
+      text-decoration: none !important;
+    }
+    img {
+      margin-right: 15px;
+      position: relative;
+      top: 4px;
+    }
+  }
+
+  &__street {
+    &:hover {
+      color: #fff !important;
+    }
+    img {
+      margin-right: 15px;
+      position: relative;
+      top: 7px;
+    }
+  }
+
+  &__row {
+
+  }
+
+  &__row-name {
+    color: #5b9de3;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  &__container {
+
+  }
+
+  &__list {
+    &--horizontal {
+      display: flex;
+      li {
+        margin-right: 70px;
+      }
+      @media (max-width: 992px) {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        li {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__list-item {
+    list-style-type: none;
+    margin-bottom: 25px;
+    padding: 0;
+    a {
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: normal;
+      text-decoration: none;
+      transition: all .3s linear;
+      &:hover {
+        color: #5b9de3;
+      }
+    }
+  }
+  
   &-link {
     color: #fff;
     text-decoration: none;
@@ -749,7 +839,7 @@ make dashboard sidebar icons smaller*/
   }
   &-top {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     background-color: #36414c;
     padding: 70px 80px;
     &-section--title {
@@ -1244,6 +1334,18 @@ footer {
     max-width: 1600px;
     width: calc(100% - 50px);
     margin: auto;
+    &.footer-settings {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 992px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+      }
+    }
   }
   &-block {
     display: flex;
@@ -1321,7 +1423,6 @@ footer {
   margin-bottom: 50px;
 }
 /*end of CANDIDATES BLOCK(index page "Find Alumni")*/
-
 
 
 /*MEDIA FOR INDEX PAGE(Find Alumni page with candidates)*/
