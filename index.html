@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./bundle.css">
 </head>
 <body class="sidebar-page-body">
-
     <!-- Header black menu(hidden if sreen size is less then 1024px) -->
     <header class="mdc-top-app-bar app-bar sidebar-page-header profile__header" id="app-bar">
         <!-- Humburger icon -->
@@ -70,7 +69,7 @@
                         <p class="find-alumni--search-results"><span>77</span> matching results</p>
                         <div class="input-and-filters">
                             <input class="find-alumni--search-input" type="text" placeholder="Type skill in here">
-                            <a href="#" class="find-alumni--search-filters">Filters</a>
+                            <p href="#" class="find-alumni--search-filters">Filters</p>
                         </div>
                         <!-- Block with all skills -->
                         <div class="find-alumni--skills-wrapper">
@@ -105,11 +104,207 @@
                             </button>
                         </div><!-- end of find-alumni--skills-wrapper-->
                     </div><!-- end of find-alumni--search-wrapper-->
+
+                    <!-- FIND ALUMNI FILTERS BLOCK(becomes visible after click on filter icon) -->
+                    <div class="find-alumni--filters-block">
+                        <div class="find-alumni--filters-wrapper">
+
+                            <!-- ONE FILTER COLUMN -->
+                            <div class="find-alumni--filters-column">
+                                <div class="find-alumni--filter-info ">
+                                    <p class="profile__card-title">hourly rate</p>
+                                    <p class="find-alumni--filter-text">
+                                        <span class="bold-text">*Minimum </span>
+                                        <span class=""> R200 excl vat per hour</span>
+                                    </p>
+                                    <select class="filter-select">
+                                        <option value="option1">Option1</option>
+                                        <option value="option2">Option2</option>
+                                        <option value="option3">Option3</option>
+                                    </select>
+                                </div><!-- end of find-alumni--filter-info -->
+                                <div class="find-alumni--filter-info ">
+                                    <p class="profile__card-title">work type</p>
+
+                                    <div class="checkboxes-wrapper">
+                                        <!-- Checkbox 1 -->
+                                        <div class="mdc-form-field">
+                                            <div class="mdc-checkbox">
+                                                <input type="checkbox" name="worktype1" class="mdc-checkbox__native-control" id="worktype1"/>
+                                                <div class="mdc-checkbox__background">
+                                                    <svg class="mdc-checkbox__checkmark"
+                                                            viewBox="0 0 24 24">
+                                                        <path class="mdc-checkbox__checkmark-path"
+                                                            fill="none"
+                                                            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                                    </svg>
+                                                    <div class="mdc-checkbox__mixedmark"></div>
+                                                </div>
+                                            </div><!--end of mdc-checkbox -->
+                                            <label for="worktype1">On - Site</label>
+                                        </div><!--end of mdc-form-field -->
+
+                                        <!-- Checkbox 2 -->
+                                        <div class="mdc-form-field">
+                                            <div class="mdc-checkbox">
+                                                <input type="checkbox" name="worktype2" class="mdc-checkbox__native-control" id="worktype2"/>
+                                                <div class="mdc-checkbox__background">
+                                                    <svg class="mdc-checkbox__checkmark"
+                                                            viewBox="0 0 24 24">
+                                                        <path class="mdc-checkbox__checkmark-path"
+                                                            fill="none"
+                                                            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                                    </svg>
+                                                    <div class="mdc-checkbox__mixedmark"></div>
+                                                </div>
+                                            </div><!--end of mdc-checkbox -->
+                                            <label for="worktype2">Remote</label>
+                                        </div><!--end of mdc-form-field -->
+                                    </div><!--end of checkboxes-wrapper -->
+                                </div><!-- end of find-alumni--filter-info -->
+                            </div><!-- end of find-alumni--filters-column-->
+
+                            <!-- ONE FILTER COLUMN -->
+                            <div class="find-alumni--filters-column">
+                                <div class="find-alumni--filter-info ">
+                                    <p class="profile__card-title">DURATION</p>
+                                    <p class="find-alumni--filter-text">
+                                        <span class="bold-text">*Minimum </span>
+                                        <span class="">1 Month / 160 hours</span>
+                                    </p>
+                                    <select class="filter-select">
+                                        <option value="option1">Option1</option>
+                                        <option value="option2">Option2</option>
+                                        <option value="option3">Option3</option>
+                                    </select>
+                                </div><!-- end of find-alumni--filter-info -->
+                                <div class="find-alumni--filter-info ">
+                                    <p class="profile__card-title">nationality</p>
+
+                                    <div class="checkboxes-wrapper">
+                                        <!-- Checkbox 1 -->
+                                        <div class="mdc-form-field">
+                                            <div class="mdc-checkbox">
+                                                <input type="checkbox" name="nation1" class="mdc-checkbox__native-control" id="nation1"/>
+                                                <div class="mdc-checkbox__background">
+                                                    <svg class="mdc-checkbox__checkmark"
+                                                            viewBox="0 0 24 24">
+                                                        <path class="mdc-checkbox__checkmark-path"
+                                                            fill="none"
+                                                            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                                    </svg>
+                                                    <div class="mdc-checkbox__mixedmark"></div>
+                                                </div>
+                                            </div><!--end of mdc-checkbox -->
+                                            <label for="nation1">South Africa</label>
+                                        </div><!--end of mdc-form-field -->
+
+                                        <!-- Checkbox 2 -->
+                                        <div class="mdc-form-field">
+                                            <div class="mdc-checkbox">
+                                                <input type="checkbox" name="nation2" class="mdc-checkbox__native-control" id="nation2"/>
+                                                <div class="mdc-checkbox__background">
+                                                    <svg class="mdc-checkbox__checkmark"
+                                                            viewBox="0 0 24 24">
+                                                        <path class="mdc-checkbox__checkmark-path"
+                                                            fill="none"
+                                                            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                                    </svg>
+                                                    <div class="mdc-checkbox__mixedmark"></div>
+                                                </div>
+                                            </div><!--end of mdc-checkbox -->
+                                            <label for="nation2">India</label>
+                                        </div><!--end of mdc-form-field -->
+
+                                        <!-- Checkbox 3 -->
+                                        <div class="mdc-form-field">
+                                            <div class="mdc-checkbox">
+                                                <input type="checkbox" name="nation3" class="mdc-checkbox__native-control" id="nation3"/>
+                                                <div class="mdc-checkbox__background">
+                                                    <svg class="mdc-checkbox__checkmark"
+                                                            viewBox="0 0 24 24">
+                                                        <path class="mdc-checkbox__checkmark-path"
+                                                            fill="none"
+                                                            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                                    </svg>
+                                                    <div class="mdc-checkbox__mixedmark"></div>
+                                                </div>
+                                            </div><!--end of mdc-checkbox -->
+                                            <label for="nation3">Ukraine</label>
+                                        </div><!--end of mdc-form-field -->
+
+                                    </div><!--end of checkboxes-wrapper -->
+                                </div><!-- end of find-alumni--filter-info -->
+                            </div><!-- end of find-alumni--filters-column-->
+
+                            <!--  ONE FILTER COLUMN -->
+                            <div class="find-alumni--filters-column">
+                                <div class="find-alumni--filter-info ">
+                                    <p class="profile__card-title">EXPERIENCE</p>
+                                    <p class="find-alumni--filter-text">
+                                        <span class="bold-text">*Minimum </span>
+                                        <span class=""> 2 years</span>
+                                    </p>
+                                    <select class="filter-select">
+                                        <option value="option1">Option1</option>
+                                        <option value="option2">Option2</option>
+                                        <option value="option3">Option3</option>
+                                    </select>
+                                </div><!-- end of find-alumni--filter-info -->
+                                <div class="find-alumni--filter-info ">
+                                    <p class="profile__card-title">gender</p>
+
+                                    <div class="checkboxes-wrapper">
+                                        <!-- Checkbox 1 -->
+                                        <div class="mdc-form-field">
+                                            <div class="mdc-checkbox">
+                                                <input type="checkbox" name="male" class="mdc-checkbox__native-control" id="male"/>
+                                                <div class="mdc-checkbox__background">
+                                                    <svg class="mdc-checkbox__checkmark"
+                                                            viewBox="0 0 24 24">
+                                                        <path class="mdc-checkbox__checkmark-path"
+                                                            fill="none"
+                                                            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                                    </svg>
+                                                    <div class="mdc-checkbox__mixedmark"></div>
+                                                </div>
+                                            </div><!--end of mdc-checkbox -->
+                                            <label for="male">Male</label>
+                                        </div><!--end of mdc-form-field -->
+
+                                        <!-- Checkbox 2 -->
+                                        <div class="mdc-form-field">
+                                            <div class="mdc-checkbox">
+                                                <input type="checkbox" name="female" class="mdc-checkbox__native-control" id="female"/>
+                                                <div class="mdc-checkbox__background">
+                                                    <svg class="mdc-checkbox__checkmark"
+                                                            viewBox="0 0 24 24">
+                                                        <path class="mdc-checkbox__checkmark-path"
+                                                            fill="none"
+                                                            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                                    </svg>
+                                                    <div class="mdc-checkbox__mixedmark"></div>
+                                                </div>
+                                            </div><!--end of mdc-checkbox -->
+                                            <label for="female">Female</label>
+                                        </div><!--end of mdc-form-field -->
+                                    </div><!--end of checkboxes-wrapper -->
+                                </div><!-- end of find-alumni--filter-info -->
+                            </div><!-- end of find-alumni--filters-column-->
+
+                            
+                            <div class="find-alumni--filters-btn">
+                                <p class="candidate--view-profile mdc-button blue-border-btn">Update</p>
+                            </div><!-- end of find-alumni--filters-btn-->
+                        </div><!-- end of find-alumni--filters-wrapper-->
+                    </div><!-- end of find-alumni--filters-block-->
+
+
                 </div><!-- end of find-alumni--search-->
         
                 <!-- FIND ALUMNI CANDIDATES -->
                 <div class="find-alumni--candidates">
-                    <div class="find-alumni--candidates--wraper">
+                    <div class="find-alumni--candidates--wrapper">
                         <!-- TOP PAGINATION -->
                         <div class="pagination find-alumni--pagination-top">
                             <button class="pagination-btn mdc-button pagination-btn-previous">
@@ -239,13 +434,13 @@
                                 <span class="mdc-button__label">Next</span>
                             </button>
                         </div>
-                    </div><!-- end of find-alumni--candidates--wraper-->
+                    </div><!-- end of find-alumni--candidates--wrapper-->
                 </div><!-- end of find-alumni--candidates-->
             </div>
         
             <footer class="footer">
                 <div class="footer-top">
-                    <div class="find-alumni--candidates--wraper footer-settings">
+                    <div class="find-alumni--candidates--wrapper footer-settings">
                         <div class="footer__row">
                             <h3 class="footer__row-name">
                                 General
@@ -296,7 +491,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="find-alumni--candidates--wraper footer-settings mt-10">
+                    <div class="find-alumni--candidates--wrapper footer-settings mt-10">
                         <div class="footer__row">
                             <h3 class="footer__row-name">
                                 CONTACT US
@@ -316,7 +511,7 @@
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <div class="find-alumni--candidates--wraper footer-settings">
+                    <div class="find-alumni--candidates--wrapper footer-settings">
                         <div class="footer-copyright">
                             <p>All Rights Reserved, Maven Academy (Pty) Ltd.</p>
                         </div>
@@ -332,5 +527,7 @@
         </main>
     </div><!--end of mdc-drawer-app-content-->
     <script type=text/javascript src="./app.js"></script>
+    <div class="overlay-bg"></div>
+
 </body>
 </html>

@@ -25,7 +25,6 @@ $mdc-theme-on-secondary: #4ca0e9;
 @import "./profile/profile";
 @import "./cv/cv";
 
-
 .mdc-drawer-scrim {
   z-index: 11;
 }
@@ -48,7 +47,7 @@ This is one of 2 types of drawers om the website.*/
   a {
     color: #fff !important;
     font-size: 14px;
-    font-family: 'Titillium Web', sans-serif !important;
+    font-family: "Titillium Web", sans-serif !important;
     text-decoration: none;
     padding: 14px 20px !important;
     width: 100%;
@@ -83,7 +82,7 @@ This is one of 2 types of drawers on the website.*/
 .mdc-data-table__header-cell,
 .mdc-data-table__cell,
 .mdc-chip {
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
 }
 
 html,
@@ -128,7 +127,7 @@ header {
 .info-row {
   display: flex;
   align-items: center;
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
   color: #777171;
   margin-bottom: 19px;
   label {
@@ -138,7 +137,7 @@ header {
   }
   input,
   textarea {
-    width: 100%; 
+    width: 100%;
     height: 37px;
     border-radius: 15px;
     border: 1px solid rgba(151, 151, 151, 0.34);
@@ -148,7 +147,7 @@ header {
     outline: none;
     font-size: 15px;
     font-weight: 400;
-    font-family: 'Titillium Web', sans-serif !important;
+    font-family: "Titillium Web", sans-serif !important;
     color: #777171;
   }
   textarea {
@@ -160,7 +159,7 @@ header {
     height: 41px;
     border-radius: 10px;
     border: 1px solid #e0e0e0;
-    font-family: 'Titillium Web', sans-serif !important;
+    font-family: "Titillium Web", sans-serif !important;
     color: #777171;
     font-weight: 400;
     font-size: 15px;
@@ -170,7 +169,7 @@ header {
 }
 
 /* Hamburger(now is now usable!!!!!!!!!!!!!!!) */
- #nav-icon3 {
+#nav-icon3 {
   width: 45px;
   height: 21px;
   position: relative;
@@ -178,14 +177,14 @@ header {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
- #nav-icon3 span {
+#nav-icon3 span {
   display: block;
   position: absolute;
   height: 2px;
@@ -198,17 +197,18 @@ header {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 #nav-icon3 span:nth-child(1) {
   top: 0px;
 }
 
-#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
   top: 9px;
 }
 
@@ -243,16 +243,12 @@ header {
 }
 /* end of hamburger */
 
-
-
-
-
 /*h1 title(not all the pages)*/
 .pages-main-title {
   color: #343d42;
   font-size: 40px;
   line-height: 72px;
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
   font-weight: 100;
   margin: 0 0 20px 12px;
 }
@@ -260,13 +256,13 @@ header {
   HEADER
 ---------*/
 .main-header {
-background-color: #36414c;
-margin-bottom: 30px;
-padding: 10px 30px;
+  background-color: #36414c;
+  margin-bottom: 30px;
+  padding: 10px 30px;
   &--btn {
     font-size: 18px;
     font-weight: 600;
-    font-family: 'Titillium Web', sans-serif !important;
+    font-family: "Titillium Web", sans-serif !important;
     color: #fff !important;
     text-transform: none;
     letter-spacing: 0 !important;
@@ -322,7 +318,7 @@ padding: 10px 30px;
   box-shadow: 0 2px 13px rgba(0, 0, 0, 0.09);
   background: #fff;
   top: 0 !important;
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
   color: #343d42;
   padding: 10px 20px;
   box-sizing: border-box;
@@ -340,14 +336,12 @@ padding: 10px 30px;
   .header-logout {
     display: flex;
     align-items: center;
-
-
   }
 }
 /*button with blue border*/
-.blue-border-btn  {
+.blue-border-btn {
   text-transform: none;
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
   font-size: 16px;
   color: #4ca0e9;
   letter-spacing: initial;
@@ -462,7 +456,7 @@ padding: 10px 30px;
     padding: 30px 0;
     cursor: pointer;
     &-name {
-      font-family: 'Titillium Web', sans-serif !important;
+      font-family: "Titillium Web", sans-serif !important;
       font-size: 16px;
       font-weight: 700;
       margin: 0;
@@ -487,12 +481,6 @@ padding: 10px 30px;
     }
   }
 }
-
-
-
-
-
-
 
 /*Media for all pages with left sidebar*/
 @media screen and (max-width: 1024px) {
@@ -534,7 +522,7 @@ padding: 10px 30px;
     // top: 60px;
     // min-width: 120px;
     // left: -150px;
-    transition: .4s ease;
+    transition: 0.4s ease;
     .dashboard-sidebar-item {
       padding: 20px 0;
     }
@@ -578,7 +566,6 @@ padding: 10px 30px;
     padding: 0 10px;
   }
   .sidebar-page-header {
-    
     &:not(.profile__header) {
       padding: 0 10px;
     }
@@ -599,7 +586,6 @@ padding: 10px 30px;
     display: block;
   }
   .sidebar-page-header {
-
   }
 }
 @media screen and (max-width: 550px) {
@@ -616,7 +602,6 @@ padding: 10px 30px;
   }
   .notifications-and-user--wraper {
     flex-direction: column;
-
   }
 }
 
@@ -641,8 +626,6 @@ padding: 10px 30px;
   }
 }
 
-
-
 /*if screen height is less then 650px and width is more then 1024px then
 make dashboard sidebar icons smaller*/
 @media screen and (max-height: 650px) and (min-width: 1024px) {
@@ -665,7 +648,7 @@ make dashboard sidebar icons smaller*/
 
 .pagination-btn {
   text-transform: none;
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
   font-size: 13px;
   letter-spacing: 0;
   font-weight: 700;
@@ -683,11 +666,10 @@ make dashboard sidebar icons smaller*/
   // &::after {
   //   background: #5b9de357;
   // }
-
 }
 .pagination-numbers {
   font-size: 14px;
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
   cursor: pointer;
   &--item {
     margin-right: 22px;
@@ -736,7 +718,7 @@ make dashboard sidebar icons smaller*/
   FOOTER
 ---------*/
 .footer {
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
   width: 100%;
   color: #fff;
 
@@ -776,7 +758,6 @@ make dashboard sidebar icons smaller*/
   }
 
   &__row {
-
   }
 
   &__row-name {
@@ -791,7 +772,6 @@ make dashboard sidebar icons smaller*/
   }
 
   &__container {
-
   }
 
   &__list {
@@ -822,19 +802,19 @@ make dashboard sidebar icons smaller*/
       font-size: 12px;
       font-weight: normal;
       text-decoration: none;
-      transition: all .3s linear;
+      transition: all 0.3s linear;
       &:hover {
         color: #5b9de3;
       }
     }
   }
-  
+
   &-link {
     color: #fff;
     text-decoration: none;
-    transition: .4s ease;
+    transition: 0.4s ease;
     &:hover {
-      opacity: .6;
+      opacity: 0.6;
     }
   }
   &-top {
@@ -854,7 +834,7 @@ make dashboard sidebar icons smaller*/
       font-size: 12px;
       text-decoration: none;
       color: #fff;
-      transition: .4s ease;
+      transition: 0.4s ease;
     }
     &-section--items {
       display: flex;
@@ -884,7 +864,7 @@ make dashboard sidebar icons smaller*/
     display: flex;
     a {
       display: block;
-      transition: .4s ease;
+      transition: 0.4s ease;
       &:not(:last-child) {
         margin-right: 12px;
       }
@@ -894,24 +874,24 @@ make dashboard sidebar icons smaller*/
     }
   }
   &-facebook {
-    background: url('assets/images/facebook.png') no-repeat;
+    background: url("assets/images/facebook.png") no-repeat;
   }
   &-twitter {
-    background: url('assets/images/twitter.png') no-repeat;
+    background: url("assets/images/twitter.png") no-repeat;
   }
   &-google-plus {
-    background: url('assets/images/google-plus.png') no-repeat;
+    background: url("assets/images/google-plus.png") no-repeat;
   }
   &-insta {
-    background: url('assets/images/insta.png') no-repeat;
+    background: url("assets/images/insta.png") no-repeat;
   }
 }
 .footer--courses {
   .footer-top-section--item {
-    p:nth-child(1)  {
+    p:nth-child(1) {
       margin-bottom: 1px;
     }
-    p:nth-child(2)  {
+    p:nth-child(2) {
       font-weight: 400;
     }
   }
@@ -919,17 +899,17 @@ make dashboard sidebar icons smaller*/
 
 .contact-us-phone {
   font-size: 22px;
-  background: url('assets/images/footer-phone.png') left center no-repeat;
+  background: url("assets/images/footer-phone.png") left center no-repeat;
 }
 .contact-us-secure {
   text-transform: uppercase;
-  background: url('assets/images/footer-secure.png') left center no-repeat;
+  background: url("assets/images/footer-secure.png") left center no-repeat;
 }
 .contact-us-email {
-  background: url('assets/images/footer-email.png') left center no-repeat;
+  background: url("assets/images/footer-email.png") left center no-repeat;
 }
 .contact-us-location {
-  background: url('assets/images/footer-location.png') left center no-repeat;
+  background: url("assets/images/footer-location.png") left center no-repeat;
 }
 .footer--contact-us {
   max-width: 280px;
@@ -951,8 +931,8 @@ footer {
       color: #fff !important;
       border: 1px solid rgba(155, 143, 143, 0.7) !important;
       border-bottom: 1px solid rgba(155, 143, 143, 0.7) !important;
-      font-family: 'Titillium Web', sans-serif !important;
-      width: calc((100% - 20px)/2);
+      font-family: "Titillium Web", sans-serif !important;
+      width: calc((100% - 20px) / 2);
       padding: 20px 15px;
       &:hover {
         border-bottom: 1px solid rgba(155, 143, 143, 0.7) !important;
@@ -992,14 +972,13 @@ footer {
   margin-bottom: 24px;
   outline: none;
   padding-left: 11px;
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
   font-size: 16px;
   font-weight: 600;
   option {
     background: #455463;
     width: 200px;
   }
-
 }
 .footer-top-wrapper {
   display: flex;
@@ -1013,13 +992,13 @@ footer {
   padding-left: 34px;
 }
 .visa {
-  background: url('assets/images/visa.png');
+  background: url("assets/images/visa.png");
   width: 96px;
   height: 32px;
   margin-right: 20px;
 }
 .mastercard {
-  background: url('assets/images/mastercard.png');
+  background: url("assets/images/mastercard.png");
   width: 64px;
   height: 50px;
 }
@@ -1039,7 +1018,7 @@ footer {
     text-transform: none;
     font-weight: 600;
     width: 100%;
-    font-family: 'Titillium Web', sans-serif !important;
+    font-family: "Titillium Web", sans-serif !important;
     margin-top: 34px;
     &::before,
     &::after {
@@ -1059,12 +1038,10 @@ footer {
         color: rgba(255, 255, 255, 0.6);
       }
     }
-
   }
   &-title {
     padding-left: 75px;
-  // background: url('./img/footer-location.png') left center no-repeat;
-
+    // background: url('./img/footer-location.png') left center no-repeat;
   }
 }
 /*Media for footer*/
@@ -1102,7 +1079,6 @@ footer {
       border-radius: 9px;
       padding: 30px 30px;
       margin-left: 60px;
-
     }
   }
 }
@@ -1194,24 +1170,23 @@ footer {
 }
 @media screen and (max-width: 400px) {
   footer .footer-form--inputs-wrapper .mdc-text-field {
-    width: calc((100% - 10px)/2);
+    width: calc((100% - 10px) / 2);
   }
-
 }
-
 
 /*--------------------------
   INDEX PAGE (find Alumni)
 --------------------------*/
 /*SEARCHBAR (index page "Find Alumni")*/
 .find-alumni {
-
   &--search {
     padding: 55px 20px 80px 20px;
     background-color: rgba(91, 157, 227, 0.08);
-    font-family: 'Titillium Web', sans-serif !important;
+    font-family: "Titillium Web", sans-serif !important;
     margin-bottom: 75px;
-
+    position: relative;
+    box-sizing: border-box;
+    z-index: 2;
     &-wrapper {
       max-width: 780px;
       margin: auto;
@@ -1249,7 +1224,7 @@ footer {
       color: #343d42;
       font-size: 14px;
       font-weight: 400;
-      font-family: 'Titillium Web', sans-serif !important;
+      font-family: "Titillium Web", sans-serif !important;
     }
 
     &-filters {
@@ -1292,45 +1267,149 @@ footer {
   }
 }
 
-
-
-
-.find-alumni--search-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.find-alumni--search-input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
   color: #343d42;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
 }
-.find-alumni--search-input::-moz-placeholder { /* Firefox 19+ */
+.find-alumni--search-input::-moz-placeholder {
+  /* Firefox 19+ */
   color: #343d42;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
 }
-.find-alumni--search-input:-ms-input-placeholder { /* IE 10+ */
+.find-alumni--search-input:-ms-input-placeholder {
+  /* IE 10+ */
   color: #343d42;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
 }
-.find-alumni--search-input:-moz-placeholder { /* Firefox 18- */
+.find-alumni--search-input:-moz-placeholder {
+  /* Firefox 18- */
   color: #343d42;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
 }
 
 .find-alumni--skills-wrapper {
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
+}
+
+.find-alumni--filters-btn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.find-alumni--filters-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  width: calc(100% - 50px);
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 112px;
+}
+
+.find-alumni--filters-column {
+  &:not(:last-child) {
+    margin-right: 150px;
+  }
+}
+
+.find-alumni--filters-block {
+  display: none;
+  position: absolute;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 2;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 4px 7px 0 rgba(119, 119, 119, 0.12);
+  .mdc-checkbox__checkmark {
+    color: #ffffff;
+  }
+  label {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 25px;
+    color: #343d42;
+    font-family: "Titillium Web", sans-serif;
+  }
+  .mdc-form-field {
+    display: flex;
+    align-items: center;
+  }
+  .profile__card-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-left: 15px;
+    margin-top: 0;
+  }
+  .profile__card-title:before {
+    height: calc(100% - 4px);
+    top: 1px;
+  }
+}
+
+.find-alumni--filter-info:nth-child(2) {
+  .profile__card-title {
+    margin-bottom: 15px;
+  }
+}
+
+.find-alumni--filter-text {
+  font-size: 12px;
+  margin-top: 3px;
+  margin-bottom: 15px;
+  color: #343d42;
+  .bold-text {
+    font-weight: bold;
+  }
+}
+.filter-select {
+  outline: none !important;
+  border-radius: 22.5px;
+  border: solid 1px rgba(151, 151, 151, 0.34);
+  padding: 12px 20px;
+  font-size: 14px;
+  width: 220px;
+  height: 45px;
+  font-family: "Titillium Web", sans-serif;
+  transition: 0.4s ease;
+  margin-bottom: 20px;
+  &:focus {
+    border-color: #aed4f4;
+    box-shadow: 0px 0px 5px 0px rgba(0, 123, 255, 0.25);
+  }
+  .mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate)
+    ~ .mdc-checkbox__background {
+    border-color: rgba(0, 0, 0, 0.14);
+  }
+}
+
+.overlay-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  background-color: #ffffff;
+  overflow: hidden;
 }
 /*end of SEARCHBAR (index page "Find Alumni")*/
-
 
 /*CANDIDATES BLOCK(index page "Find Alumni")*/
 .find-alumni--candidates {
   background: #fff;
   margin-bottom: 55px;
-  &--wraper {
+  &--wrapper {
     max-width: 1600px;
     width: calc(100% - 50px);
     margin: auto;
@@ -1353,7 +1432,7 @@ footer {
     justify-content: space-between;
   }
   .one-candidate {
-    font-family: 'Titillium Web', sans-serif !important;
+    font-family: "Titillium Web", sans-serif !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1399,21 +1478,21 @@ footer {
       margin-bottom: 16px;
     }
     &--view-profile {
-      transition: .4s ease;
+      transition: 0.4s ease;
       font-weight: 700;
       color: #4ca0e9;
       margin-bottom: 18px;
     }
     &--download-resume {
       a {
-        font-family: 'Titillium Web', sans-serif !important;
+        font-family: "Titillium Web", sans-serif !important;
         color: #acacac;
         font-size: 14px;
         font-weight: 600;
         text-decoration: underline;
-        transition: .4s ease;
+        transition: 0.4s ease;
         &:hover {
-          opacity: .85;
+          opacity: 0.85;
         }
       }
     }
@@ -1424,11 +1503,10 @@ footer {
 }
 /*end of CANDIDATES BLOCK(index page "Find Alumni")*/
 
-
 /*MEDIA FOR INDEX PAGE(Find Alumni page with candidates)*/
 @media screen and (max-width: 1700px) {
   .find-alumni--candidates {
-    &--wraper {
+    &--wrapper {
       max-width: 1300px;
     }
     .one-candidate {
@@ -1439,16 +1517,32 @@ footer {
 
 @media screen and (max-width: 1200px) {
   .find-alumni--candidates {
-    &--wraper {
+    &--wrapper {
       max-width: 900px;
     }
     .one-candidate {
       width: 210px;
     }
   }
+  .find-alumni--filters-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .find-alumni--filters-column:not(:last-child) {
+    margin-right: 120px;
+  }
+  .filter-select {
+    width: 180px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
+  .find-alumni--filters-column:not(:last-child) {
+    margin-right: 50px;
+  }
+  .find-alumni--filters-wrapper {
+    justify-content: space-between;
+  }
   .universal__header-menu {
     display: none;
   }
@@ -1484,7 +1578,26 @@ footer {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .find-alumni--filters-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .find-alumni--filters-column {
+    margin-bottom: 20px;
+  }
+  .find-alumni--filters-btn {
+    margin-top: 0;
+  }
+}
+
 @media screen and (max-width: 700px) {
+  .find-alumni--filters-wrapper {
+    width: calc(100% - 30px);
+  }
+
   .find-alumni--candidates {
     margin-bottom: 25px;
     .one-candidate {
@@ -1558,11 +1671,13 @@ footer {
   opacity: 1 !important;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder {
+  /* Firefox 18- */
   opacity: 1 !important;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+::-moz-placeholder {
+  /* Firefox 19+ */
   opacity: 1 !important;
 }
 
